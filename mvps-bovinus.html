@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><title>MVPs Bovinu's</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{width:1800px;background:#1a1412;color:#f3ebe3;font-family:"Segoe UI",Arial,sans-serif;padding:56px}
+header{display:flex;justify-content:space-between;align-items:flex-end;border-bottom:2px solid #c9a24a;padding-bottom:24px;margin-bottom:36px}
+h1{font-size:46px;font-weight:800;letter-spacing:-.5px}
+h1 span{color:#c9a24a}
+.sub{font-size:20px;color:#b9aba0;margin-top:8px}
+.kpis{display:flex;gap:28px;text-align:right}
+.kpis b{display:block;font-size:30px;color:#c9a24a}
+.kpis small{font-size:14px;color:#b9aba0}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:32px}
+.card{background:#251d1a;border:1px solid #3a2e29;border-radius:20px;padding:32px;display:flex;gap:28px}
+.info{flex:1}
+.tag{display:inline-block;background:#8b1e1e;color:#fff;font-size:13px;font-weight:700;padding:5px 12px;border-radius:20px;letter-spacing:.5px}
+.card h2{font-size:30px;margin:12px 0 4px}
+.who{color:#c9a24a;font-size:15px;font-weight:600;margin-bottom:16px}
+.row{margin-bottom:12px}
+.row h3{font-size:13px;text-transform:uppercase;letter-spacing:1px;color:#b9aba0;margin-bottom:3px}
+.row p{font-size:16px;line-height:1.45}
+.metric{margin-top:14px;background:#1a1412;border-left:4px solid #c9a24a;padding:10px 14px;font-size:15px;border-radius:6px}
+.metric b{color:#c9a24a}
+/* phone */
+.phone{width:230px;flex:none;background:#0d0a09;border-radius:34px;padding:12px;border:2px solid #4a3c35}
+.scr{background:#f7f2ec;color:#2a201c;border-radius:24px;height:450px;overflow:hidden;font-size:12px}
+.bar{background:#8b1e1e;color:#fff;padding:14px 14px 10px;font-weight:700;font-size:14px}
+.bar small{display:block;font-weight:400;opacity:.8;font-size:11px}
+.pad{padding:12px}
+.big{font-size:44px;font-weight:800;color:#8b1e1e;text-align:center;margin:8px 0 0}
+.c{text-align:center;color:#6b5d55}
+.btn{background:#8b1e1e;color:#fff;text-align:center;padding:10px;border-radius:10px;font-weight:700;margin-top:10px}
+.btn.g{background:#c9a24a;color:#2a201c}
+.li{background:#fff;border-radius:10px;padding:9px 10px;margin-top:8px;display:flex;justify-content:space-between;align-items:center;box-shadow:0 1px 2px #0001}
+.li b{font-size:12px}
+.pill{background:#e9dfd5;border-radius:12px;padding:3px 8px;font-size:11px;white-space:nowrap}
+.btn{white-space:nowrap;font-size:12px}
+.pill.on{background:#2e7d32;color:#fff}
+.prog{height:8px;background:#e9dfd5;border-radius:4px;margin:8px 0}
+.prog i{display:block;height:100%;width:70%;background:#c9a24a;border-radius:4px}
+.qr{width:120px;height:120px;margin:10px auto;background:
+ repeating-linear-gradient(90deg,#2a201c 0 8px,transparent 8px 16px),
+ repeating-linear-gradient(0deg,#2a201c 0 8px,#f7f2ec 8px 16px);border:8px solid #fff;outline:3px solid #2a201c}
+.sec{grid-column:1/-1;display:flex;align-items:center;gap:16px;font-size:15px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#c9a24a}
+.sec::after{content:"";flex:1;height:1px;background:#3a2e29}
+.tag.n{background:#c9a24a;color:#2a201c}
+footer{margin-top:36px;display:flex;justify-content:space-between;color:#b9aba0;font-size:16px;border-top:1px solid #3a2e29;padding-top:20px}
+footer b{color:#f3ebe3}
+</style></head><body>
+
+<header>
+ <div>
+  <h1>Desafio: <span>inovação na experiência do cliente</span></h1>
+  <div class="sub">Grupo Bovinu's · 8 propostas de MVP para o hackathon</div>
+ </div>
+ <div class="kpis">
+  <div><b>160 mil</b><small>clientes/mês</small></div>
+  <div><b>13</b><small>unidades · 5 marcas</small></div>
+  <div><b>R$ 55 / R$ 200</b><small>ticket fast grill / rodízio</small></div>
+ </div>
+</header>
+
+<div class="grid">
+
+ <div class="sec">Bloco A · Operação e jornada no salão</div>
+
+ <!-- 1 -->
+ <div class="card">
+  <div class="info">
+   <span class="tag">MVP 1 · ESPERA</span>
+   <h2>Mesa Pronta</h2>
+   <div class="who">Churrascarias Lapa e Rebouças · famílias e grupos</div>
+   <div class="row"><h3>Dor</h3><p>Fim de semana tem fila na porta. Grupos grandes não sabem quanto tempo vão esperar e acabam desistindo.</p></div>
+   <div class="row"><h3>Solução</h3><p>Fila virtual pelo WhatsApp: o cliente entra na fila por um QR code na porta ou de casa, vê sua posição em tempo real e recebe um aviso quando a mesa estiver pronta.</p></div>
+   <div class="row"><h3>MVP em 2 semanas</h3><p>Bot de WhatsApp + planilha controlada pela hostess. Piloto numa unidade, aos domingos.</p></div>
+   <div class="metric"><b>Métrica:</b> taxa de desistência da fila e tempo percebido de espera (NPS)</div>
+  </div>
+  <div class="phone"><div class="scr">
+   <div class="bar">Bovinu's Lapa<small>Fila virtual · WhatsApp</small></div>
+   <div class="pad">
+    <div class="c" style="margin-top:6px">Sua posição</div>
+    <div class="big">3º</div>
+    <div class="c">Mesa para 8 pessoas</div>
+    <div class="prog"><i></i></div>
+    <div class="c">≈ 12 min de espera</div>
+    <div class="li"><b>Cardápio do dia</b><span class="pill">ver</span></div>
+    <div class="li"><b>Aviso por mensagem</b><span class="pill on">ativo</span></div>
+    <div class="btn">Estou chegando</div>
+    <div class="btn g">Sair da fila</div>
+   </div>
+  </div></div>
+ </div>
+
+ <!-- 2 -->
+ <div class="card">
+  <div class="info">
+   <span class="tag">MVP 2 · CHECKOUT</span>
+   <h2>Pesa &amp; Paga</h2>
+   <div class="who">Fast Grill · executivos no almoço</div>
+   <div class="row"><h3>Dor</h3><p>Picos de mais de 1.200 almoços na XV de Novembro. O executivo, com pouco tempo, enfrenta fila no caixa depois de já ter pesado o prato.</p></div>
+   <div class="row"><h3>Solução</h3><p>A balança imprime uma comanda com QR code. O cliente paga via Pix pelo celular, na mesa, e sai sem passar pelo caixa.</p></div>
+   <div class="row"><h3>MVP em 2 semanas</h3><p>QR com o valor + link de Pix (gateway pronto). Validação do pagamento na saída com um tablet.</p></div>
+   <div class="metric"><b>Métrica:</b> tempo entre a pesagem e a saída, e giro de mesas no pico das 12h às 14h</div>
+  </div>
+  <div class="phone"><div class="scr">
+   <div class="bar">Fast Grill XV<small>Comanda #0482</small></div>
+   <div class="pad">
+    <div class="li"><b>Prato 0,612 kg</b><span>R$ 56,90</span></div>
+    <div class="li"><b>Suco natural</b><span>R$ 12,00</span></div>
+    <div class="li"><b>Total</b><b style="color:#8b1e1e;font-size:15px">R$ 68,90</b></div>
+    <div class="qr"></div>
+    <div class="c">Pague com Pix na mesa</div>
+    <div class="btn">Pagar R$ 68,90</div>
+    <div class="c" style="margin-top:8px">✓ Libere a saída mostrando esta tela</div>
+   </div>
+  </div></div>
+ </div>
+
+ <!-- 3 -->
+ <div class="card">
+  <div class="info">
+   <span class="tag">MVP 3 · FIDELIDADE</span>
+   <h2>Bovinu's Club</h2>
+   <div class="who">Todas as marcas · cliente recorrente</div>
+   <div class="row"><h3>Dor</h3><p>São 5 marcas que não se conversam. Quem almoça no Fast Grill não sabe que o Golden ou o Paulista Burger são do mesmo grupo.</p></div>
+   <div class="row"><h3>Solução</h3><p>Cashback que vale em qualquer marca: o almoço no Fast Grill gera crédito para o rodízio de pizza ou para a churrascaria no fim de semana.</p></div>
+   <div class="row"><h3>MVP em 2 semanas</h3><p>Cadastro pelo CPF no caixa + saldo consultado pelo WhatsApp. Piloto em 3 unidades de marcas diferentes.</p></div>
+   <div class="metric"><b>Métrica:</b> % de clientes que visitam uma segunda marca e frequência de retorno em 30 dias</div>
+  </div>
+  <div class="phone"><div class="scr">
+   <div class="bar">Bovinu's Club<small>Olá, Marina</small></div>
+   <div class="pad">
+    <div class="c" style="margin-top:4px">Seu saldo</div>
+    <div class="big" style="font-size:38px">R$ 34,50</div>
+    <div class="prog"><i></i></div>
+    <div class="c">Faltam R$ 15 para virar Ouro</div>
+    <div class="li"><b>Fast Grill Paulista</b><span class="pill">+R$ 5,50</span></div>
+    <div class="li"><b>Golden Morumbi</b><span class="pill">+R$ 12,00</span></div>
+    <div class="li"><b>Paulista Burger</b><span class="pill">+R$ 4,00</span></div>
+    <div class="btn g">Usar no rodízio de sábado</div>
+   </div>
+  </div></div>
+ </div>
+
+ <!-- 4 -->
+ <div class="card">
+  <div class="info">
+   <span class="tag">MVP 4 · RODÍZIO</span>
+   <h2>Meu Corte</h2>
+   <div class="who">Churrascarias · experiência à mesa</div>
+   <div class="row"><h3>Dor</h3><p>"A picanha nunca passa na minha mesa." O cliente que paga um ticket de R$ 200 fica sem o corte que mais gosta, enquanto outros cortes sobram e viram desperdício.</p></div>
+   <div class="row"><h3>Solução</h3><p>Um QR code na mesa permite pedir o corte e o ponto da carne. O pedido aparece num painel para os passadores, que sabem qual mesa visitar primeiro.</p></div>
+   <div class="row"><h3>MVP em 2 semanas</h3><p>Web app simples + tela de TV na churrasqueira. Sem integração com o PDV.</p></div>
+   <div class="metric"><b>Métrica:</b> tempo até o corte pedido chegar, NPS da mesa e kg de sobra por corte</div>
+  </div>
+  <div class="phone"><div class="scr">
+   <div class="bar">Mesa 14 · Rebouças<small>Peça seu corte favorito</small></div>
+   <div class="pad">
+    <div class="li"><b>Picanha</b><span class="pill on">pedido</span></div>
+    <div class="li"><b>Bife ancho</b><span class="pill">pedir</span></div>
+    <div class="li"><b>Filé c/ queijo</b><span class="pill">pedir</span></div>
+    <div class="li"><b>Paleta de cordeiro</b><span class="pill">pedir</span></div>
+    <div class="li"><b>Costela premium</b><span class="pill">pedir</span></div>
+    <div class="c" style="margin-top:10px">Ponto da carne</div>
+    <div style="display:flex;gap:6px;margin-top:6px"><span class="pill" style="flex:1;text-align:center">mal</span><span class="pill on" style="flex:1;text-align:center">ao ponto</span><span class="pill" style="flex:1;text-align:center">bem</span></div>
+    <div class="btn">Passador a caminho · ~3 min</div>
+   </div>
+  </div></div>
+ </div>
+
+ <div class="sec">Bloco B · Relacionamento, ocasião e voz do cliente</div>
+
+ <!-- 5 -->
+ <div class="card">
+  <div class="info">
+   <span class="tag n">MVP 5 · COMUNICAÇÃO</span>
+   <h2>Dia de Quê?</h2>
+   <div class="who">Fast Grill · quem trabalha perto das unidades</div>
+   <div class="row"><h3>Dor</h3><p>O cardápio tem um tema para cada dia (feijoada na quarta, frutos do mar na sexta, comida árabe na terça), mas quem passa na rua não fica sabendo.</p></div>
+   <div class="row"><h3>Solução</h3><p>Lista de transmissão no WhatsApp: o cliente escolhe os temas que gosta e recebe às 11h um aviso só nos dias desses temas, com a foto do prato.</p></div>
+   <div class="row"><h3>MVP em 2 semanas</h3><p>QR code na bandeja para entrar na lista + envio manual com mensagens prontas. Piloto na Av. Paulista.</p></div>
+   <div class="metric"><b>Métrica:</b> movimento nos dias de tema comparado à semana anterior, e taxa de quem sai da lista</div>
+  </div>
+  <div class="phone"><div class="scr">
+   <div class="bar">Fast Grill Paulista<small>WhatsApp · hoje 11:02</small></div>
+   <div class="pad">
+    <div class="li" style="display:block"><b>🍲 Quarta é dia de feijoada!</b><div style="margin-top:4px;color:#6b5d55">Completa, no buffet, até 15h. Você marcou que ama feijoada 😉</div></div>
+    <div class="c" style="margin-top:12px">Seus temas</div>
+    <div class="li"><b>Feijoada</b><span class="pill on">sim</span></div>
+    <div class="li"><b>Frutos do mar</b><span class="pill on">sim</span></div>
+    <div class="li"><b>Comida árabe</b><span class="pill">não</span></div>
+    <div class="li"><b>Massas</b><span class="pill">não</span></div>
+    <div class="btn">Ver como chegar</div>
+   </div>
+  </div></div>
+ </div>
+
+ <!-- 6 -->
+ <div class="card">
+  <div class="info">
+   <span class="tag n">MVP 6 · OCASIÃO</span>
+   <h2>Festa Fácil</h2>
+   <div class="who">Churrascarias e Golden · aniversários e grupos</div>
+   <div class="row"><h3>Dor</h3><p>Os salões grandes são um diferencial, mas para reservar uma mesa de aniversário é preciso ligar, negociar e torcer para lembrarem do bolo.</p></div>
+   <div class="row"><h3>Solução</h3><p>Uma página de reserva para comemorações: a pessoa escolhe a data e quantos vão, adiciona um bolo ou decoração, paga um sinal via Pix e recebe um convite digital para mandar aos convidados.</p></div>
+   <div class="row"><h3>MVP em 2 semanas</h3><p>Formulário + link de Pix + modelo de convite. As reservas caem num quadro de pedidos para o gerente.</p></div>
+   <div class="metric"><b>Métrica:</b> nº de reservas de grupo, pessoas por reserva e quantos não comparecem</div>
+  </div>
+  <div class="phone"><div class="scr">
+   <div class="bar">Festa Fácil<small>Bovinu's Rebouças</small></div>
+   <div class="pad">
+    <div class="li"><b>Data</b><span>Sáb, 12/12 · 20h</span></div>
+    <div class="li"><b>Convidados</b><span>18 pessoas</span></div>
+    <div class="li"><b>Bolo da casa</b><span class="pill on">+ R$ 120</span></div>
+    <div class="li"><b>Mesa decorada</b><span class="pill">+ R$ 80</span></div>
+    <div class="li"><b>Sinal (Pix)</b><b style="color:#8b1e1e">R$ 200,00</b></div>
+    <div class="btn">Confirmar reserva</div>
+    <div class="btn g">Enviar convite 🎉</div>
+   </div>
+  </div></div>
+ </div>
+
+ <!-- 7 -->
+ <div class="card">
+  <div class="info">
+   <span class="tag n">MVP 7 · VOZ DO CLIENTE</span>
+   <h2>Feedback Relâmpago</h2>
+   <div class="who">Todas as 13 unidades · gerentes</div>
+   <div class="row"><h3>Dor</h3><p>Cada unidade funciona de forma independente e o grupo não tem uma visão única do cliente. A reclamação só aparece depois, no Google, quando o cliente já foi embora.</p></div>
+   <div class="row"><h3>Solução</h3><p>Uma avaliação de 1 toque pelo QR code na mesa ou na comanda. Se a nota for baixa, o gerente recebe um alerta na hora e vai até a mesa antes de o cliente sair.</p></div>
+   <div class="row"><h3>MVP em 2 semanas</h3><p>Google Forms + automação (Zapier/Make) que dispara um alerta no WhatsApp do gerente. O painel junta as notas de todas as unidades.</p></div>
+   <div class="metric"><b>Métrica:</b> % de mesas que respondem, % de notas baixas resolvidas no salão e nota no Google</div>
+  </div>
+  <div class="phone"><div class="scr">
+   <div class="bar">Como foi hoje?<small>Mesa 22 · Fast Grill XV</small></div>
+   <div class="pad">
+    <div style="display:flex;justify-content:space-between;font-size:24px;margin:14px 2px">😡<span style="opacity:.35">😕</span><span style="opacity:.35">😐</span><span style="opacity:.35">🙂</span><span style="opacity:.35">😍</span></div>
+    <div class="c">O que aconteceu?</div>
+    <div class="li"><b>Comida fria</b><span class="pill on">✓</span></div>
+    <div class="li"><b>Demora no atendimento</b><span class="pill">—</span></div>
+    <div class="li"><b>Fila no caixa</b><span class="pill">—</span></div>
+    <div class="btn">Enviar</div>
+    <div class="li" style="background:#fdecea;border:1px solid #8b1e1e"><b style="color:#8b1e1e">🔔 Gerente avisado · mesa 22</b></div>
+   </div>
+  </div></div>
+ </div>
+
+ <!-- 8 -->
+ <div class="card">
+  <div class="info">
+   <span class="tag n">MVP 8 · TURISTA</span>
+   <h2>Churrasco Experience</h2>
+   <div class="who">Rebouças e Paulista · turistas e estrangeiros</div>
+   <div class="row"><h3>Dor</h3><p>O turista procura o churrasco como experiência cultural, mas não conhece os cortes, não entende a ficha verde e vermelha e não conhece a história gaúcha da casa.</p></div>
+   <div class="row"><h3>Solução</h3><p>QR code na mesa com um guia do rodízio em inglês e espanhol: os cortes com foto, como funciona a ficha, a história do grupo desde 1983 e um "passaporte" dos cortes provados.</p></div>
+   <div class="row"><h3>MVP em 2 semanas</h3><p>Uma página estática em 3 idiomas + divulgação na recepção de hotéis próximos.</p></div>
+   <div class="metric"><b>Métrica:</b> acessos ao guia, avaliações em inglês e espanhol, e mesas vindas de hotéis</div>
+  </div>
+  <div class="phone"><div class="scr">
+   <div class="bar">Churrasco Guide<small>EN · ES · PT</small></div>
+   <div class="pad">
+    <div class="li" style="display:block"><b>🟢 Green card = more meat</b><div style="color:#6b5d55;margin-top:2px">🔴 Red card = pause</div></div>
+    <div class="li"><b>Picanha · top sirloin</b><span class="pill on">tried</span></div>
+    <div class="li"><b>Bife ancho · ribeye</b><span class="pill on">tried</span></div>
+    <div class="li"><b>Cordeiro · lamb</b><span class="pill">next</span></div>
+    <div class="c" style="margin-top:8px">Passport: 2 / 8 cuts</div>
+    <div class="prog"><i style="width:25%"></i></div>
+    <div class="btn g">Since 1983 · our story</div>
+   </div>
+  </div></div>
+ </div>
+
+</div>
+
+<footer>
+ <div><b>Critério comum:</b> cada MVP roda numa única unidade, com ferramentas prontas (WhatsApp, Pix, planilha), sem integrar com o PDV na primeira versão.</div>
+ <div>Fonte dos dados: Rede Food Service, jan/2026</div>
+</footer>
+</body></html>
