@@ -8,7 +8,7 @@ Projeto para o **Hackathon Tech FMU 2026.2 × Bovinu's Grill & Beer – Augusta*
 |---|---|
 | **Protótipo funcionando** | https://razzano380.github.io/Hacktoon-Bovinus/ (abre no computador, tablet e celular, sem login) |
 | **Slides (5)** | [`slides-bovinus-flow.pdf`](slides-bovinus-flow.pdf) |
-| **Vídeo (até 2 min)** | _[link do vídeo]_ |
+| **Vídeo (1min50s)** | https://razzano380.github.io/Hacktoon-Bovinus/video/bovinus-flow-demo.mp4 (arquivo: [`video/bovinus-flow-demo.mp4`](video/bovinus-flow-demo.mp4)) |
 | **Equipe** | Juan Razzano · Gustavo Lima · Rodrigo Viana |
 
 > ⚠️ **Todos os números deste projeto são sintéticos.** Vêm de uma simulação e de um histórico gerados a partir de premissas declaradas, não de dados reais da empresa. Não conversamos com os donos nem fizemos pesquisa de campo.
@@ -17,7 +17,19 @@ Projeto para o **Hackathon Tech FMU 2026.2 × Bovinu's Grill & Beer – Augusta*
 
 ## 1. O problema
 
-A unidade Augusta recebe cerca de **600 clientes** num almoço de dia útil, com **90 mesas em 3 salões**. Mais da metade das chegadas se concentra num pico curto (premissa nossa: 12h10–13h20). Nesse intervalo, três filas se formam ao mesmo tempo:
+**Números da unidade (dados da empresa):**
+
+| | |
+|---|---|
+| Clientes por dia durante a semana | ~618 |
+| Consumo médio | 482 g por cliente |
+| Preço | R$ 119,90/kg (ou R$ 113,00 no buffet livre, por pessoa) |
+| **Ticket médio estimado** | **≈ R$ 57,80** por cliente (0,482 kg × R$ 119,90) |
+| **Faturamento estimado do almoço** | **≈ R$ 35,7 mil por dia útil** (618 × R$ 57,80) |
+
+Cada cliente que desiste da fila ou não volta por causa da espera custa cerca de R$ 58 por almoço.
+
+A unidade Augusta recebe cerca de **618 clientes** por dia na semana, com **90 mesas em 3 salões**. Mais da metade das chegadas se concentra num pico curto (premissa nossa: 12h10–13h20). Nesse intervalo, três filas se formam ao mesmo tempo:
 
 - **na balança**, na entrada;
 - **na churrasqueira**, esperando a carne;
@@ -155,6 +167,10 @@ Simulação com dados sintéticos; não é medição real. Na simulação o refo
 
 **Próximo passo:** piloto de 4 semanas na Augusta, uma peça por semana (QR nas mesas → celular do garçom → fila e grelha → painel do gerente). Investimento estimado: ≈ R$ 2.700 de equipamento (2 tablets e QR nas 90 mesas) + até R$ 350/mês. Os valores são estimativas de mercado, sem cotação.
 
+**Retorno:** com ticket médio de ≈ R$ 57,80, **47 almoços** pagam o equipamento e **6 almoços por mês** pagam a mensalidade. Em uma casa com ~618 clientes por dia, evitar 1 desistência a cada 2 dias úteis já paga o primeiro ano (47 + 12 × 6 = 119 almoços em ~264 dias úteis).
+
+A simulação usa 600 clientes por dia útil (premissa anterior ao dado de 618); a diferença não muda as conclusões.
+
 ## 7. Como rodar
 
 - **Online:** abra https://razzano380.github.io/Hacktoon-Bovinus/
@@ -170,6 +186,7 @@ No protótipo, cada pessoa que abre o site roda a própria simulação; as telas
 |---|---|
 | `index.html` | Protótipo navegável (código-fonte completo) |
 | `slides-bovinus-flow.pdf` | Apresentação em 5 slides |
+| `video/bovinus-flow-demo.mp4` | Vídeo de 1min50s com o protótipo funcionando (narração em voz sintética) |
 | `deck/` | Fonte dos slides |
 | `capturas/` | 5 capturas de tela da solução |
 | `docs/modelo-de-dados.sql` | Esquema do banco proposto |
