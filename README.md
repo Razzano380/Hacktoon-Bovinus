@@ -1,28 +1,182 @@
 # Bovinu's Flow
 
-Projeto do grupo para o Hackathon FMU × Grupo Bovinu's (unidade Grill & Beer Augusta, almoço por quilo).
+Projeto para o **Hackathon Tech FMU 2026.2 × Bovinu's Grill & Beer – Augusta** (almoço por quilo).
 
 > A Bovinu's já sabe quanto pesa o prato. O Flow mostra quanto pesa cada minuto do cliente.
 
-## O que tem aqui
-
-| Pasta / arquivo | O que é |
+| | |
 |---|---|
-| `index.html` | Protótipo navegável (abre direto no navegador, funciona em computador, tablet e celular) |
-| `deck/` | Fonte dos 10 slides do pitch (formato do Claude Slides) |
-| `telas-para-slides/` | Capturas das telas do protótipo para usar nos slides |
-| `mvps-bovinus.html` / `.png` | Quadro com as 8 ideias de MVP avaliadas antes do Flow |
+| **Protótipo funcionando** | https://razzano380.github.io/Hacktoon-Bovinus/ (abre no computador, tablet e celular, sem login) |
+| **Slides (5)** | [`slides-bovinus-flow.pdf`](slides-bovinus-flow.pdf) |
+| **Vídeo (até 2 min)** | _[link do vídeo]_ |
+| **Equipe** | Juan Razzano · Gustavo Lima · Rodrigo Viana |
 
-## Telas do protótipo
+> ⚠️ **Todos os números deste projeto são sintéticos.** Vêm de uma simulação e de um histórico gerados a partir de premissas declaradas, não de dados reais da empresa. Não conversamos com os donos nem fizemos pesquisa de campo.
 
-`#gerente` · `#diretoria` · `#salao` · `#churrasqueira` · `#garcom` · `#cliente` · `#experiencia` · `#como-funciona` · `#agora` (página do cliente pelo QR code)
+---
 
-## Publicar online (GitHub Pages)
+## 1. O problema
 
-Settings → Pages → Branch `main`, pasta `/ (root)` → Save. Em 1–2 minutos o protótipo fica em
-`https://<seu-usuario>.github.io/bovinus-flow/`, e o QR code da aba Cliente passa a apontar para esse endereço, sem login.
+A unidade Augusta recebe cerca de **600 clientes** num almoço de dia útil, com **90 mesas em 3 salões**. Mais da metade das chegadas se concentra num pico curto (premissa nossa: 12h10–13h20). Nesse intervalo, três filas se formam ao mesmo tempo:
+
+- **na balança**, na entrada;
+- **na churrasqueira**, esperando a carne;
+- **por uma mesa**, enquanto mesas sujas demoram a ser liberadas.
+
+Ninguém vê as três juntas. O gerente descobre o gargalo pela cara do cliente ou, pior, pela avaliação no Google no dia seguinte. A diretoria não tem uma visão simples do movimento da semana, do mês e do ano.
+
+## 2. A solução
+
+O **Bovinu's Flow** transforma cada toque de um funcionário (e cada registro que a comanda já faz) em um **evento com horário**. Somando os eventos, o sistema sabe em tempo real onde está o gargalo e sugere a ação. Cada pessoa que mexe no fluxo ganha uma tela simples:
+
+| Frente | Aparelho | O que faz |
+|---|---|---|
+| **Gerente** | tablet | Semáforo do salão, fila, grelha e lotação; alertas com botão *Aplicar* |
+| **Garçom** | celular da casa | Mesa para limpar, pessoas sentadas, chamados, grupo da fila de mesa |
+| **Churrasqueira** | painel | Tempo de espera; chama reforço quando passa de 2 min |
+| **Cliente** | QR code, sem app | Lotação, fila de mesa, pedido rápido e avaliação de 1 toque |
+| **Diretoria** | navegador | Movimento por semana/mês/ano, horário de pico e pico da grelha |
+
+**Integração entre as frentes:** todas leem e gravam no mesmo fluxo de eventos. O "Limpei" do garçom muda na hora a tela do gerente, a fila do cliente e o histórico da diretoria.
+
+**Fora do escopo:** cozinha, compras, estoque, pagamento e a comanda (o Flow só lê o horário dela).
+
+## 3. Capturas de tela
+
+| | |
+|---|---|
+| ![Painel do gerente](capturas/1-painel-do-gerente.png) | ![Mapa do salão](capturas/2-mapa-do-salao.png) |
+| **Painel do gerente** | **Mapa do salão** |
+| ![Cliente pelo QR code](capturas/3-cliente-qr-code.png) | ![Diretoria](capturas/4-diretoria.png) |
+| **Cliente pelo QR code** | **Diretoria** |
+| ![Celular e tablet](capturas/5-celular-e-tablet.png) | |
+| **Celular e tablet** | |
+
+## 4. Estrutura e integração
+
+```mermaid
+flowchart LR
+  subgraph Coleta
+    G[Celular do garçom]
+    A[Tablet do anfitrião]
+    C[Tablet da churrasqueira]
+    Q[QR do cliente]
+    K[Comanda eletrônica<br/>já existe]
+  end
+  G & A & C & Q & K -->|evento ~200 bytes<br/>Wi-Fi, guarda offline| E[(PostgreSQL / Supabase<br/>tabela eventos)]
+  E -->|tempo real| R[Regras: semáforo,<br/>alerta 2min30s, mesa suja]
+  E -->|toda noite| P[Previsão do pico<br/>por 15 min]
+  R --> TG[Tela do gerente]
+  R --> TW[Tela do garçom]
+  R --> TC[Painel da grelha]
+  R --> TQ[Página do cliente]
+  P --> TD[Painel da diretoria]
+  E --> TD
+```
+
+**Versão principal:** Supabase (PostgreSQL em tempo real), telas em Next.js como PWA, previsão em Python, WhatsApp Business para o relatório semanal.
+**Versão baixo custo:** AppSheet ou Glide com Google Sheets, Forms e Looker Studio. Dá para começar sem equipe de TI.
+
+### Modelo de dados
+
+Esquema completo em [`docs/modelo-de-dados.sql`](docs/modelo-de-dados.sql).
+
+```mermaid
+erDiagram
+  MESAS ||--o{ EVENTOS : "acontece em"
+  MESAS ||--o{ PESQUISAS : "avaliada em"
+  MESAS {
+    text id PK
+    text salao
+    text praca
+    int lugares
+    text estado
+  }
+  EVENTOS {
+    bigint id PK
+    text tipo
+    text mesa FK
+    text origem
+    timestamptz horario
+    int duracao_s
+  }
+  PESQUISAS {
+    bigint id PK
+    text mesa FK
+    int nota
+    text motivo
+  }
+  EQUIPE_TURNO {
+    bigint id PK
+    date dia
+    text posto
+    text praca
+  }
+  CLIENTES_PASSE {
+    bigint id PK
+    text telefone
+    timestamptz consentimento
+  }
+  PREVISAO {
+    date dia PK
+    time faixa PK
+    int clientes
+  }
+```
+
+Exemplo de evento (o garçom tocou "Limpei" na mesa S14):
+
+```json
+{ "unidade": "augusta", "tipo": "mesa_liberada", "mesa": "S14", "praca": "B",
+  "origem": "celular_garcom", "horario": "2026-11-26T12:47:31-03:00", "duracao_s": 212 }
+```
+
+**LGPD:** sem câmera no MVP, pesquisa anônima, telefone só com aceite e guarda de no máximo 12 meses.
+
+## 5. Como desenvolvemos
+
+1. **Entender:** lemos o case da Bovinu's (almoço por quilo, 600 clientes, pico curto) e o mapa da unidade.
+2. **Escolher:** comparamos 8 ideias de MVP por impacto no cliente, custo e facilidade de testar ([`mvps-bovinus.png`](mvps-bovinus.png)). O Flow venceu por atacar a espera, que é o que o cliente sente.
+3. **Modelar:** sem dados da loja, escrevemos uma simulação do almoço (chegadas, balança, grelha, mesas, limpeza) com premissas declaradas e semente fixa, para o resultado ser reproduzível.
+4. **Construir:** fizemos o protótipo web com 9 telas em um único arquivo (`index.html`, HTML + CSS + JavaScript puro), publicado no GitHub Pages.
+5. **Testar:** rodamos o mesmo dia duas vezes, com as mesmas chegadas, sem e com o Flow, e ajustamos o layout para celular e tablet.
+
+## 6. Resultado esperado (simulação)
+
+| Indicador (dia útil, 600 clientes) | Hoje | Com Flow | Meta do piloto |
+|---|---:|---:|---:|
+| Maior fila na entrada | 6,5 min | 4,1 min | –20% |
+| Grelha atendida em até 2min30s | 69% | 100% | 85% |
+| Tempo para liberar a mesa | 7,9 min | 5,2 min | –30% |
+| Tempo para achar mesa | 2,2 min | 0,7 min | a medir |
+| Clientes satisfeitos (estimado) | ~55% | ~85% | a medir |
+
+Simulação com dados sintéticos; não é medição real. Na simulação o reforço da grelha é acionado sempre que a espera passa de 2 min, por isso chega a 100%.
+
+**Próximo passo:** piloto de 4 semanas na Augusta, uma peça por semana (QR nas mesas → celular do garçom → fila e grelha → painel do gerente). Investimento estimado: ≈ R$ 2.700 de equipamento (2 tablets e QR nas 90 mesas) + até R$ 350/mês. Os valores são estimativas de mercado, sem cotação.
+
+## 7. Como rodar
+
+- **Online:** abra https://razzano380.github.io/Hacktoon-Bovinus/
+- **Local:** baixe o repositório e abra `index.html` no navegador. Não precisa instalar nada.
+
+Telas: `#gerente` · `#diretoria` · `#salao` · `#churrasqueira` · `#garcom` · `#cliente` · `#experiencia` · `#como-funciona` · `#agora` (página do cliente pelo QR code).
+
+No protótipo, cada pessoa que abre o site roda a própria simulação; as telas não são compartilhadas entre aparelhos.
+
+## 8. O que tem no repositório
+
+| Arquivo / pasta | O que é |
+|---|---|
+| `index.html` | Protótipo navegável (código-fonte completo) |
+| `slides-bovinus-flow.pdf` | Apresentação em 5 slides |
+| `deck/` | Fonte dos slides |
+| `capturas/` | 5 capturas de tela da solução |
+| `docs/modelo-de-dados.sql` | Esquema do banco proposto |
+| `docs/qr-prototipo.png` | QR code que abre o protótipo |
+| `mvps-bovinus.html` / `.png` | Quadro com as 8 ideias de MVP avaliadas |
 
 ## Avisos
 
-- **Todos os números são sintéticos** (simulação e histórico gerados a partir de premissas declaradas). Não são dados reais da empresa.
-- Escala de equipe é estimativa: validar com RH, Jurídico e sindicato. Não é parecer jurídico.
+- **Dados sintéticos:** simulação e histórico gerados a partir de premissas declaradas; não são dados reais da empresa.
+- A escala de equipe sugerida no protótipo é estimativa e deve ser validada com RH, Jurídico e sindicato. Não é parecer jurídico.

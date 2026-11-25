@@ -17,6 +17,7 @@ p{font-size:32px;line-height:1.35;color:var(--soft)}
 .dark p{color:#D9CFC4}
 .dark .eyebrow{color:var(--goldtx)}
 .dark::after{color:#B8ADA2}
+.dark .tag{color:var(--brand-dk)}
 .red{background:var(--brand)}
 .red h2,.red h3{color:var(--cream)}
 .red p{color:#F5E3DC}

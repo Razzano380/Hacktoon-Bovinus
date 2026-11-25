@@ -1,16 +1,30 @@
 <section id="resultados">
 <div style="display:flex;flex-direction:column;gap:16px">
-<p class="eyebrow">Resultado esperado</p>
+<p class="eyebrow">Resultado e próximo passo</p>
 <h2>Mesmo dia, mesmas chegadas, outro almoço</h2>
 </div>
-<table class="in" style="font-size:32px">
-<tr><th style="width:40%">Indicador (dia útil, 600 clientes)</th><th style="width:20%;text-align:right">Hoje</th><th style="width:20%;text-align:right">Com Flow</th><th style="width:20%;text-align:right">Meta do piloto</th></tr>
+<table class="in" style="font-size:30px">
+<tr><th style="width:52%">Indicador (dia útil, 600 clientes)</th><th style="width:16%;text-align:right">Hoje</th><th style="width:16%;text-align:right">Com Flow</th><th style="width:16%;text-align:right">Meta piloto</th></tr>
 <tr><td>Maior fila na entrada</td><td style="text-align:right">6,5 min</td><td style="text-align:right;color:#8E1B1B">4,1 min</td><td style="text-align:right">–20%</td></tr>
 <tr><td>Grelha atendida em até 2min30s</td><td style="text-align:right">69%</td><td style="text-align:right;color:#8E1B1B">100%</td><td style="text-align:right">85%</td></tr>
 <tr><td>Tempo para liberar a mesa</td><td style="text-align:right">7,9 min</td><td style="text-align:right;color:#8E1B1B">5,2 min</td><td style="text-align:right">–30%</td></tr>
-<tr><td>Tempo para achar mesa</td><td style="text-align:right">2,2 min</td><td style="text-align:right;color:#8E1B1B">0,7 min</td><td style="text-align:right">a definir</td></tr>
-<tr><td>Clientes satisfeitos (estimado)</td><td style="text-align:right">~55%</td><td style="text-align:right;color:#8E1B1B">~85%</td><td style="text-align:right">a definir</td></tr>
+<tr><td>Clientes satisfeitos (estimado)</td><td style="text-align:right">~55%</td><td style="text-align:right;color:#8E1B1B">~85%</td><td style="text-align:right">a medir</td></tr>
 </table>
-<p class="src">Simulação com dados sintéticos e premissas declaradas; não é medição real. As metas do piloto são hipóteses a validar na Augusta.</p>
-<aside>Resultado (25 s). “Rodamos o mesmo dia duas vezes, com as mesmas chegadas: uma do jeito de hoje e outra com o Flow. A fila máxima cai de 6,5 para 4 minutos e a mesa é liberada quase 3 minutos antes.” Diga com todas as letras que é simulação com dados sintéticos; o piloto existe justamente para medir de verdade. Se perguntarem por que a grelha vai a 100%: na simulação o reforço é acionado sempre que a espera passa de 2 min; na vida real a meta é 85%.</aside>
+<p class="src">Simulação com dados sintéticos e premissas declaradas; não é medição real.</p>
+<div style="display:flex;gap:64px;align-items:center">
+<div class="in" style="--i:1;display:flex;flex-direction:column;gap:8px"><p class="eyebrow">O pedido</p><p style="font-size:40px;line-height:1.2;color:var(--ink)">Piloto de 4 semanas na Augusta,<br>uma peça por semana</p></div>
+<div class="in" style="--i:2;display:flex;flex-direction:column;gap:8px"><p class="eyebrow">Investimento estimado</p><p style="font-size:40px;line-height:1.2;color:var(--ink)">≈ R$ 2.700<br>+ R$ 350/mês</p></div>
+<div style="flex:1"></div>
+<div class="qrcard in" style="--i:3;flex-direction:row;gap:16px;padding:16px;border:2px solid var(--line)"><img src="/_blob/70a7800b232dcb42249038f7e4fd90b7" alt="QR code do protótipo: razzano380.github.io/Hacktoon-Bovinus" style="width:170px;height:170px;object-fit:contain"><p class="ql" style="width:170px;text-align:left">Teste no seu celular</p></div>
+</div>
+<aside>Resultado e fechamento (40 s). “Rodamos o mesmo dia duas vezes, com as mesmas chegadas. A fila máxima cai de 6,5 para 4 minutos e a mesa é liberada quase 3 minutos antes.” Diga com todas as letras que é simulação com dados sintéticos. “O que pedimos é um piloto de quatro semanas na Augusta, uma peça por semana: QR nas mesas, celular do garçom, fila e grelha, painel do gerente. Cerca de R$ 2.700 de equipamento (2 tablets e QR nas 90 mesas) e até R$ 350 por mês.” Feche: “A Bovinu’s já sabe quanto pesa o prato. O Flow mostra quanto pesa cada minuto do cliente.”
+
+Perguntas difíceis:
+1. “E se o garçom não usar?” Um toque por mesa, no celular da casa; o painel nunca é usado para punir.
+2. “A internet cai?” O app guarda offline e envia quando volta.
+3. “Quem mantém?” A versão baixo custo em planilha roda sem TI.
+4. “E a LGPD?” Sem câmera, pesquisa anônima, telefone só com aceite.
+5. “Os números são reais?” Não: simulação sintética; o piloto mede de verdade.
+6. “Por que a grelha vai a 100%?” Na simulação o reforço é acionado sempre que passa de 2 min; na vida real a meta é 85%.
+7. “E a escala da equipe?” Estimativa; precisa passar por RH, Jurídico e sindicato.</aside>
 </section>
