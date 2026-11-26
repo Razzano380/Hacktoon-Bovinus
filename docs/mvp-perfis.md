@@ -59,7 +59,7 @@ Tela inicial, login e logout, permissões no backend, separação dos perfis, pa
 ## 5. Testes
 
 - `npm test`: 11 testes da API (login, senha errada, perfil trocado, cookie forjado, permissões por perfil e por praça, QR assinado e adulterado, POST sem JSON, arquivos internos, limite de tentativas).
-- `tests/e2e.mjs` (Playwright): 20 verificações no navegador com servidor e 15 no modo estático, incluindo celular (iPhone 13) sem rolagem horizontal e ausência de erros de JavaScript.
+- `tests/e2e.mjs` (Playwright): 20 verificações no navegador com servidor e 17 no modo estático, incluindo celular (iPhone 13) sem rolagem horizontal e ausência de erros de JavaScript.
 
 ## 6. Pendências técnicas (não prontas para produção)
 
