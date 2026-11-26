@@ -8,7 +8,7 @@ import json, random, os
 random.seed(137)  # grupo C-137: resultado reproduzível
 
 PRECO_KG = 119.90          # preço da casa (dado da empresa)
-PESO_MEDIO_KG = 0.408      # premissa do cenário: R$ 48,90 / R$ 119,90
+PESO_MEDIO_KG = 0.482      # dado da empresa: 482 g por cliente (ticket ≈ R$ 57,80)
 # custo do insumo por kg pronto (premissa nossa, a validar com compras)
 CUSTO = {'nobre': 78.0, 'comum': 24.0, 'base': 6.5, 'salada': 9.0}
 LIMITE_PROTEINA = 0.50     # gatilho do alerta: proteína total acima de 50% do peso
@@ -39,7 +39,7 @@ def turno(com_ajuste):
         tot = {k: 0.0 for k in CUSTO}
         receita = custo = 0.0
         for _ in range(n):
-            peso = max(0.18, random.gauss(PESO_MEDIO_KG, 0.09))
+            peso = max(0.18, random.gauss(PESO_MEDIO_KG, 0.10))
             mix = {k: max(0.0, v + random.gauss(0, 0.05)) for k, v in alvo.items()}
             s = sum(mix.values()); mix = {k: v / s for k, v in mix.items()}
             c = sum(peso * mix[k] * CUSTO[k] for k in CUSTO)

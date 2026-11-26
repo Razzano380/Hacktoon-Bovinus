@@ -63,9 +63,7 @@ Para a diretoria responder se a casa está ganhando dinheiro no quilo, e onde es
 
 ## 3. Cenário simulado: um almoço antes e depois
 
-Turno de 11h30 a 14h30 com 320 pratos, peso médio de 408 g e preço de R$ 119,90/kg.
-
-> O ticket de R$ 48,90 é o cenário do pitch. O dado real da empresa é ≈ R$ 57,80 (482 g).
+Turno de 11h30 a 14h30 com 320 pratos, peso médio de 482 g e preço de R$ 119,90/kg (dados da empresa). Ticket médio simulado: R$ 58,34, perto do real de ≈ R$ 57,80.
 
 **Custo do insumo por kg (premissa):** carne nobre R$ 78, carne comum R$ 24, base R$ 6,50, salada R$ 9.
 
@@ -76,11 +74,11 @@ Os dois dias têm as mesmas chegadas e os mesmos pesos. Só muda o mix depois qu
 
 | Indicador do turno | Sem ajuste | Com ajuste | Diferença |
 |---|---:|---:|---:|
-| Pratos / kg vendidos | 320 / 131,9 kg | 320 / 131,9 kg | igual |
-| Receita | R$ 15.811,70 | R$ 15.811,70 | igual |
-| Custo do insumo (CMV) | R$ 4.768,75 (30,2%) | R$ 4.420,93 (28,0%) | **−R$ 347,82** |
-| Margem bruta | R$ 11.042,95 (69,8%) | R$ 11.390,77 (72,0%) | **+R$ 347,82** |
-| Margem por kg | R$ 83,72 | R$ 86,36 | +R$ 2,64 |
+| Pratos / kg vendidos | 320 / 155,7 kg | 320 / 155,7 kg | igual |
+| Receita | R$ 18.668,44 | R$ 18.668,44 | igual |
+| Custo do insumo (CMV) | R$ 5.630,64 (30,2%) | R$ 5.219,97 (28,0%) | **−R$ 410,67** |
+| Margem bruta | R$ 13.037,80 (69,8%) | R$ 13.448,47 (72,0%) | **+R$ 410,67** |
+| Margem por kg | R$ 83,74 | R$ 86,37 | +R$ 2,63 |
 
 | Faixa | Pratos | Proteína sem ajuste | Margem sem ajuste | Proteína com ajuste | Margem com ajuste |
 |---|---:|---:|---:|---:|---:|
@@ -89,7 +87,7 @@ Os dois dias têm as mesmas chegadas e os mesmos pesos. Só muda o mix depois qu
 | **13h00–13h15** | 76 | **58%** ⚠ | 67–68% | **52%** | **72–73%** |
 | 13h30–14h15 | 66 | 46–50% | 73–74% | 40–44% | 78–79% |
 
-Em escala, e ainda como simulação: **≈ R$ 350 por almoço**, que em 22 dias úteis dá **≈ R$ 7.650 por mês** de margem recuperada. Isso equivale a cerca de 130 almoços pelo ticket do cenário.
+Em escala, e ainda como simulação: **≈ R$ 410 por almoço**, que em 22 dias úteis dá **≈ R$ 9.000 por mês** de margem recuperada. Isso equivale a cerca de 155 almoços pelo ticket médio.
 
 O alerta deste cenário fala em −8% na margem por kg (pico contra fora de pico), e não nos −14% do exemplo do briefing: o número tem de sair dos dados simulados.
 
@@ -102,10 +100,10 @@ Filtros: Semana / Mês / Ano, sempre comparando com o período equivalente.
 
 | # | Componente | Conteúdo | Origem |
 |---|---|---|---|
-| D1 | KPI | **Margem bruta por kg**: R$ 83,72, com variação contra o período anterior | Estoque + vendas |
+| D1 | KPI | **Margem bruta por kg**: R$ 83,74, com variação contra o período anterior | Estoque + vendas |
 | D2 | KPI | **CMV do buffet**: 30,2% (meta ≤ 28%), pill ok/atenção | Estoque |
 | D3 | KPI | **Proteína no prato**: 54% do peso (limite 50%) | Estimativa |
-| D4 | KPI | **Custo médio do prato**: R$ 14,90 de insumo por R$ 49,41 de ticket | Estimativa |
+| D4 | KPI | **Custo médio do prato**: R$ 17,60 de insumo por R$ 58,34 de ticket | Estimativa |
 | D5 | Barra 100% empilhada | **Composição média do prato** por dia: nobre / comum / base / salada | Estimativa |
 | D6 | Barras horizontais | **Custo por categoria** (R$/dia): nobre domina mesmo sendo cerca de 37% do peso | Estoque |
 | D7 | Linha | **Margem por kg × proteína %** ao longo dos dias, com a linha do limite de 50% | Estimativa + estoque |
