@@ -1,0 +1,8121 @@
+{
+ "aviso": "Dados SIMULADOS para demonstração. Custos por kg são premissas, não dados da Bovinu's.",
+ "premissas": {
+  "preco_kg": 119.9,
+  "peso_medio_kg": 0.482,
+  "custo_kg": {
+   "nobre": 78.0,
+   "comum": 24.0,
+   "base": 6.5,
+   "salada": 9.0
+  },
+  "limite_proteina_pct": 50.0,
+  "intervencao": "13h00"
+ },
+ "antes": {
+  "resumo": {
+   "pratos": 320,
+   "kg": 155.7,
+   "ticket_medio": 58.34,
+   "receita": 18668.44,
+   "custo_insumo": 5630.64,
+   "margem_bruta": 13037.8,
+   "margem_bruta_pct": 69.8,
+   "margem_por_kg": 83.74,
+   "cmv_pct": 30.2
+  },
+  "faixas": [
+   {
+    "faixa": "11h30",
+    "pratos": 10,
+    "kg": 5.3,
+    "mix_pct": {
+     "nobre": 31.4,
+     "comum": 17.9,
+     "base": 36.0,
+     "salada": 14.7
+    },
+    "proteina_pct": 49.3,
+    "receita": 634.31,
+    "custo_insumo": 171.67,
+    "margem_bruta_pct": 72.9
+   },
+   {
+    "faixa": "11h45",
+    "pratos": 14,
+    "kg": 6.4,
+    "mix_pct": {
+     "nobre": 31.6,
+     "comum": 15.2,
+     "base": 37.1,
+     "salada": 16.2
+    },
+    "proteina_pct": 46.8,
+    "receita": 769.86,
+    "custo_insumo": 206.44,
+    "margem_bruta_pct": 73.2
+   },
+   {
+    "faixa": "12h00",
+    "pratos": 26,
+    "kg": 13.2,
+    "mix_pct": {
+     "nobre": 29.2,
+     "comum": 17.1,
+     "base": 36.8,
+     "salada": 16.9
+    },
+    "proteina_pct": 46.3,
+    "receita": 1585.55,
+    "custo_insumo": 407.47,
+    "margem_bruta_pct": 74.3
+   },
+   {
+    "faixa": "12h15",
+    "pratos": 38,
+    "kg": 18.4,
+    "mix_pct": {
+     "nobre": 40.0,
+     "comum": 17.1,
+     "base": 26.8,
+     "salada": 16.1
+    },
+    "proteina_pct": 57.1,
+    "receita": 2202.73,
+    "custo_insumo": 707.74,
+    "margem_bruta_pct": 67.9
+   },
+   {
+    "faixa": "12h30",
+    "pratos": 44,
+    "kg": 20.1,
+    "mix_pct": {
+     "nobre": 39.7,
+     "comum": 16.8,
+     "base": 25.6,
+     "salada": 17.8
+    },
+    "proteina_pct": 56.5,
+    "receita": 2415.45,
+    "custo_insumo": 770.82,
+    "margem_bruta_pct": 68.1
+   },
+   {
+    "faixa": "12h45",
+    "pratos": 46,
+    "kg": 23.3,
+    "mix_pct": {
+     "nobre": 40.4,
+     "comum": 18.4,
+     "base": 24.7,
+     "salada": 16.5
+    },
+    "proteina_pct": 58.8,
+    "receita": 2788.05,
+    "custo_insumo": 906.83,
+    "margem_bruta_pct": 67.5
+   },
+   {
+    "faixa": "13h00",
+    "pratos": 42,
+    "kg": 20.9,
+    "mix_pct": {
+     "nobre": 41.8,
+     "comum": 16.7,
+     "base": 25.1,
+     "salada": 16.5
+    },
+    "proteina_pct": 58.4,
+    "receita": 2502.5,
+    "custo_insumo": 828.22,
+    "margem_bruta_pct": 66.9
+   },
+   {
+    "faixa": "13h15",
+    "pratos": 34,
+    "kg": 16.5,
+    "mix_pct": {
+     "nobre": 40.0,
+     "comum": 18.0,
+     "base": 25.4,
+     "salada": 16.6
+    },
+    "proteina_pct": 58.0,
+    "receita": 1979.78,
+    "custo_insumo": 638.28,
+    "margem_bruta_pct": 67.8
+   },
+   {
+    "faixa": "13h30",
+    "pratos": 26,
+    "kg": 12.6,
+    "mix_pct": {
+     "nobre": 29.4,
+     "comum": 16.2,
+     "base": 37.1,
+     "salada": 17.2
+    },
+    "proteina_pct": 45.6,
+    "receita": 1509.2,
+    "custo_insumo": 387.72,
+    "margem_bruta_pct": 74.3
+   },
+   {
+    "faixa": "13h45",
+    "pratos": 18,
+    "kg": 8.5,
+    "mix_pct": {
+     "nobre": 30.6,
+     "comum": 19.5,
+     "base": 35.6,
+     "salada": 14.2
+    },
+    "proteina_pct": 50.1,
+    "receita": 1015.2,
+    "custo_insumo": 272.35,
+    "margem_bruta_pct": 73.2
+   },
+   {
+    "faixa": "14h00",
+    "pratos": 12,
+    "kg": 5.5,
+    "mix_pct": {
+     "nobre": 30.1,
+     "comum": 17.7,
+     "base": 33.4,
+     "salada": 18.8
+    },
+    "proteina_pct": 47.8,
+    "receita": 665.36,
+    "custo_insumo": 175.44,
+    "margem_bruta_pct": 73.6
+   },
+   {
+    "faixa": "14h15",
+    "pratos": 10,
+    "kg": 5.0,
+    "mix_pct": {
+     "nobre": 30.1,
+     "comum": 17.5,
+     "base": 35.7,
+     "salada": 16.7
+    },
+    "proteina_pct": 47.6,
+    "receita": 600.45,
+    "custo_insumo": 157.66,
+    "margem_bruta_pct": 73.7
+   }
+  ],
+  "pratos": [
+   {
+    "faixa": "11h30",
+    "peso_kg": 0.574,
+    "mix": {
+     "nobre": 0.322,
+     "comum": 0.206,
+     "base": 0.357,
+     "salada": 0.116
+    },
+    "custo": 19.18,
+    "receita": 68.86
+   },
+   {
+    "faixa": "11h30",
+    "peso_kg": 0.633,
+    "mix": {
+     "nobre": 0.322,
+     "comum": 0.124,
+     "base": 0.418,
+     "salada": 0.136
+    },
+    "custo": 20.26,
+    "receita": 75.87
+   },
+   {
+    "faixa": "11h30",
+    "peso_kg": 0.429,
+    "mix": {
+     "nobre": 0.302,
+     "comum": 0.118,
+     "base": 0.395,
+     "salada": 0.185
+    },
+    "custo": 13.12,
+    "receita": 51.39
+   },
+   {
+    "faixa": "11h30",
+    "peso_kg": 0.482,
+    "mix": {
+     "nobre": 0.318,
+     "comum": 0.161,
+     "base": 0.374,
+     "salada": 0.147
+    },
+    "custo": 15.64,
+    "receita": 57.83
+   },
+   {
+    "faixa": "11h30",
+    "peso_kg": 0.535,
+    "mix": {
+     "nobre": 0.211,
+     "comum": 0.266,
+     "base": 0.35,
+     "salada": 0.173
+    },
+    "custo": 14.29,
+    "receita": 64.17
+   },
+   {
+    "faixa": "11h30",
+    "peso_kg": 0.495,
+    "mix": {
+     "nobre": 0.283,
+     "comum": 0.18,
+     "base": 0.321,
+     "salada": 0.216
+    },
+    "custo": 15.07,
+    "receita": 59.31
+   },
+   {
+    "faixa": "11h30",
+    "peso_kg": 0.526,
+    "mix": {
+     "nobre": 0.354,
+     "comum": 0.223,
+     "base": 0.33,
+     "salada": 0.093
+    },
+    "custo": 18.89,
+    "receita": 63.02
+   },
+   {
+    "faixa": "11h30",
+    "peso_kg": 0.433,
+    "mix": {
+     "nobre": 0.324,
+     "comum": 0.161,
+     "base": 0.344,
+     "salada": 0.172
+    },
+    "custo": 14.25,
+    "receita": 51.96
+   },
+   {
+    "faixa": "11h30",
+    "peso_kg": 0.485,
+    "mix": {
+     "nobre": 0.335,
+     "comum": 0.171,
+     "base": 0.299,
+     "salada": 0.195
+    },
+    "custo": 16.45,
+    "receita": 58.13
+   },
+   {
+    "faixa": "11h30",
+    "peso_kg": 0.699,
+    "mix": {
+     "nobre": 0.354,
+     "comum": 0.175,
+     "base": 0.388,
+     "salada": 0.082
+    },
+    "custo": 24.52,
+    "receita": 83.77
+   },
+   {
+    "faixa": "11h45",
+    "peso_kg": 0.503,
+    "mix": {
+     "nobre": 0.345,
+     "comum": 0.142,
+     "base": 0.386,
+     "salada": 0.127
+    },
+    "custo": 17.1,
+    "receita": 60.33
+   },
+   {
+    "faixa": "11h45",
+    "peso_kg": 0.492,
+    "mix": {
+     "nobre": 0.398,
+     "comum": 0.116,
+     "base": 0.405,
+     "salada": 0.081
+    },
+    "custo": 18.31,
+    "receita": 59.03
+   },
+   {
+    "faixa": "11h45",
+    "peso_kg": 0.317,
+    "mix": {
+     "nobre": 0.387,
+     "comum": 0.056,
+     "base": 0.364,
+     "salada": 0.193
+    },
+    "custo": 11.3,
+    "receita": 38.02
+   },
+   {
+    "faixa": "11h45",
+    "peso_kg": 0.519,
+    "mix": {
+     "nobre": 0.317,
+     "comum": 0.163,
+     "base": 0.411,
+     "salada": 0.109
+    },
+    "custo": 16.78,
+    "receita": 62.22
+   },
+   {
+    "faixa": "11h45",
+    "peso_kg": 0.315,
+    "mix": {
+     "nobre": 0.236,
+     "comum": 0.134,
+     "base": 0.435,
+     "salada": 0.195
+    },
+    "custo": 8.25,
+    "receita": 37.71
+   },
+   {
+    "faixa": "11h45",
+    "peso_kg": 0.474,
+    "mix": {
+     "nobre": 0.343,
+     "comum": 0.166,
+     "base": 0.33,
+     "salada": 0.161
+    },
+    "custo": 16.29,
+    "receita": 56.89
+   },
+   {
+    "faixa": "11h45",
+    "peso_kg": 0.346,
+    "mix": {
+     "nobre": 0.322,
+     "comum": 0.127,
+     "base": 0.352,
+     "salada": 0.199
+    },
+    "custo": 11.14,
+    "receita": 41.44
+   },
+   {
+    "faixa": "11h45",
+    "peso_kg": 0.475,
+    "mix": {
+     "nobre": 0.272,
+     "comum": 0.094,
+     "base": 0.442,
+     "salada": 0.192
+    },
+    "custo": 13.34,
+    "receita": 56.91
+   },
+   {
+    "faixa": "11h45",
+    "peso_kg": 0.524,
+    "mix": {
+     "nobre": 0.187,
+     "comum": 0.199,
+     "base": 0.372,
+     "salada": 0.243
+    },
+    "custo": 12.56,
+    "receita": 62.84
+   },
+   {
+    "faixa": "11h45",
+    "peso_kg": 0.431,
+    "mix": {
+     "nobre": 0.348,
+     "comum": 0.162,
+     "base": 0.328,
+     "salada": 0.162
+    },
+    "custo": 14.95,
+    "receita": 51.73
+   },
+   {
+    "faixa": "11h45",
+    "peso_kg": 0.543,
+    "mix": {
+     "nobre": 0.331,
+     "comum": 0.228,
+     "base": 0.335,
+     "salada": 0.107
+    },
+    "custo": 18.67,
+    "receita": 65.07
+   },
+   {
+    "faixa": "11h45",
+    "peso_kg": 0.51,
+    "mix": {
+     "nobre": 0.288,
+     "comum": 0.156,
+     "base": 0.383,
+     "salada": 0.173
+    },
+    "custo": 15.45,
+    "receita": 61.18
+   },
+   {
+    "faixa": "11h45",
+    "peso_kg": 0.545,
+    "mix": {
+     "nobre": 0.333,
+     "comum": 0.19,
+     "base": 0.329,
+     "salada": 0.148
+    },
+    "custo": 18.52,
+    "receita": 65.29
+   },
+   {
+    "faixa": "11h45",
+    "peso_kg": 0.427,
+    "mix": {
+     "nobre": 0.323,
+     "comum": 0.124,
+     "base": 0.331,
+     "salada": 0.222
+    },
+    "custo": 13.8,
+    "receita": 51.19
+   },
+   {
+    "faixa": "12h00",
+    "peso_kg": 0.493,
+    "mix": {
+     "nobre": 0.319,
+     "comum": 0.239,
+     "base": 0.313,
+     "salada": 0.129
+    },
+    "custo": 16.69,
+    "receita": 59.14
+   },
+   {
+    "faixa": "12h00",
+    "peso_kg": 0.646,
+    "mix": {
+     "nobre": 0.229,
+     "comum": 0.174,
+     "base": 0.367,
+     "salada": 0.23
+    },
+    "custo": 17.1,
+    "receita": 77.47
+   },
+   {
+    "faixa": "12h00",
+    "peso_kg": 0.412,
+    "mix": {
+     "nobre": 0.311,
+     "comum": 0.226,
+     "base": 0.33,
+     "salada": 0.133
+    },
+    "custo": 13.62,
+    "receita": 49.44
+   },
+   {
+    "faixa": "12h00",
+    "peso_kg": 0.542,
+    "mix": {
+     "nobre": 0.257,
+     "comum": 0.2,
+     "base": 0.388,
+     "salada": 0.155
+    },
+    "custo": 15.59,
+    "receita": 64.95
+   },
+   {
+    "faixa": "12h00",
+    "peso_kg": 0.352,
+    "mix": {
+     "nobre": 0.321,
+     "comum": 0.111,
+     "base": 0.32,
+     "salada": 0.248
+    },
+    "custo": 11.25,
+    "receita": 42.16
+   },
+   {
+    "faixa": "12h00",
+    "peso_kg": 0.526,
+    "mix": {
+     "nobre": 0.322,
+     "comum": 0.186,
+     "base": 0.404,
+     "salada": 0.089
+    },
+    "custo": 17.34,
+    "receita": 63.08
+   },
+   {
+    "faixa": "12h00",
+    "peso_kg": 0.346,
+    "mix": {
+     "nobre": 0.357,
+     "comum": 0.027,
+     "base": 0.383,
+     "salada": 0.233
+    },
+    "custo": 11.45,
+    "receita": 41.52
+   },
+   {
+    "faixa": "12h00",
+    "peso_kg": 0.526,
+    "mix": {
+     "nobre": 0.3,
+     "comum": 0.165,
+     "base": 0.342,
+     "salada": 0.193
+    },
+    "custo": 16.48,
+    "receita": 63.12
+   },
+   {
+    "faixa": "12h00",
+    "peso_kg": 0.418,
+    "mix": {
+     "nobre": 0.283,
+     "comum": 0.179,
+     "base": 0.429,
+     "salada": 0.108
+    },
+    "custo": 12.62,
+    "receita": 50.18
+   },
+   {
+    "faixa": "12h00",
+    "peso_kg": 0.367,
+    "mix": {
+     "nobre": 0.32,
+     "comum": 0.137,
+     "base": 0.424,
+     "salada": 0.118
+    },
+    "custo": 11.79,
+    "receita": 44.02
+   },
+   {
+    "faixa": "12h00",
+    "peso_kg": 0.448,
+    "mix": {
+     "nobre": 0.232,
+     "comum": 0.162,
+     "base": 0.411,
+     "salada": 0.195
+    },
+    "custo": 11.83,
+    "receita": 53.76
+   },
+   {
+    "faixa": "12h00",
+    "peso_kg": 0.484,
+    "mix": {
+     "nobre": 0.328,
+     "comum": 0.171,
+     "base": 0.36,
+     "salada": 0.142
+    },
+    "custo": 16.12,
+    "receita": 58.04
+   },
+   {
+    "faixa": "12h00",
+    "peso_kg": 0.475,
+    "mix": {
+     "nobre": 0.301,
+     "comum": 0.203,
+     "base": 0.355,
+     "salada": 0.141
+    },
+    "custo": 15.17,
+    "receita": 56.96
+   },
+   {
+    "faixa": "12h00",
+    "peso_kg": 0.549,
+    "mix": {
+     "nobre": 0.262,
+     "comum": 0.146,
+     "base": 0.447,
+     "salada": 0.145
+    },
+    "custo": 15.45,
+    "receita": 65.81
+   },
+   {
+    "faixa": "12h00",
+    "peso_kg": 0.558,
+    "mix": {
+     "nobre": 0.249,
+     "comum": 0.206,
+     "base": 0.327,
+     "salada": 0.218
+    },
+    "custo": 15.87,
+    "receita": 66.9
+   },
+   {
+    "faixa": "12h00",
+    "peso_kg": 0.57,
+    "mix": {
+     "nobre": 0.189,
+     "comum": 0.257,
+     "base": 0.334,
+     "salada": 0.22
+    },
+    "custo": 14.28,
+    "receita": 68.37
+   },
+   {
+    "faixa": "12h00",
+    "peso_kg": 0.382,
+    "mix": {
+     "nobre": 0.429,
+     "comum": 0.146,
+     "base": 0.302,
+     "salada": 0.123
+    },
+    "custo": 15.31,
+    "receita": 45.82
+   },
+   {
+    "faixa": "12h00",
+    "peso_kg": 0.413,
+    "mix": {
+     "nobre": 0.256,
+     "comum": 0.179,
+     "base": 0.396,
+     "salada": 0.169
+    },
+    "custo": 11.73,
+    "receita": 49.58
+   },
+   {
+    "faixa": "12h00",
+    "peso_kg": 0.543,
+    "mix": {
+     "nobre": 0.288,
+     "comum": 0.046,
+     "base": 0.398,
+     "salada": 0.269
+    },
+    "custo": 15.51,
+    "receita": 65.11
+   },
+   {
+    "faixa": "12h00",
+    "peso_kg": 0.55,
+    "mix": {
+     "nobre": 0.359,
+     "comum": 0.19,
+     "base": 0.361,
+     "salada": 0.09
+    },
+    "custo": 19.67,
+    "receita": 65.98
+   },
+   {
+    "faixa": "12h00",
+    "peso_kg": 0.641,
+    "mix": {
+     "nobre": 0.283,
+     "comum": 0.192,
+     "base": 0.332,
+     "salada": 0.192
+    },
+    "custo": 19.63,
+    "receita": 76.9
+   },
+   {
+    "faixa": "12h00",
+    "peso_kg": 0.513,
+    "mix": {
+     "nobre": 0.315,
+     "comum": 0.196,
+     "base": 0.34,
+     "salada": 0.149
+    },
+    "custo": 16.82,
+    "receita": 61.47
+   },
+   {
+    "faixa": "12h00",
+    "peso_kg": 0.604,
+    "mix": {
+     "nobre": 0.322,
+     "comum": 0.184,
+     "base": 0.329,
+     "salada": 0.164
+    },
+    "custo": 20.04,
+    "receita": 72.43
+   },
+   {
+    "faixa": "12h00",
+    "peso_kg": 0.717,
+    "mix": {
+     "nobre": 0.348,
+     "comum": 0.1,
+     "base": 0.383,
+     "salada": 0.169
+    },
+    "custo": 24.05,
+    "receita": 86.0
+   },
+   {
+    "faixa": "12h00",
+    "peso_kg": 0.586,
+    "mix": {
+     "nobre": 0.277,
+     "comum": 0.21,
+     "base": 0.376,
+     "salada": 0.138
+    },
+    "custo": 17.74,
+    "receita": 70.21
+   },
+   {
+    "faixa": "12h00",
+    "peso_kg": 0.56,
+    "mix": {
+     "nobre": 0.22,
+     "comum": 0.161,
+     "base": 0.411,
+     "salada": 0.208
+    },
+    "custo": 14.32,
+    "receita": 67.17
+   },
+   {
+    "faixa": "12h15",
+    "peso_kg": 0.554,
+    "mix": {
+     "nobre": 0.418,
+     "comum": 0.147,
+     "base": 0.336,
+     "salada": 0.099
+    },
+    "custo": 21.74,
+    "receita": 66.45
+   },
+   {
+    "faixa": "12h15",
+    "peso_kg": 0.27,
+    "mix": {
+     "nobre": 0.449,
+     "comum": 0.209,
+     "base": 0.284,
+     "salada": 0.057
+    },
+    "custo": 11.46,
+    "receita": 32.38
+   },
+   {
+    "faixa": "12h15",
+    "peso_kg": 0.399,
+    "mix": {
+     "nobre": 0.346,
+     "comum": 0.125,
+     "base": 0.326,
+     "salada": 0.203
+    },
+    "custo": 13.54,
+    "receita": 47.82
+   },
+   {
+    "faixa": "12h15",
+    "peso_kg": 0.672,
+    "mix": {
+     "nobre": 0.355,
+     "comum": 0.165,
+     "base": 0.272,
+     "salada": 0.208
+    },
+    "custo": 23.71,
+    "receita": 80.6
+   },
+   {
+    "faixa": "12h15",
+    "peso_kg": 0.437,
+    "mix": {
+     "nobre": 0.48,
+     "comum": 0.178,
+     "base": 0.187,
+     "salada": 0.154
+    },
+    "custo": 19.38,
+    "receita": 52.38
+   },
+   {
+    "faixa": "12h15",
+    "peso_kg": 0.632,
+    "mix": {
+     "nobre": 0.442,
+     "comum": 0.227,
+     "base": 0.219,
+     "salada": 0.112
+    },
+    "custo": 26.79,
+    "receita": 75.83
+   },
+   {
+    "faixa": "12h15",
+    "peso_kg": 0.65,
+    "mix": {
+     "nobre": 0.435,
+     "comum": 0.176,
+     "base": 0.297,
+     "salada": 0.092
+    },
+    "custo": 26.62,
+    "receita": 77.99
+   },
+   {
+    "faixa": "12h15",
+    "peso_kg": 0.323,
+    "mix": {
+     "nobre": 0.44,
+     "comum": 0.136,
+     "base": 0.215,
+     "salada": 0.209
+    },
+    "custo": 13.18,
+    "receita": 38.68
+   },
+   {
+    "faixa": "12h15",
+    "peso_kg": 0.392,
+    "mix": {
+     "nobre": 0.545,
+     "comum": 0.163,
+     "base": 0.197,
+     "salada": 0.095
+    },
+    "custo": 19.01,
+    "receita": 46.97
+   },
+   {
+    "faixa": "12h15",
+    "peso_kg": 0.614,
+    "mix": {
+     "nobre": 0.394,
+     "comum": 0.189,
+     "base": 0.284,
+     "salada": 0.133
+    },
+    "custo": 23.5,
+    "receita": 73.56
+   },
+   {
+    "faixa": "12h15",
+    "peso_kg": 0.489,
+    "mix": {
+     "nobre": 0.359,
+     "comum": 0.123,
+     "base": 0.38,
+     "salada": 0.138
+    },
+    "custo": 16.96,
+    "receita": 58.67
+   },
+   {
+    "faixa": "12h15",
+    "peso_kg": 0.49,
+    "mix": {
+     "nobre": 0.497,
+     "comum": 0.133,
+     "base": 0.171,
+     "salada": 0.199
+    },
+    "custo": 21.99,
+    "receita": 58.76
+   },
+   {
+    "faixa": "12h15",
+    "peso_kg": 0.499,
+    "mix": {
+     "nobre": 0.418,
+     "comum": 0.155,
+     "base": 0.288,
+     "salada": 0.139
+    },
+    "custo": 19.69,
+    "receita": 59.86
+   },
+   {
+    "faixa": "12h15",
+    "peso_kg": 0.534,
+    "mix": {
+     "nobre": 0.406,
+     "comum": 0.201,
+     "base": 0.231,
+     "salada": 0.161
+    },
+    "custo": 21.06,
+    "receita": 63.99
+   },
+   {
+    "faixa": "12h15",
+    "peso_kg": 0.55,
+    "mix": {
+     "nobre": 0.377,
+     "comum": 0.115,
+     "base": 0.342,
+     "salada": 0.166
+    },
+    "custo": 19.72,
+    "receita": 65.93
+   },
+   {
+    "faixa": "12h15",
+    "peso_kg": 0.355,
+    "mix": {
+     "nobre": 0.406,
+     "comum": 0.127,
+     "base": 0.334,
+     "salada": 0.133
+    },
+    "custo": 13.52,
+    "receita": 42.54
+   },
+   {
+    "faixa": "12h15",
+    "peso_kg": 0.434,
+    "mix": {
+     "nobre": 0.389,
+     "comum": 0.126,
+     "base": 0.385,
+     "salada": 0.099
+    },
+    "custo": 15.95,
+    "receita": 52.01
+   },
+   {
+    "faixa": "12h15",
+    "peso_kg": 0.451,
+    "mix": {
+     "nobre": 0.398,
+     "comum": 0.133,
+     "base": 0.245,
+     "salada": 0.224
+    },
+    "custo": 17.07,
+    "receita": 54.11
+   },
+   {
+    "faixa": "12h15",
+    "peso_kg": 0.307,
+    "mix": {
+     "nobre": 0.329,
+     "comum": 0.166,
+     "base": 0.311,
+     "salada": 0.195
+    },
+    "custo": 10.26,
+    "receita": 36.83
+   },
+   {
+    "faixa": "12h15",
+    "peso_kg": 0.381,
+    "mix": {
+     "nobre": 0.371,
+     "comum": 0.147,
+     "base": 0.257,
+     "salada": 0.225
+    },
+    "custo": 13.8,
+    "receita": 45.72
+   },
+   {
+    "faixa": "12h15",
+    "peso_kg": 0.488,
+    "mix": {
+     "nobre": 0.381,
+     "comum": 0.215,
+     "base": 0.229,
+     "salada": 0.175
+    },
+    "custo": 18.52,
+    "receita": 58.47
+   },
+   {
+    "faixa": "12h15",
+    "peso_kg": 0.581,
+    "mix": {
+     "nobre": 0.326,
+     "comum": 0.23,
+     "base": 0.236,
+     "salada": 0.208
+    },
+    "custo": 19.98,
+    "receita": 69.67
+   },
+   {
+    "faixa": "12h15",
+    "peso_kg": 0.525,
+    "mix": {
+     "nobre": 0.382,
+     "comum": 0.219,
+     "base": 0.263,
+     "salada": 0.136
+    },
+    "custo": 19.97,
+    "receita": 63.0
+   },
+   {
+    "faixa": "12h15",
+    "peso_kg": 0.376,
+    "mix": {
+     "nobre": 0.316,
+     "comum": 0.229,
+     "base": 0.245,
+     "salada": 0.21
+    },
+    "custo": 12.65,
+    "receita": 45.04
+   },
+   {
+    "faixa": "12h15",
+    "peso_kg": 0.408,
+    "mix": {
+     "nobre": 0.403,
+     "comum": 0.169,
+     "base": 0.269,
+     "salada": 0.159
+    },
+    "custo": 15.8,
+    "receita": 48.96
+   },
+   {
+    "faixa": "12h15",
+    "peso_kg": 0.567,
+    "mix": {
+     "nobre": 0.345,
+     "comum": 0.191,
+     "base": 0.249,
+     "salada": 0.215
+    },
+    "custo": 19.88,
+    "receita": 67.96
+   },
+   {
+    "faixa": "12h15",
+    "peso_kg": 0.37,
+    "mix": {
+     "nobre": 0.378,
+     "comum": 0.162,
+     "base": 0.261,
+     "salada": 0.199
+    },
+    "custo": 13.66,
+    "receita": 44.41
+   },
+   {
+    "faixa": "12h15",
+    "peso_kg": 0.389,
+    "mix": {
+     "nobre": 0.437,
+     "comum": 0.228,
+     "base": 0.223,
+     "salada": 0.113
+    },
+    "custo": 16.35,
+    "receita": 46.66
+   },
+   {
+    "faixa": "12h15",
+    "peso_kg": 0.558,
+    "mix": {
+     "nobre": 0.391,
+     "comum": 0.106,
+     "base": 0.294,
+     "salada": 0.209
+    },
+    "custo": 20.56,
+    "receita": 66.93
+   },
+   {
+    "faixa": "12h15",
+    "peso_kg": 0.544,
+    "mix": {
+     "nobre": 0.427,
+     "comum": 0.155,
+     "base": 0.284,
+     "salada": 0.133
+    },
+    "custo": 21.79,
+    "receita": 65.17
+   },
+   {
+    "faixa": "12h15",
+    "peso_kg": 0.598,
+    "mix": {
+     "nobre": 0.409,
+     "comum": 0.217,
+     "base": 0.248,
+     "salada": 0.125
+    },
+    "custo": 23.83,
+    "receita": 71.65
+   },
+   {
+    "faixa": "12h15",
+    "peso_kg": 0.745,
+    "mix": {
+     "nobre": 0.333,
+     "comum": 0.169,
+     "base": 0.312,
+     "salada": 0.186
+    },
+    "custo": 25.1,
+    "receita": 89.3
+   },
+   {
+    "faixa": "12h15",
+    "peso_kg": 0.549,
+    "mix": {
+     "nobre": 0.442,
+     "comum": 0.145,
+     "base": 0.181,
+     "salada": 0.232
+    },
+    "custo": 22.62,
+    "receita": 65.82
+   },
+   {
+    "faixa": "12h15",
+    "peso_kg": 0.289,
+    "mix": {
+     "nobre": 0.378,
+     "comum": 0.205,
+     "base": 0.315,
+     "salada": 0.102
+    },
+    "custo": 10.78,
+    "receita": 34.6
+   },
+   {
+    "faixa": "12h15",
+    "peso_kg": 0.413,
+    "mix": {
+     "nobre": 0.458,
+     "comum": 0.174,
+     "base": 0.221,
+     "salada": 0.148
+    },
+    "custo": 17.61,
+    "receita": 49.51
+   },
+   {
+    "faixa": "12h15",
+    "peso_kg": 0.459,
+    "mix": {
+     "nobre": 0.405,
+     "comum": 0.137,
+     "base": 0.269,
+     "salada": 0.189
+    },
+    "custo": 17.59,
+    "receita": 54.99
+   },
+   {
+    "faixa": "12h15",
+    "peso_kg": 0.559,
+    "mix": {
+     "nobre": 0.384,
+     "comum": 0.204,
+     "base": 0.293,
+     "salada": 0.12
+    },
+    "custo": 21.14,
+    "receita": 67.06
+   },
+   {
+    "faixa": "12h15",
+    "peso_kg": 0.521,
+    "mix": {
+     "nobre": 0.422,
+     "comum": 0.177,
+     "base": 0.216,
+     "salada": 0.185
+    },
+    "custo": 20.96,
+    "receita": 62.44
+   },
+   {
+    "faixa": "12h30",
+    "peso_kg": 0.465,
+    "mix": {
+     "nobre": 0.356,
+     "comum": 0.184,
+     "base": 0.284,
+     "salada": 0.175
+    },
+    "custo": 16.56,
+    "receita": 55.72
+   },
+   {
+    "faixa": "12h30",
+    "peso_kg": 0.408,
+    "mix": {
+     "nobre": 0.372,
+     "comum": 0.172,
+     "base": 0.281,
+     "salada": 0.176
+    },
+    "custo": 14.91,
+    "receita": 48.92
+   },
+   {
+    "faixa": "12h30",
+    "peso_kg": 0.591,
+    "mix": {
+     "nobre": 0.394,
+     "comum": 0.137,
+     "base": 0.315,
+     "salada": 0.153
+    },
+    "custo": 22.16,
+    "receita": 70.91
+   },
+   {
+    "faixa": "12h30",
+    "peso_kg": 0.514,
+    "mix": {
+     "nobre": 0.381,
+     "comum": 0.191,
+     "base": 0.265,
+     "salada": 0.163
+    },
+    "custo": 19.26,
+    "receita": 61.6
+   },
+   {
+    "faixa": "12h30",
+    "peso_kg": 0.43,
+    "mix": {
+     "nobre": 0.388,
+     "comum": 0.205,
+     "base": 0.22,
+     "salada": 0.186
+    },
+    "custo": 16.49,
+    "receita": 51.6
+   },
+   {
+    "faixa": "12h30",
+    "peso_kg": 0.37,
+    "mix": {
+     "nobre": 0.458,
+     "comum": 0.134,
+     "base": 0.261,
+     "salada": 0.147
+    },
+    "custo": 15.54,
+    "receita": 44.37
+   },
+   {
+    "faixa": "12h30",
+    "peso_kg": 0.679,
+    "mix": {
+     "nobre": 0.411,
+     "comum": 0.148,
+     "base": 0.175,
+     "salada": 0.265
+    },
+    "custo": 26.61,
+    "receita": 81.43
+   },
+   {
+    "faixa": "12h30",
+    "peso_kg": 0.367,
+    "mix": {
+     "nobre": 0.443,
+     "comum": 0.186,
+     "base": 0.267,
+     "salada": 0.104
+    },
+    "custo": 15.29,
+    "receita": 43.99
+   },
+   {
+    "faixa": "12h30",
+    "peso_kg": 0.448,
+    "mix": {
+     "nobre": 0.374,
+     "comum": 0.15,
+     "base": 0.301,
+     "salada": 0.176
+    },
+    "custo": 16.26,
+    "receita": 53.74
+   },
+   {
+    "faixa": "12h30",
+    "peso_kg": 0.553,
+    "mix": {
+     "nobre": 0.348,
+     "comum": 0.157,
+     "base": 0.261,
+     "salada": 0.234
+    },
+    "custo": 19.21,
+    "receita": 66.32
+   },
+   {
+    "faixa": "12h30",
+    "peso_kg": 0.392,
+    "mix": {
+     "nobre": 0.392,
+     "comum": 0.138,
+     "base": 0.21,
+     "salada": 0.26
+    },
+    "custo": 14.73,
+    "receita": 46.96
+   },
+   {
+    "faixa": "12h30",
+    "peso_kg": 0.531,
+    "mix": {
+     "nobre": 0.342,
+     "comum": 0.144,
+     "base": 0.249,
+     "salada": 0.265
+    },
+    "custo": 18.12,
+    "receita": 63.66
+   },
+   {
+    "faixa": "12h30",
+    "peso_kg": 0.408,
+    "mix": {
+     "nobre": 0.428,
+     "comum": 0.126,
+     "base": 0.199,
+     "salada": 0.247
+    },
+    "custo": 16.3,
+    "receita": 48.98
+   },
+   {
+    "faixa": "12h30",
+    "peso_kg": 0.634,
+    "mix": {
+     "nobre": 0.37,
+     "comum": 0.202,
+     "base": 0.211,
+     "salada": 0.217
+    },
+    "custo": 23.45,
+    "receita": 75.99
+   },
+   {
+    "faixa": "12h30",
+    "peso_kg": 0.422,
+    "mix": {
+     "nobre": 0.421,
+     "comum": 0.18,
+     "base": 0.275,
+     "salada": 0.125
+    },
+    "custo": 16.91,
+    "receita": 50.65
+   },
+   {
+    "faixa": "12h30",
+    "peso_kg": 0.357,
+    "mix": {
+     "nobre": 0.412,
+     "comum": 0.198,
+     "base": 0.222,
+     "salada": 0.169
+    },
+    "custo": 14.23,
+    "receita": 42.85
+   },
+   {
+    "faixa": "12h30",
+    "peso_kg": 0.609,
+    "mix": {
+     "nobre": 0.456,
+     "comum": 0.095,
+     "base": 0.255,
+     "salada": 0.194
+    },
+    "custo": 25.14,
+    "receita": 73.08
+   },
+   {
+    "faixa": "12h30",
+    "peso_kg": 0.558,
+    "mix": {
+     "nobre": 0.395,
+     "comum": 0.252,
+     "base": 0.221,
+     "salada": 0.132
+    },
+    "custo": 22.0,
+    "receita": 66.85
+   },
+   {
+    "faixa": "12h30",
+    "peso_kg": 0.484,
+    "mix": {
+     "nobre": 0.461,
+     "comum": 0.158,
+     "base": 0.274,
+     "salada": 0.106
+    },
+    "custo": 20.58,
+    "receita": 58.05
+   },
+   {
+    "faixa": "12h30",
+    "peso_kg": 0.438,
+    "mix": {
+     "nobre": 0.408,
+     "comum": 0.145,
+     "base": 0.278,
+     "salada": 0.169
+    },
+    "custo": 16.92,
+    "receita": 52.53
+   },
+   {
+    "faixa": "12h30",
+    "peso_kg": 0.47,
+    "mix": {
+     "nobre": 0.39,
+     "comum": 0.201,
+     "base": 0.276,
+     "salada": 0.134
+    },
+    "custo": 17.97,
+    "receita": 56.35
+   },
+   {
+    "faixa": "12h30",
+    "peso_kg": 0.436,
+    "mix": {
+     "nobre": 0.391,
+     "comum": 0.178,
+     "base": 0.286,
+     "salada": 0.145
+    },
+    "custo": 16.55,
+    "receita": 52.3
+   },
+   {
+    "faixa": "12h30",
+    "peso_kg": 0.416,
+    "mix": {
+     "nobre": 0.449,
+     "comum": 0.07,
+     "base": 0.352,
+     "salada": 0.13
+    },
+    "custo": 16.72,
+    "receita": 49.9
+   },
+   {
+    "faixa": "12h30",
+    "peso_kg": 0.44,
+    "mix": {
+     "nobre": 0.449,
+     "comum": 0.135,
+     "base": 0.254,
+     "salada": 0.161
+    },
+    "custo": 18.23,
+    "receita": 52.78
+   },
+   {
+    "faixa": "12h30",
+    "peso_kg": 0.483,
+    "mix": {
+     "nobre": 0.367,
+     "comum": 0.17,
+     "base": 0.242,
+     "salada": 0.221
+    },
+    "custo": 17.51,
+    "receita": 57.87
+   },
+   {
+    "faixa": "12h30",
+    "peso_kg": 0.384,
+    "mix": {
+     "nobre": 0.434,
+     "comum": 0.177,
+     "base": 0.177,
+     "salada": 0.212
+    },
+    "custo": 15.79,
+    "receita": 46.0
+   },
+   {
+    "faixa": "12h30",
+    "peso_kg": 0.573,
+    "mix": {
+     "nobre": 0.366,
+     "comum": 0.174,
+     "base": 0.225,
+     "salada": 0.235
+    },
+    "custo": 20.79,
+    "receita": 68.7
+   },
+   {
+    "faixa": "12h30",
+    "peso_kg": 0.369,
+    "mix": {
+     "nobre": 0.369,
+     "comum": 0.188,
+     "base": 0.251,
+     "salada": 0.192
+    },
+    "custo": 13.53,
+    "receita": 44.28
+   },
+   {
+    "faixa": "12h30",
+    "peso_kg": 0.435,
+    "mix": {
+     "nobre": 0.361,
+     "comum": 0.17,
+     "base": 0.299,
+     "salada": 0.171
+    },
+    "custo": 15.54,
+    "receita": 52.2
+   },
+   {
+    "faixa": "12h30",
+    "peso_kg": 0.492,
+    "mix": {
+     "nobre": 0.401,
+     "comum": 0.18,
+     "base": 0.241,
+     "salada": 0.178
+    },
+    "custo": 19.09,
+    "receita": 59.02
+   },
+   {
+    "faixa": "12h30",
+    "peso_kg": 0.48,
+    "mix": {
+     "nobre": 0.371,
+     "comum": 0.245,
+     "base": 0.177,
+     "salada": 0.207
+    },
+    "custo": 18.18,
+    "receita": 57.61
+   },
+   {
+    "faixa": "12h30",
+    "peso_kg": 0.389,
+    "mix": {
+     "nobre": 0.334,
+     "comum": 0.2,
+     "base": 0.309,
+     "salada": 0.158
+    },
+    "custo": 13.32,
+    "receita": 46.59
+   },
+   {
+    "faixa": "12h30",
+    "peso_kg": 0.473,
+    "mix": {
+     "nobre": 0.317,
+     "comum": 0.222,
+     "base": 0.332,
+     "salada": 0.13
+    },
+    "custo": 15.77,
+    "receita": 56.72
+   },
+   {
+    "faixa": "12h30",
+    "peso_kg": 0.466,
+    "mix": {
+     "nobre": 0.454,
+     "comum": 0.197,
+     "base": 0.222,
+     "salada": 0.127
+    },
+    "custo": 19.9,
+    "receita": 55.85
+   },
+   {
+    "faixa": "12h30",
+    "peso_kg": 0.377,
+    "mix": {
+     "nobre": 0.387,
+     "comum": 0.25,
+     "base": 0.183,
+     "salada": 0.18
+    },
+    "custo": 14.7,
+    "receita": 45.22
+   },
+   {
+    "faixa": "12h30",
+    "peso_kg": 0.38,
+    "mix": {
+     "nobre": 0.404,
+     "comum": 0.126,
+     "base": 0.334,
+     "salada": 0.136
+    },
+    "custo": 14.4,
+    "receita": 45.54
+   },
+   {
+    "faixa": "12h30",
+    "peso_kg": 0.309,
+    "mix": {
+     "nobre": 0.362,
+     "comum": 0.144,
+     "base": 0.274,
+     "salada": 0.22
+    },
+    "custo": 10.96,
+    "receita": 37.04
+   },
+   {
+    "faixa": "12h30",
+    "peso_kg": 0.316,
+    "mix": {
+     "nobre": 0.398,
+     "comum": 0.193,
+     "base": 0.216,
+     "salada": 0.192
+    },
+    "custo": 12.27,
+    "receita": 37.88
+   },
+   {
+    "faixa": "12h30",
+    "peso_kg": 0.562,
+    "mix": {
+     "nobre": 0.332,
+     "comum": 0.158,
+     "base": 0.285,
+     "salada": 0.225
+    },
+    "custo": 18.86,
+    "receita": 67.37
+   },
+   {
+    "faixa": "12h30",
+    "peso_kg": 0.415,
+    "mix": {
+     "nobre": 0.432,
+     "comum": 0.182,
+     "base": 0.205,
+     "salada": 0.182
+    },
+    "custo": 17.03,
+    "receita": 49.79
+   },
+   {
+    "faixa": "12h30",
+    "peso_kg": 0.493,
+    "mix": {
+     "nobre": 0.464,
+     "comum": 0.103,
+     "base": 0.29,
+     "salada": 0.143
+    },
+    "custo": 20.61,
+    "receita": 59.05
+   },
+   {
+    "faixa": "12h30",
+    "peso_kg": 0.41,
+    "mix": {
+     "nobre": 0.376,
+     "comum": 0.167,
+     "base": 0.331,
+     "salada": 0.126
+    },
+    "custo": 14.99,
+    "receita": 49.1
+   },
+   {
+    "faixa": "12h30",
+    "peso_kg": 0.649,
+    "mix": {
+     "nobre": 0.44,
+     "comum": 0.127,
+     "base": 0.294,
+     "salada": 0.138
+    },
+    "custo": 26.33,
+    "receita": 77.87
+   },
+   {
+    "faixa": "12h30",
+    "peso_kg": 0.269,
+    "mix": {
+     "nobre": 0.432,
+     "comum": 0.21,
+     "base": 0.201,
+     "salada": 0.157
+    },
+    "custo": 11.14,
+    "receita": 32.24
+   },
+   {
+    "faixa": "12h45",
+    "peso_kg": 0.399,
+    "mix": {
+     "nobre": 0.46,
+     "comum": 0.158,
+     "base": 0.281,
+     "salada": 0.101
+    },
+    "custo": 16.92,
+    "receita": 47.82
+   },
+   {
+    "faixa": "12h45",
+    "peso_kg": 0.493,
+    "mix": {
+     "nobre": 0.413,
+     "comum": 0.25,
+     "base": 0.229,
+     "salada": 0.107
+    },
+    "custo": 20.05,
+    "receita": 59.1
+   },
+   {
+    "faixa": "12h45",
+    "peso_kg": 0.372,
+    "mix": {
+     "nobre": 0.422,
+     "comum": 0.173,
+     "base": 0.213,
+     "salada": 0.192
+    },
+    "custo": 14.96,
+    "receita": 44.64
+   },
+   {
+    "faixa": "12h45",
+    "peso_kg": 0.458,
+    "mix": {
+     "nobre": 0.457,
+     "comum": 0.252,
+     "base": 0.134,
+     "salada": 0.157
+    },
+    "custo": 20.16,
+    "receita": 54.95
+   },
+   {
+    "faixa": "12h45",
+    "peso_kg": 0.473,
+    "mix": {
+     "nobre": 0.469,
+     "comum": 0.135,
+     "base": 0.224,
+     "salada": 0.172
+    },
+    "custo": 20.25,
+    "receita": 56.7
+   },
+   {
+    "faixa": "12h45",
+    "peso_kg": 0.507,
+    "mix": {
+     "nobre": 0.443,
+     "comum": 0.225,
+     "base": 0.213,
+     "salada": 0.119
+    },
+    "custo": 21.52,
+    "receita": 60.84
+   },
+   {
+    "faixa": "12h45",
+    "peso_kg": 0.654,
+    "mix": {
+     "nobre": 0.343,
+     "comum": 0.15,
+     "base": 0.328,
+     "salada": 0.179
+    },
+    "custo": 22.29,
+    "receita": 78.44
+   },
+   {
+    "faixa": "12h45",
+    "peso_kg": 0.52,
+    "mix": {
+     "nobre": 0.396,
+     "comum": 0.16,
+     "base": 0.253,
+     "salada": 0.192
+    },
+    "custo": 19.8,
+    "receita": 62.35
+   },
+   {
+    "faixa": "12h45",
+    "peso_kg": 0.528,
+    "mix": {
+     "nobre": 0.404,
+     "comum": 0.228,
+     "base": 0.226,
+     "salada": 0.142
+    },
+    "custo": 20.99,
+    "receita": 63.36
+   },
+   {
+    "faixa": "12h45",
+    "peso_kg": 0.455,
+    "mix": {
+     "nobre": 0.351,
+     "comum": 0.235,
+     "base": 0.305,
+     "salada": 0.109
+    },
+    "custo": 16.35,
+    "receita": 54.54
+   },
+   {
+    "faixa": "12h45",
+    "peso_kg": 0.517,
+    "mix": {
+     "nobre": 0.411,
+     "comum": 0.24,
+     "base": 0.231,
+     "salada": 0.118
+    },
+    "custo": 20.89,
+    "receita": 62.04
+   },
+   {
+    "faixa": "12h45",
+    "peso_kg": 0.598,
+    "mix": {
+     "nobre": 0.395,
+     "comum": 0.222,
+     "base": 0.18,
+     "salada": 0.204
+    },
+    "custo": 23.38,
+    "receita": 71.69
+   },
+   {
+    "faixa": "12h45",
+    "peso_kg": 0.61,
+    "mix": {
+     "nobre": 0.411,
+     "comum": 0.129,
+     "base": 0.234,
+     "salada": 0.226
+    },
+    "custo": 23.61,
+    "receita": 73.16
+   },
+   {
+    "faixa": "12h45",
+    "peso_kg": 0.465,
+    "mix": {
+     "nobre": 0.301,
+     "comum": 0.157,
+     "base": 0.255,
+     "salada": 0.288
+    },
+    "custo": 14.65,
+    "receita": 55.79
+   },
+   {
+    "faixa": "12h45",
+    "peso_kg": 0.66,
+    "mix": {
+     "nobre": 0.464,
+     "comum": 0.196,
+     "base": 0.209,
+     "salada": 0.131
+    },
+    "custo": 28.64,
+    "receita": 79.1
+   },
+   {
+    "faixa": "12h45",
+    "peso_kg": 0.501,
+    "mix": {
+     "nobre": 0.432,
+     "comum": 0.116,
+     "base": 0.274,
+     "salada": 0.179
+    },
+    "custo": 19.96,
+    "receita": 60.06
+   },
+   {
+    "faixa": "12h45",
+    "peso_kg": 0.561,
+    "mix": {
+     "nobre": 0.421,
+     "comum": 0.114,
+     "base": 0.222,
+     "salada": 0.243
+    },
+    "custo": 21.97,
+    "receita": 67.23
+   },
+   {
+    "faixa": "12h45",
+    "peso_kg": 0.488,
+    "mix": {
+     "nobre": 0.357,
+     "comum": 0.188,
+     "base": 0.307,
+     "salada": 0.149
+    },
+    "custo": 17.42,
+    "receita": 58.56
+   },
+   {
+    "faixa": "12h45",
+    "peso_kg": 0.397,
+    "mix": {
+     "nobre": 0.422,
+     "comum": 0.246,
+     "base": 0.218,
+     "salada": 0.115
+    },
+    "custo": 16.37,
+    "receita": 47.59
+   },
+   {
+    "faixa": "12h45",
+    "peso_kg": 0.377,
+    "mix": {
+     "nobre": 0.359,
+     "comum": 0.207,
+     "base": 0.251,
+     "salada": 0.183
+    },
+    "custo": 13.66,
+    "receita": 45.19
+   },
+   {
+    "faixa": "12h45",
+    "peso_kg": 0.562,
+    "mix": {
+     "nobre": 0.388,
+     "comum": 0.253,
+     "base": 0.205,
+     "salada": 0.155
+    },
+    "custo": 21.92,
+    "receita": 67.34
+   },
+   {
+    "faixa": "12h45",
+    "peso_kg": 0.526,
+    "mix": {
+     "nobre": 0.365,
+     "comum": 0.169,
+     "base": 0.298,
+     "salada": 0.168
+    },
+    "custo": 18.92,
+    "receita": 63.07
+   },
+   {
+    "faixa": "12h45",
+    "peso_kg": 0.255,
+    "mix": {
+     "nobre": 0.465,
+     "comum": 0.162,
+     "base": 0.205,
+     "salada": 0.168
+    },
+    "custo": 10.97,
+    "receita": 30.56
+   },
+   {
+    "faixa": "12h45",
+    "peso_kg": 0.538,
+    "mix": {
+     "nobre": 0.375,
+     "comum": 0.156,
+     "base": 0.289,
+     "salada": 0.18
+    },
+    "custo": 19.63,
+    "receita": 64.51
+   },
+   {
+    "faixa": "12h45",
+    "peso_kg": 0.36,
+    "mix": {
+     "nobre": 0.391,
+     "comum": 0.159,
+     "base": 0.252,
+     "salada": 0.198
+    },
+    "custo": 13.59,
+    "receita": 43.2
+   },
+   {
+    "faixa": "12h45",
+    "peso_kg": 0.493,
+    "mix": {
+     "nobre": 0.422,
+     "comum": 0.218,
+     "base": 0.252,
+     "salada": 0.109
+    },
+    "custo": 20.06,
+    "receita": 59.07
+   },
+   {
+    "faixa": "12h45",
+    "peso_kg": 0.331,
+    "mix": {
+     "nobre": 0.463,
+     "comum": 0.193,
+     "base": 0.214,
+     "salada": 0.13
+    },
+    "custo": 14.33,
+    "receita": 39.67
+   },
+   {
+    "faixa": "12h45",
+    "peso_kg": 0.578,
+    "mix": {
+     "nobre": 0.479,
+     "comum": 0.149,
+     "base": 0.191,
+     "salada": 0.181
+    },
+    "custo": 25.31,
+    "receita": 69.26
+   },
+   {
+    "faixa": "12h45",
+    "peso_kg": 0.535,
+    "mix": {
+     "nobre": 0.365,
+     "comum": 0.206,
+     "base": 0.225,
+     "salada": 0.204
+    },
+    "custo": 19.64,
+    "receita": 64.1
+   },
+   {
+    "faixa": "12h45",
+    "peso_kg": 0.543,
+    "mix": {
+     "nobre": 0.325,
+     "comum": 0.171,
+     "base": 0.283,
+     "salada": 0.222
+    },
+    "custo": 18.04,
+    "receita": 65.06
+   },
+   {
+    "faixa": "12h45",
+    "peso_kg": 0.535,
+    "mix": {
+     "nobre": 0.391,
+     "comum": 0.187,
+     "base": 0.285,
+     "salada": 0.137
+    },
+    "custo": 20.37,
+    "receita": 64.17
+   },
+   {
+    "faixa": "12h45",
+    "peso_kg": 0.329,
+    "mix": {
+     "nobre": 0.415,
+     "comum": 0.165,
+     "base": 0.321,
+     "salada": 0.1
+    },
+    "custo": 12.94,
+    "receita": 39.5
+   },
+   {
+    "faixa": "12h45",
+    "peso_kg": 0.525,
+    "mix": {
+     "nobre": 0.428,
+     "comum": 0.158,
+     "base": 0.288,
+     "salada": 0.126
+    },
+    "custo": 21.08,
+    "receita": 62.91
+   },
+   {
+    "faixa": "12h45",
+    "peso_kg": 0.608,
+    "mix": {
+     "nobre": 0.36,
+     "comum": 0.267,
+     "base": 0.25,
+     "salada": 0.123
+    },
+    "custo": 22.62,
+    "receita": 72.88
+   },
+   {
+    "faixa": "12h45",
+    "peso_kg": 0.475,
+    "mix": {
+     "nobre": 0.436,
+     "comum": 0.123,
+     "base": 0.283,
+     "salada": 0.158
+    },
+    "custo": 19.11,
+    "receita": 56.99
+   },
+   {
+    "faixa": "12h45",
+    "peso_kg": 0.676,
+    "mix": {
+     "nobre": 0.426,
+     "comum": 0.204,
+     "base": 0.205,
+     "salada": 0.165
+    },
+    "custo": 27.65,
+    "receita": 81.02
+   },
+   {
+    "faixa": "12h45",
+    "peso_kg": 0.524,
+    "mix": {
+     "nobre": 0.448,
+     "comum": 0.163,
+     "base": 0.22,
+     "salada": 0.168
+    },
+    "custo": 21.93,
+    "receita": 62.84
+   },
+   {
+    "faixa": "12h45",
+    "peso_kg": 0.546,
+    "mix": {
+     "nobre": 0.434,
+     "comum": 0.144,
+     "base": 0.228,
+     "salada": 0.194
+    },
+    "custo": 22.14,
+    "receita": 65.48
+   },
+   {
+    "faixa": "12h45",
+    "peso_kg": 0.605,
+    "mix": {
+     "nobre": 0.344,
+     "comum": 0.202,
+     "base": 0.299,
+     "salada": 0.154
+    },
+    "custo": 21.2,
+    "receita": 72.54
+   },
+   {
+    "faixa": "12h45",
+    "peso_kg": 0.848,
+    "mix": {
+     "nobre": 0.329,
+     "comum": 0.218,
+     "base": 0.284,
+     "salada": 0.169
+    },
+    "custo": 29.04,
+    "receita": 101.7
+   },
+   {
+    "faixa": "12h45",
+    "peso_kg": 0.597,
+    "mix": {
+     "nobre": 0.426,
+     "comum": 0.187,
+     "base": 0.253,
+     "salada": 0.134
+    },
+    "custo": 24.2,
+    "receita": 71.55
+   },
+   {
+    "faixa": "12h45",
+    "peso_kg": 0.456,
+    "mix": {
+     "nobre": 0.385,
+     "comum": 0.19,
+     "base": 0.225,
+     "salada": 0.2
+    },
+    "custo": 17.27,
+    "receita": 54.72
+   },
+   {
+    "faixa": "12h45",
+    "peso_kg": 0.54,
+    "mix": {
+     "nobre": 0.411,
+     "comum": 0.175,
+     "base": 0.323,
+     "salada": 0.092
+    },
+    "custo": 21.13,
+    "receita": 64.69
+   },
+   {
+    "faixa": "12h45",
+    "peso_kg": 0.46,
+    "mix": {
+     "nobre": 0.503,
+     "comum": 0.134,
+     "base": 0.142,
+     "salada": 0.222
+    },
+    "custo": 20.88,
+    "receita": 55.21
+   },
+   {
+    "faixa": "12h45",
+    "peso_kg": 0.346,
+    "mix": {
+     "nobre": 0.406,
+     "comum": 0.09,
+     "base": 0.312,
+     "salada": 0.192
+    },
+    "custo": 13.02,
+    "receita": 41.49
+   },
+   {
+    "faixa": "12h45",
+    "peso_kg": 0.428,
+    "mix": {
+     "nobre": 0.377,
+     "comum": 0.192,
+     "base": 0.232,
+     "salada": 0.199
+    },
+    "custo": 15.98,
+    "receita": 51.34
+   },
+   {
+    "faixa": "13h00",
+    "peso_kg": 0.414,
+    "mix": {
+     "nobre": 0.391,
+     "comum": 0.184,
+     "base": 0.312,
+     "salada": 0.113
+    },
+    "custo": 15.71,
+    "receita": 49.66
+   },
+   {
+    "faixa": "13h00",
+    "peso_kg": 0.495,
+    "mix": {
+     "nobre": 0.474,
+     "comum": 0.076,
+     "base": 0.245,
+     "salada": 0.205
+    },
+    "custo": 20.91,
+    "receita": 59.4
+   },
+   {
+    "faixa": "13h00",
+    "peso_kg": 0.526,
+    "mix": {
+     "nobre": 0.368,
+     "comum": 0.243,
+     "base": 0.241,
+     "salada": 0.148
+    },
+    "custo": 19.7,
+    "receita": 63.05
+   },
+   {
+    "faixa": "13h00",
+    "peso_kg": 0.479,
+    "mix": {
+     "nobre": 0.452,
+     "comum": 0.147,
+     "base": 0.231,
+     "salada": 0.17
+    },
+    "custo": 20.03,
+    "receita": 57.44
+   },
+   {
+    "faixa": "13h00",
+    "peso_kg": 0.599,
+    "mix": {
+     "nobre": 0.344,
+     "comum": 0.161,
+     "base": 0.313,
+     "salada": 0.182
+    },
+    "custo": 20.57,
+    "receita": 71.8
+   },
+   {
+    "faixa": "13h00",
+    "peso_kg": 0.444,
+    "mix": {
+     "nobre": 0.411,
+     "comum": 0.16,
+     "base": 0.248,
+     "salada": 0.181
+    },
+    "custo": 17.37,
+    "receita": 53.21
+   },
+   {
+    "faixa": "13h00",
+    "peso_kg": 0.403,
+    "mix": {
+     "nobre": 0.39,
+     "comum": 0.179,
+     "base": 0.343,
+     "salada": 0.088
+    },
+    "custo": 15.24,
+    "receita": 48.38
+   },
+   {
+    "faixa": "13h00",
+    "peso_kg": 0.449,
+    "mix": {
+     "nobre": 0.416,
+     "comum": 0.149,
+     "base": 0.234,
+     "salada": 0.201
+    },
+    "custo": 17.67,
+    "receita": 53.84
+   },
+   {
+    "faixa": "13h00",
+    "peso_kg": 0.477,
+    "mix": {
+     "nobre": 0.465,
+     "comum": 0.173,
+     "base": 0.188,
+     "salada": 0.175
+    },
+    "custo": 20.59,
+    "receita": 57.14
+   },
+   {
+    "faixa": "13h00",
+    "peso_kg": 0.616,
+    "mix": {
+     "nobre": 0.446,
+     "comum": 0.09,
+     "base": 0.205,
+     "salada": 0.259
+    },
+    "custo": 25.01,
+    "receita": 73.84
+   },
+   {
+    "faixa": "13h00",
+    "peso_kg": 0.492,
+    "mix": {
+     "nobre": 0.459,
+     "comum": 0.179,
+     "base": 0.284,
+     "salada": 0.078
+    },
+    "custo": 20.98,
+    "receita": 58.98
+   },
+   {
+    "faixa": "13h00",
+    "peso_kg": 0.546,
+    "mix": {
+     "nobre": 0.386,
+     "comum": 0.187,
+     "base": 0.352,
+     "salada": 0.075
+    },
+    "custo": 20.5,
+    "receita": 65.48
+   },
+   {
+    "faixa": "13h00",
+    "peso_kg": 0.525,
+    "mix": {
+     "nobre": 0.427,
+     "comum": 0.214,
+     "base": 0.235,
+     "salada": 0.124
+    },
+    "custo": 21.55,
+    "receita": 62.93
+   },
+   {
+    "faixa": "13h00",
+    "peso_kg": 0.581,
+    "mix": {
+     "nobre": 0.46,
+     "comum": 0.179,
+     "base": 0.22,
+     "salada": 0.142
+    },
+    "custo": 24.92,
+    "receita": 69.71
+   },
+   {
+    "faixa": "13h00",
+    "peso_kg": 0.501,
+    "mix": {
+     "nobre": 0.44,
+     "comum": 0.173,
+     "base": 0.161,
+     "salada": 0.225
+    },
+    "custo": 20.81,
+    "receita": 60.02
+   },
+   {
+    "faixa": "13h00",
+    "peso_kg": 0.503,
+    "mix": {
+     "nobre": 0.356,
+     "comum": 0.153,
+     "base": 0.215,
+     "salada": 0.276
+    },
+    "custo": 17.78,
+    "receita": 60.3
+   },
+   {
+    "faixa": "13h00",
+    "peso_kg": 0.381,
+    "mix": {
+     "nobre": 0.333,
+     "comum": 0.216,
+     "base": 0.372,
+     "salada": 0.079
+    },
+    "custo": 13.07,
+    "receita": 45.72
+   },
+   {
+    "faixa": "13h00",
+    "peso_kg": 0.559,
+    "mix": {
+     "nobre": 0.34,
+     "comum": 0.203,
+     "base": 0.217,
+     "salada": 0.241
+    },
+    "custo": 19.53,
+    "receita": 67.07
+   },
+   {
+    "faixa": "13h00",
+    "peso_kg": 0.396,
+    "mix": {
+     "nobre": 0.367,
+     "comum": 0.128,
+     "base": 0.307,
+     "salada": 0.197
+    },
+    "custo": 14.04,
+    "receita": 47.44
+   },
+   {
+    "faixa": "13h00",
+    "peso_kg": 0.566,
+    "mix": {
+     "nobre": 0.266,
+     "comum": 0.227,
+     "base": 0.328,
+     "salada": 0.179
+    },
+    "custo": 16.96,
+    "receita": 67.9
+   },
+   {
+    "faixa": "13h00",
+    "peso_kg": 0.549,
+    "mix": {
+     "nobre": 0.42,
+     "comum": 0.147,
+     "base": 0.263,
+     "salada": 0.17
+    },
+    "custo": 21.71,
+    "receita": 65.84
+   },
+   {
+    "faixa": "13h00",
+    "peso_kg": 0.52,
+    "mix": {
+     "nobre": 0.5,
+     "comum": 0.166,
+     "base": 0.121,
+     "salada": 0.214
+    },
+    "custo": 23.74,
+    "receita": 62.32
+   },
+   {
+    "faixa": "13h00",
+    "peso_kg": 0.457,
+    "mix": {
+     "nobre": 0.419,
+     "comum": 0.169,
+     "base": 0.242,
+     "salada": 0.171
+    },
+    "custo": 18.21,
+    "receita": 54.83
+   },
+   {
+    "faixa": "13h00",
+    "peso_kg": 0.36,
+    "mix": {
+     "nobre": 0.35,
+     "comum": 0.199,
+     "base": 0.317,
+     "salada": 0.134
+    },
+    "custo": 12.7,
+    "receita": 43.11
+   },
+   {
+    "faixa": "13h00",
+    "peso_kg": 0.428,
+    "mix": {
+     "nobre": 0.496,
+     "comum": 0.215,
+     "base": 0.145,
+     "salada": 0.144
+    },
+    "custo": 19.74,
+    "receita": 51.36
+   },
+   {
+    "faixa": "13h00",
+    "peso_kg": 0.537,
+    "mix": {
+     "nobre": 0.505,
+     "comum": 0.076,
+     "base": 0.239,
+     "salada": 0.18
+    },
+    "custo": 23.85,
+    "receita": 64.4
+   },
+   {
+    "faixa": "13h00",
+    "peso_kg": 0.472,
+    "mix": {
+     "nobre": 0.435,
+     "comum": 0.092,
+     "base": 0.288,
+     "salada": 0.184
+    },
+    "custo": 18.74,
+    "receita": 56.62
+   },
+   {
+    "faixa": "13h00",
+    "peso_kg": 0.449,
+    "mix": {
+     "nobre": 0.386,
+     "comum": 0.124,
+     "base": 0.266,
+     "salada": 0.223
+    },
+    "custo": 16.55,
+    "receita": 53.84
+   },
+   {
+    "faixa": "13h00",
+    "peso_kg": 0.678,
+    "mix": {
+     "nobre": 0.476,
+     "comum": 0.197,
+     "base": 0.235,
+     "salada": 0.092
+    },
+    "custo": 29.94,
+    "receita": 81.25
+   },
+   {
+    "faixa": "13h00",
+    "peso_kg": 0.509,
+    "mix": {
+     "nobre": 0.433,
+     "comum": 0.168,
+     "base": 0.229,
+     "salada": 0.17
+    },
+    "custo": 20.77,
+    "receita": 61.01
+   },
+   {
+    "faixa": "13h00",
+    "peso_kg": 0.503,
+    "mix": {
+     "nobre": 0.45,
+     "comum": 0.232,
+     "base": 0.23,
+     "salada": 0.088
+    },
+    "custo": 21.62,
+    "receita": 60.32
+   },
+   {
+    "faixa": "13h00",
+    "peso_kg": 0.464,
+    "mix": {
+     "nobre": 0.452,
+     "comum": 0.172,
+     "base": 0.223,
+     "salada": 0.153
+    },
+    "custo": 19.6,
+    "receita": 55.69
+   },
+   {
+    "faixa": "13h00",
+    "peso_kg": 0.513,
+    "mix": {
+     "nobre": 0.485,
+     "comum": 0.104,
+     "base": 0.305,
+     "salada": 0.106
+    },
+    "custo": 22.16,
+    "receita": 61.48
+   },
+   {
+    "faixa": "13h00",
+    "peso_kg": 0.42,
+    "mix": {
+     "nobre": 0.377,
+     "comum": 0.175,
+     "base": 0.254,
+     "salada": 0.193
+    },
+    "custo": 15.53,
+    "receita": 50.32
+   },
+   {
+    "faixa": "13h00",
+    "peso_kg": 0.368,
+    "mix": {
+     "nobre": 0.461,
+     "comum": 0.141,
+     "base": 0.202,
+     "salada": 0.196
+    },
+    "custo": 15.6,
+    "receita": 44.09
+   },
+   {
+    "faixa": "13h00",
+    "peso_kg": 0.643,
+    "mix": {
+     "nobre": 0.419,
+     "comum": 0.17,
+     "base": 0.233,
+     "salada": 0.179
+    },
+    "custo": 25.62,
+    "receita": 77.1
+   },
+   {
+    "faixa": "13h00",
+    "peso_kg": 0.453,
+    "mix": {
+     "nobre": 0.435,
+     "comum": 0.163,
+     "base": 0.241,
+     "salada": 0.162
+    },
+    "custo": 18.52,
+    "receita": 54.34
+   },
+   {
+    "faixa": "13h00",
+    "peso_kg": 0.663,
+    "mix": {
+     "nobre": 0.347,
+     "comum": 0.187,
+     "base": 0.308,
+     "salada": 0.157
+    },
+    "custo": 23.22,
+    "receita": 79.54
+   },
+   {
+    "faixa": "13h00",
+    "peso_kg": 0.537,
+    "mix": {
+     "nobre": 0.41,
+     "comum": 0.186,
+     "base": 0.181,
+     "salada": 0.223
+    },
+    "custo": 21.28,
+    "receita": 64.41
+   },
+   {
+    "faixa": "13h00",
+    "peso_kg": 0.409,
+    "mix": {
+     "nobre": 0.418,
+     "comum": 0.175,
+     "base": 0.176,
+     "salada": 0.231
+    },
+    "custo": 16.37,
+    "receita": 49.06
+   },
+   {
+    "faixa": "13h00",
+    "peso_kg": 0.624,
+    "mix": {
+     "nobre": 0.432,
+     "comum": 0.149,
+     "base": 0.33,
+     "salada": 0.089
+    },
+    "custo": 25.08,
+    "receita": 74.81
+   },
+   {
+    "faixa": "13h00",
+    "peso_kg": 0.362,
+    "mix": {
+     "nobre": 0.433,
+     "comum": 0.165,
+     "base": 0.288,
+     "salada": 0.113
+    },
+    "custo": 14.73,
+    "receita": 43.44
+   },
+   {
+    "faixa": "13h15",
+    "peso_kg": 0.567,
+    "mix": {
+     "nobre": 0.433,
+     "comum": 0.122,
+     "base": 0.287,
+     "salada": 0.157
+    },
+    "custo": 22.67,
+    "receita": 67.93
+   },
+   {
+    "faixa": "13h15",
+    "peso_kg": 0.465,
+    "mix": {
+     "nobre": 0.354,
+     "comum": 0.163,
+     "base": 0.241,
+     "salada": 0.241
+    },
+    "custo": 16.4,
+    "receita": 55.72
+   },
+   {
+    "faixa": "13h15",
+    "peso_kg": 0.556,
+    "mix": {
+     "nobre": 0.36,
+     "comum": 0.239,
+     "base": 0.233,
+     "salada": 0.168
+    },
+    "custo": 20.52,
+    "receita": 66.72
+   },
+   {
+    "faixa": "13h15",
+    "peso_kg": 0.59,
+    "mix": {
+     "nobre": 0.354,
+     "comum": 0.185,
+     "base": 0.262,
+     "salada": 0.198
+    },
+    "custo": 20.97,
+    "receita": 70.7
+   },
+   {
+    "faixa": "13h15",
+    "peso_kg": 0.482,
+    "mix": {
+     "nobre": 0.378,
+     "comum": 0.267,
+     "base": 0.185,
+     "salada": 0.17
+    },
+    "custo": 18.61,
+    "receita": 57.75
+   },
+   {
+    "faixa": "13h15",
+    "peso_kg": 0.442,
+    "mix": {
+     "nobre": 0.428,
+     "comum": 0.104,
+     "base": 0.255,
+     "salada": 0.213
+    },
+    "custo": 17.45,
+    "receita": 53.0
+   },
+   {
+    "faixa": "13h15",
+    "peso_kg": 0.487,
+    "mix": {
+     "nobre": 0.451,
+     "comum": 0.227,
+     "base": 0.188,
+     "salada": 0.135
+    },
+    "custo": 20.95,
+    "receita": 58.38
+   },
+   {
+    "faixa": "13h15",
+    "peso_kg": 0.644,
+    "mix": {
+     "nobre": 0.376,
+     "comum": 0.241,
+     "base": 0.269,
+     "salada": 0.115
+    },
+    "custo": 24.41,
+    "receita": 77.27
+   },
+   {
+    "faixa": "13h15",
+    "peso_kg": 0.453,
+    "mix": {
+     "nobre": 0.42,
+     "comum": 0.174,
+     "base": 0.248,
+     "salada": 0.158
+    },
+    "custo": 18.1,
+    "receita": 54.34
+   },
+   {
+    "faixa": "13h15",
+    "peso_kg": 0.621,
+    "mix": {
+     "nobre": 0.339,
+     "comum": 0.19,
+     "base": 0.262,
+     "salada": 0.209
+    },
+    "custo": 21.46,
+    "receita": 74.41
+   },
+   {
+    "faixa": "13h15",
+    "peso_kg": 0.433,
+    "mix": {
+     "nobre": 0.413,
+     "comum": 0.153,
+     "base": 0.237,
+     "salada": 0.197
+    },
+    "custo": 16.98,
+    "receita": 51.96
+   },
+   {
+    "faixa": "13h15",
+    "peso_kg": 0.328,
+    "mix": {
+     "nobre": 0.343,
+     "comum": 0.188,
+     "base": 0.238,
+     "salada": 0.232
+    },
+    "custo": 11.44,
+    "receita": 39.34
+   },
+   {
+    "faixa": "13h15",
+    "peso_kg": 0.588,
+    "mix": {
+     "nobre": 0.368,
+     "comum": 0.135,
+     "base": 0.31,
+     "salada": 0.187
+    },
+    "custo": 20.96,
+    "receita": 70.54
+   },
+   {
+    "faixa": "13h15",
+    "peso_kg": 0.502,
+    "mix": {
+     "nobre": 0.388,
+     "comum": 0.218,
+     "base": 0.232,
+     "salada": 0.161
+    },
+    "custo": 19.3,
+    "receita": 60.16
+   },
+   {
+    "faixa": "13h15",
+    "peso_kg": 0.319,
+    "mix": {
+     "nobre": 0.344,
+     "comum": 0.247,
+     "base": 0.227,
+     "salada": 0.183
+    },
+    "custo": 11.45,
+    "receita": 38.31
+   },
+   {
+    "faixa": "13h15",
+    "peso_kg": 0.435,
+    "mix": {
+     "nobre": 0.387,
+     "comum": 0.242,
+     "base": 0.296,
+     "salada": 0.075
+    },
+    "custo": 16.77,
+    "receita": 52.13
+   },
+   {
+    "faixa": "13h15",
+    "peso_kg": 0.401,
+    "mix": {
+     "nobre": 0.447,
+     "comum": 0.111,
+     "base": 0.25,
+     "salada": 0.192
+    },
+    "custo": 16.39,
+    "receita": 48.1
+   },
+   {
+    "faixa": "13h15",
+    "peso_kg": 0.538,
+    "mix": {
+     "nobre": 0.381,
+     "comum": 0.168,
+     "base": 0.346,
+     "salada": 0.106
+    },
+    "custo": 19.89,
+    "receita": 64.55
+   },
+   {
+    "faixa": "13h15",
+    "peso_kg": 0.391,
+    "mix": {
+     "nobre": 0.401,
+     "comum": 0.136,
+     "base": 0.271,
+     "salada": 0.193
+    },
+    "custo": 14.85,
+    "receita": 46.86
+   },
+   {
+    "faixa": "13h15",
+    "peso_kg": 0.591,
+    "mix": {
+     "nobre": 0.366,
+     "comum": 0.111,
+     "base": 0.268,
+     "salada": 0.255
+    },
+    "custo": 20.84,
+    "receita": 70.9
+   },
+   {
+    "faixa": "13h15",
+    "peso_kg": 0.524,
+    "mix": {
+     "nobre": 0.346,
+     "comum": 0.2,
+     "base": 0.243,
+     "salada": 0.211
+    },
+    "custo": 18.51,
+    "receita": 62.88
+   },
+   {
+    "faixa": "13h15",
+    "peso_kg": 0.472,
+    "mix": {
+     "nobre": 0.433,
+     "comum": 0.136,
+     "base": 0.234,
+     "salada": 0.196
+    },
+    "custo": 19.06,
+    "receita": 56.63
+   },
+   {
+    "faixa": "13h15",
+    "peso_kg": 0.252,
+    "mix": {
+     "nobre": 0.415,
+     "comum": 0.203,
+     "base": 0.194,
+     "salada": 0.188
+    },
+    "custo": 10.15,
+    "receita": 30.27
+   },
+   {
+    "faixa": "13h15",
+    "peso_kg": 0.499,
+    "mix": {
+     "nobre": 0.426,
+     "comum": 0.209,
+     "base": 0.186,
+     "salada": 0.178
+    },
+    "custo": 20.49,
+    "receita": 59.8
+   },
+   {
+    "faixa": "13h15",
+    "peso_kg": 0.342,
+    "mix": {
+     "nobre": 0.486,
+     "comum": 0.182,
+     "base": 0.216,
+     "salada": 0.116
+    },
+    "custo": 15.31,
+    "receita": 41.06
+   },
+   {
+    "faixa": "13h15",
+    "peso_kg": 0.735,
+    "mix": {
+     "nobre": 0.464,
+     "comum": 0.132,
+     "base": 0.265,
+     "salada": 0.139
+    },
+    "custo": 31.09,
+    "receita": 88.1
+   },
+   {
+    "faixa": "13h15",
+    "peso_kg": 0.464,
+    "mix": {
+     "nobre": 0.448,
+     "comum": 0.17,
+     "base": 0.29,
+     "salada": 0.092
+    },
+    "custo": 19.35,
+    "receita": 55.61
+   },
+   {
+    "faixa": "13h15",
+    "peso_kg": 0.42,
+    "mix": {
+     "nobre": 0.437,
+     "comum": 0.193,
+     "base": 0.242,
+     "salada": 0.128
+    },
+    "custo": 17.4,
+    "receita": 50.35
+   },
+   {
+    "faixa": "13h15",
+    "peso_kg": 0.601,
+    "mix": {
+     "nobre": 0.383,
+     "comum": 0.221,
+     "base": 0.276,
+     "salada": 0.12
+    },
+    "custo": 22.89,
+    "receita": 72.07
+   },
+   {
+    "faixa": "13h15",
+    "peso_kg": 0.451,
+    "mix": {
+     "nobre": 0.381,
+     "comum": 0.134,
+     "base": 0.296,
+     "salada": 0.189
+    },
+    "custo": 16.49,
+    "receita": 54.09
+   },
+   {
+    "faixa": "13h15",
+    "peso_kg": 0.486,
+    "mix": {
+     "nobre": 0.404,
+     "comum": 0.146,
+     "base": 0.243,
+     "salada": 0.206
+    },
+    "custo": 18.71,
+    "receita": 58.28
+   },
+   {
+    "faixa": "13h15",
+    "peso_kg": 0.545,
+    "mix": {
+     "nobre": 0.377,
+     "comum": 0.285,
+     "base": 0.229,
+     "salada": 0.109
+    },
+    "custo": 21.09,
+    "receita": 65.29
+   },
+   {
+    "faixa": "13h15",
+    "peso_kg": 0.576,
+    "mix": {
+     "nobre": 0.508,
+     "comum": 0.131,
+     "base": 0.249,
+     "salada": 0.113
+    },
+    "custo": 26.14,
+    "receita": 69.08
+   },
+   {
+    "faixa": "13h15",
+    "peso_kg": 0.31,
+    "mix": {
+     "nobre": 0.363,
+     "comum": 0.179,
+     "base": 0.277,
+     "salada": 0.181
+    },
+    "custo": 11.18,
+    "receita": 37.19
+   },
+   {
+    "faixa": "13h30",
+    "peso_kg": 0.46,
+    "mix": {
+     "nobre": 0.274,
+     "comum": 0.186,
+     "base": 0.386,
+     "salada": 0.154
+    },
+    "custo": 13.69,
+    "receita": 55.18
+   },
+   {
+    "faixa": "13h30",
+    "peso_kg": 0.42,
+    "mix": {
+     "nobre": 0.328,
+     "comum": 0.2,
+     "base": 0.316,
+     "salada": 0.156
+    },
+    "custo": 14.22,
+    "receita": 50.37
+   },
+   {
+    "faixa": "13h30",
+    "peso_kg": 0.439,
+    "mix": {
+     "nobre": 0.23,
+     "comum": 0.198,
+     "base": 0.383,
+     "salada": 0.189
+    },
+    "custo": 11.79,
+    "receita": 52.64
+   },
+   {
+    "faixa": "13h30",
+    "peso_kg": 0.544,
+    "mix": {
+     "nobre": 0.299,
+     "comum": 0.151,
+     "base": 0.415,
+     "salada": 0.135
+    },
+    "custo": 16.79,
+    "receita": 65.2
+   },
+   {
+    "faixa": "13h30",
+    "peso_kg": 0.42,
+    "mix": {
+     "nobre": 0.327,
+     "comum": 0.106,
+     "base": 0.405,
+     "salada": 0.162
+    },
+    "custo": 13.51,
+    "receita": 50.37
+   },
+   {
+    "faixa": "13h30",
+    "peso_kg": 0.497,
+    "mix": {
+     "nobre": 0.222,
+     "comum": 0.173,
+     "base": 0.396,
+     "salada": 0.209
+    },
+    "custo": 12.86,
+    "receita": 59.53
+   },
+   {
+    "faixa": "13h30",
+    "peso_kg": 0.355,
+    "mix": {
+     "nobre": 0.252,
+     "comum": 0.164,
+     "base": 0.35,
+     "salada": 0.234
+    },
+    "custo": 9.92,
+    "receita": 42.55
+   },
+   {
+    "faixa": "13h30",
+    "peso_kg": 0.536,
+    "mix": {
+     "nobre": 0.265,
+     "comum": 0.056,
+     "base": 0.438,
+     "salada": 0.241
+    },
+    "custo": 14.47,
+    "receita": 64.23
+   },
+   {
+    "faixa": "13h30",
+    "peso_kg": 0.404,
+    "mix": {
+     "nobre": 0.294,
+     "comum": 0.168,
+     "base": 0.365,
+     "salada": 0.173
+    },
+    "custo": 12.47,
+    "receita": 48.39
+   },
+   {
+    "faixa": "13h30",
+    "peso_kg": 0.496,
+    "mix": {
+     "nobre": 0.299,
+     "comum": 0.141,
+     "base": 0.405,
+     "salada": 0.155
+    },
+    "custo": 15.24,
+    "receita": 59.5
+   },
+   {
+    "faixa": "13h30",
+    "peso_kg": 0.65,
+    "mix": {
+     "nobre": 0.358,
+     "comum": 0.171,
+     "base": 0.282,
+     "salada": 0.188
+    },
+    "custo": 23.12,
+    "receita": 77.94
+   },
+   {
+    "faixa": "13h30",
+    "peso_kg": 0.422,
+    "mix": {
+     "nobre": 0.252,
+     "comum": 0.167,
+     "base": 0.417,
+     "salada": 0.164
+    },
+    "custo": 11.76,
+    "receita": 50.6
+   },
+   {
+    "faixa": "13h30",
+    "peso_kg": 0.559,
+    "mix": {
+     "nobre": 0.257,
+     "comum": 0.231,
+     "base": 0.325,
+     "salada": 0.186
+    },
+    "custo": 16.43,
+    "receita": 67.0
+   },
+   {
+    "faixa": "13h30",
+    "peso_kg": 0.534,
+    "mix": {
+     "nobre": 0.421,
+     "comum": 0.185,
+     "base": 0.275,
+     "salada": 0.119
+    },
+    "custo": 21.43,
+    "receita": 64.03
+   },
+   {
+    "faixa": "13h30",
+    "peso_kg": 0.505,
+    "mix": {
+     "nobre": 0.245,
+     "comum": 0.096,
+     "base": 0.466,
+     "salada": 0.193
+    },
+    "custo": 13.2,
+    "receita": 60.5
+   },
+   {
+    "faixa": "13h30",
+    "peso_kg": 0.574,
+    "mix": {
+     "nobre": 0.254,
+     "comum": 0.204,
+     "base": 0.352,
+     "salada": 0.19
+    },
+    "custo": 16.47,
+    "receita": 68.82
+   },
+   {
+    "faixa": "13h30",
+    "peso_kg": 0.512,
+    "mix": {
+     "nobre": 0.279,
+     "comum": 0.201,
+     "base": 0.377,
+     "salada": 0.144
+    },
+    "custo": 15.5,
+    "receita": 61.35
+   },
+   {
+    "faixa": "13h30",
+    "peso_kg": 0.509,
+    "mix": {
+     "nobre": 0.307,
+     "comum": 0.099,
+     "base": 0.419,
+     "salada": 0.175
+    },
+    "custo": 15.59,
+    "receita": 61.01
+   },
+   {
+    "faixa": "13h30",
+    "peso_kg": 0.454,
+    "mix": {
+     "nobre": 0.254,
+     "comum": 0.161,
+     "base": 0.409,
+     "salada": 0.176
+    },
+    "custo": 12.67,
+    "receita": 54.43
+   },
+   {
+    "faixa": "13h30",
+    "peso_kg": 0.373,
+    "mix": {
+     "nobre": 0.311,
+     "comum": 0.169,
+     "base": 0.379,
+     "salada": 0.141
+    },
+    "custo": 11.96,
+    "receita": 44.76
+   },
+   {
+    "faixa": "13h30",
+    "peso_kg": 0.486,
+    "mix": {
+     "nobre": 0.269,
+     "comum": 0.158,
+     "base": 0.404,
+     "salada": 0.169
+    },
+    "custo": 14.07,
+    "receita": 58.31
+   },
+   {
+    "faixa": "13h30",
+    "peso_kg": 0.603,
+    "mix": {
+     "nobre": 0.336,
+     "comum": 0.216,
+     "base": 0.356,
+     "salada": 0.092
+    },
+    "custo": 20.83,
+    "receita": 72.3
+   },
+   {
+    "faixa": "13h30",
+    "peso_kg": 0.364,
+    "mix": {
+     "nobre": 0.362,
+     "comum": 0.174,
+     "base": 0.342,
+     "salada": 0.122
+    },
+    "custo": 13.01,
+    "receita": 43.68
+   },
+   {
+    "faixa": "13h30",
+    "peso_kg": 0.52,
+    "mix": {
+     "nobre": 0.329,
+     "comum": 0.173,
+     "base": 0.276,
+     "salada": 0.222
+    },
+    "custo": 17.48,
+    "receita": 62.37
+   },
+   {
+    "faixa": "13h30",
+    "peso_kg": 0.559,
+    "mix": {
+     "nobre": 0.324,
+     "comum": 0.111,
+     "base": 0.371,
+     "salada": 0.194
+    },
+    "custo": 17.94,
+    "receita": 67.08
+   },
+   {
+    "faixa": "13h30",
+    "peso_kg": 0.393,
+    "mix": {
+     "nobre": 0.27,
+     "comum": 0.144,
+     "base": 0.385,
+     "salada": 0.201
+    },
+    "custo": 11.31,
+    "receita": 47.07
+   },
+   {
+    "faixa": "13h45",
+    "peso_kg": 0.415,
+    "mix": {
+     "nobre": 0.277,
+     "comum": 0.196,
+     "base": 0.338,
+     "salada": 0.19
+    },
+    "custo": 12.52,
+    "receita": 49.73
+   },
+   {
+    "faixa": "13h45",
+    "peso_kg": 0.432,
+    "mix": {
+     "nobre": 0.36,
+     "comum": 0.265,
+     "base": 0.229,
+     "salada": 0.145
+    },
+    "custo": 16.11,
+    "receita": 51.83
+   },
+   {
+    "faixa": "13h45",
+    "peso_kg": 0.391,
+    "mix": {
+     "nobre": 0.351,
+     "comum": 0.118,
+     "base": 0.339,
+     "salada": 0.192
+    },
+    "custo": 13.35,
+    "receita": 46.88
+   },
+   {
+    "faixa": "13h45",
+    "peso_kg": 0.428,
+    "mix": {
+     "nobre": 0.271,
+     "comum": 0.166,
+     "base": 0.353,
+     "salada": 0.21
+    },
+    "custo": 12.53,
+    "receita": 51.27
+   },
+   {
+    "faixa": "13h45",
+    "peso_kg": 0.374,
+    "mix": {
+     "nobre": 0.23,
+     "comum": 0.174,
+     "base": 0.378,
+     "salada": 0.218
+    },
+    "custo": 9.93,
+    "receita": 44.86
+   },
+   {
+    "faixa": "13h45",
+    "peso_kg": 0.593,
+    "mix": {
+     "nobre": 0.336,
+     "comum": 0.185,
+     "base": 0.479,
+     "salada": 0.0
+    },
+    "custo": 20.02,
+    "receita": 71.09
+   },
+   {
+    "faixa": "13h45",
+    "peso_kg": 0.528,
+    "mix": {
+     "nobre": 0.295,
+     "comum": 0.184,
+     "base": 0.382,
+     "salada": 0.139
+    },
+    "custo": 16.46,
+    "receita": 63.31
+   },
+   {
+    "faixa": "13h45",
+    "peso_kg": 0.402,
+    "mix": {
+     "nobre": 0.295,
+     "comum": 0.174,
+     "base": 0.339,
+     "salada": 0.192
+    },
+    "custo": 12.49,
+    "receita": 48.18
+   },
+   {
+    "faixa": "13h45",
+    "peso_kg": 0.49,
+    "mix": {
+     "nobre": 0.246,
+     "comum": 0.267,
+     "base": 0.404,
+     "salada": 0.083
+    },
+    "custo": 14.2,
+    "receita": 58.73
+   },
+   {
+    "faixa": "13h45",
+    "peso_kg": 0.564,
+    "mix": {
+     "nobre": 0.312,
+     "comum": 0.201,
+     "base": 0.312,
+     "salada": 0.176
+    },
+    "custo": 18.44,
+    "receita": 67.57
+   },
+   {
+    "faixa": "13h45",
+    "peso_kg": 0.428,
+    "mix": {
+     "nobre": 0.342,
+     "comum": 0.238,
+     "base": 0.249,
+     "salada": 0.171
+    },
+    "custo": 15.2,
+    "receita": 51.27
+   },
+   {
+    "faixa": "13h45",
+    "peso_kg": 0.584,
+    "mix": {
+     "nobre": 0.309,
+     "comum": 0.192,
+     "base": 0.368,
+     "salada": 0.131
+    },
+    "custo": 18.85,
+    "receita": 70.02
+   },
+   {
+    "faixa": "13h45",
+    "peso_kg": 0.581,
+    "mix": {
+     "nobre": 0.276,
+     "comum": 0.17,
+     "base": 0.397,
+     "salada": 0.157
+    },
+    "custo": 17.2,
+    "receita": 69.72
+   },
+   {
+    "faixa": "13h45",
+    "peso_kg": 0.427,
+    "mix": {
+     "nobre": 0.346,
+     "comum": 0.171,
+     "base": 0.311,
+     "salada": 0.172
+    },
+    "custo": 14.81,
+    "receita": 51.23
+   },
+   {
+    "faixa": "13h45",
+    "peso_kg": 0.632,
+    "mix": {
+     "nobre": 0.354,
+     "comum": 0.174,
+     "base": 0.362,
+     "salada": 0.11
+    },
+    "custo": 22.2,
+    "receita": 75.76
+   },
+   {
+    "faixa": "13h45",
+    "peso_kg": 0.394,
+    "mix": {
+     "nobre": 0.254,
+     "comum": 0.208,
+     "base": 0.335,
+     "salada": 0.203
+    },
+    "custo": 11.35,
+    "receita": 47.21
+   },
+   {
+    "faixa": "13h45",
+    "peso_kg": 0.474,
+    "mix": {
+     "nobre": 0.294,
+     "comum": 0.252,
+     "base": 0.387,
+     "salada": 0.066
+    },
+    "custo": 15.22,
+    "receita": 56.79
+   },
+   {
+    "faixa": "13h45",
+    "peso_kg": 0.331,
+    "mix": {
+     "nobre": 0.35,
+     "comum": 0.162,
+     "base": 0.388,
+     "salada": 0.1
+    },
+    "custo": 11.47,
+    "receita": 39.74
+   },
+   {
+    "faixa": "14h00",
+    "peso_kg": 0.473,
+    "mix": {
+     "nobre": 0.315,
+     "comum": 0.178,
+     "base": 0.365,
+     "salada": 0.142
+    },
+    "custo": 15.35,
+    "receita": 56.66
+   },
+   {
+    "faixa": "14h00",
+    "peso_kg": 0.416,
+    "mix": {
+     "nobre": 0.373,
+     "comum": 0.12,
+     "base": 0.356,
+     "salada": 0.151
+    },
+    "custo": 14.82,
+    "receita": 49.84
+   },
+   {
+    "faixa": "14h00",
+    "peso_kg": 0.452,
+    "mix": {
+     "nobre": 0.245,
+     "comum": 0.201,
+     "base": 0.438,
+     "salada": 0.116
+    },
+    "custo": 12.56,
+    "receita": 54.16
+   },
+   {
+    "faixa": "14h00",
+    "peso_kg": 0.463,
+    "mix": {
+     "nobre": 0.349,
+     "comum": 0.185,
+     "base": 0.261,
+     "salada": 0.205
+    },
+    "custo": 16.3,
+    "receita": 55.53
+   },
+   {
+    "faixa": "14h00",
+    "peso_kg": 0.68,
+    "mix": {
+     "nobre": 0.355,
+     "comum": 0.192,
+     "base": 0.284,
+     "salada": 0.168
+    },
+    "custo": 24.27,
+    "receita": 81.57
+   },
+   {
+    "faixa": "14h00",
+    "peso_kg": 0.55,
+    "mix": {
+     "nobre": 0.32,
+     "comum": 0.103,
+     "base": 0.364,
+     "salada": 0.213
+    },
+    "custo": 17.43,
+    "receita": 65.91
+   },
+   {
+    "faixa": "14h00",
+    "peso_kg": 0.244,
+    "mix": {
+     "nobre": 0.316,
+     "comum": 0.137,
+     "base": 0.301,
+     "salada": 0.246
+    },
+    "custo": 7.85,
+    "receita": 29.3
+   },
+   {
+    "faixa": "14h00",
+    "peso_kg": 0.385,
+    "mix": {
+     "nobre": 0.252,
+     "comum": 0.175,
+     "base": 0.329,
+     "salada": 0.243
+    },
+    "custo": 10.87,
+    "receita": 46.19
+   },
+   {
+    "faixa": "14h00",
+    "peso_kg": 0.524,
+    "mix": {
+     "nobre": 0.313,
+     "comum": 0.153,
+     "base": 0.307,
+     "salada": 0.226
+    },
+    "custo": 16.82,
+    "receita": 62.78
+   },
+   {
+    "faixa": "14h00",
+    "peso_kg": 0.567,
+    "mix": {
+     "nobre": 0.245,
+     "comum": 0.263,
+     "base": 0.281,
+     "salada": 0.211
+    },
+    "custo": 16.53,
+    "receita": 67.98
+   },
+   {
+    "faixa": "14h00",
+    "peso_kg": 0.451,
+    "mix": {
+     "nobre": 0.27,
+     "comum": 0.171,
+     "base": 0.38,
+     "salada": 0.179
+    },
+    "custo": 13.19,
+    "receita": 54.07
+   },
+   {
+    "faixa": "14h00",
+    "peso_kg": 0.345,
+    "mix": {
+     "nobre": 0.232,
+     "comum": 0.218,
+     "base": 0.373,
+     "salada": 0.177
+    },
+    "custo": 9.45,
+    "receita": 41.37
+   },
+   {
+    "faixa": "14h15",
+    "peso_kg": 0.47,
+    "mix": {
+     "nobre": 0.345,
+     "comum": 0.179,
+     "base": 0.326,
+     "salada": 0.15
+    },
+    "custo": 16.31,
+    "receita": 56.37
+   },
+   {
+    "faixa": "14h15",
+    "peso_kg": 0.533,
+    "mix": {
+     "nobre": 0.254,
+     "comum": 0.187,
+     "base": 0.377,
+     "salada": 0.182
+    },
+    "custo": 15.14,
+    "receita": 63.89
+   },
+   {
+    "faixa": "14h15",
+    "peso_kg": 0.462,
+    "mix": {
+     "nobre": 0.3,
+     "comum": 0.164,
+     "base": 0.362,
+     "salada": 0.174
+    },
+    "custo": 14.45,
+    "receita": 55.43
+   },
+   {
+    "faixa": "14h15",
+    "peso_kg": 0.641,
+    "mix": {
+     "nobre": 0.221,
+     "comum": 0.252,
+     "base": 0.386,
+     "salada": 0.141
+    },
+    "custo": 17.34,
+    "receita": 76.85
+   },
+   {
+    "faixa": "14h15",
+    "peso_kg": 0.459,
+    "mix": {
+     "nobre": 0.301,
+     "comum": 0.191,
+     "base": 0.365,
+     "salada": 0.143
+    },
+    "custo": 14.57,
+    "receita": 55.05
+   },
+   {
+    "faixa": "14h15",
+    "peso_kg": 0.311,
+    "mix": {
+     "nobre": 0.306,
+     "comum": 0.064,
+     "base": 0.425,
+     "salada": 0.205
+    },
+    "custo": 9.33,
+    "receita": 37.29
+   },
+   {
+    "faixa": "14h15",
+    "peso_kg": 0.507,
+    "mix": {
+     "nobre": 0.331,
+     "comum": 0.197,
+     "base": 0.346,
+     "salada": 0.126
+    },
+    "custo": 17.22,
+    "receita": 60.79
+   },
+   {
+    "faixa": "14h15",
+    "peso_kg": 0.504,
+    "mix": {
+     "nobre": 0.348,
+     "comum": 0.111,
+     "base": 0.361,
+     "salada": 0.18
+    },
+    "custo": 17.04,
+    "receita": 60.48
+   },
+   {
+    "faixa": "14h15",
+    "peso_kg": 0.642,
+    "mix": {
+     "nobre": 0.33,
+     "comum": 0.159,
+     "base": 0.289,
+     "salada": 0.222
+    },
+    "custo": 21.47,
+    "receita": 76.95
+   },
+   {
+    "faixa": "14h15",
+    "peso_kg": 0.478,
+    "mix": {
+     "nobre": 0.289,
+     "comum": 0.193,
+     "base": 0.367,
+     "salada": 0.151
+    },
+    "custo": 14.79,
+    "receita": 57.34
+   }
+  ]
+ },
+ "depois": {
+  "resumo": {
+   "pratos": 320,
+   "kg": 155.7,
+   "ticket_medio": 58.34,
+   "receita": 18668.44,
+   "custo_insumo": 5219.97,
+   "margem_bruta": 13448.47,
+   "margem_bruta_pct": 72.0,
+   "margem_por_kg": 86.37,
+   "cmv_pct": 28.0
+  },
+  "faixas": [
+   {
+    "faixa": "11h30",
+    "pratos": 10,
+    "kg": 5.3,
+    "mix_pct": {
+     "nobre": 31.4,
+     "comum": 17.9,
+     "base": 36.0,
+     "salada": 14.7
+    },
+    "proteina_pct": 49.3,
+    "receita": 634.31,
+    "custo_insumo": 171.67,
+    "margem_bruta_pct": 72.9
+   },
+   {
+    "faixa": "11h45",
+    "pratos": 14,
+    "kg": 6.4,
+    "mix_pct": {
+     "nobre": 31.6,
+     "comum": 15.2,
+     "base": 37.1,
+     "salada": 16.2
+    },
+    "proteina_pct": 46.8,
+    "receita": 769.86,
+    "custo_insumo": 206.44,
+    "margem_bruta_pct": 73.2
+   },
+   {
+    "faixa": "12h00",
+    "pratos": 26,
+    "kg": 13.2,
+    "mix_pct": {
+     "nobre": 29.2,
+     "comum": 17.1,
+     "base": 36.8,
+     "salada": 16.9
+    },
+    "proteina_pct": 46.3,
+    "receita": 1585.55,
+    "custo_insumo": 407.47,
+    "margem_bruta_pct": 74.3
+   },
+   {
+    "faixa": "12h15",
+    "pratos": 38,
+    "kg": 18.4,
+    "mix_pct": {
+     "nobre": 40.0,
+     "comum": 17.1,
+     "base": 26.8,
+     "salada": 16.1
+    },
+    "proteina_pct": 57.1,
+    "receita": 2202.73,
+    "custo_insumo": 707.74,
+    "margem_bruta_pct": 67.9
+   },
+   {
+    "faixa": "12h30",
+    "pratos": 44,
+    "kg": 20.1,
+    "mix_pct": {
+     "nobre": 39.7,
+     "comum": 16.8,
+     "base": 25.6,
+     "salada": 17.8
+    },
+    "proteina_pct": 56.5,
+    "receita": 2415.45,
+    "custo_insumo": 770.82,
+    "margem_bruta_pct": 68.1
+   },
+   {
+    "faixa": "12h45",
+    "pratos": 46,
+    "kg": 23.3,
+    "mix_pct": {
+     "nobre": 40.4,
+     "comum": 18.4,
+     "base": 24.7,
+     "salada": 16.5
+    },
+    "proteina_pct": 58.8,
+    "receita": 2788.05,
+    "custo_insumo": 906.83,
+    "margem_bruta_pct": 67.5
+   },
+   {
+    "faixa": "13h00",
+    "pratos": 42,
+    "kg": 20.9,
+    "mix_pct": {
+     "nobre": 32.4,
+     "comum": 19.8,
+     "base": 27.2,
+     "salada": 20.6
+    },
+    "proteina_pct": 52.2,
+    "receita": 2502.5,
+    "custo_insumo": 701.8,
+    "margem_bruta_pct": 72.0
+   },
+   {
+    "faixa": "13h15",
+    "pratos": 34,
+    "kg": 16.5,
+    "mix_pct": {
+     "nobre": 30.6,
+     "comum": 21.1,
+     "base": 27.4,
+     "salada": 20.8
+    },
+    "proteina_pct": 51.8,
+    "receita": 1979.78,
+    "custo_insumo": 538.68,
+    "margem_bruta_pct": 72.8
+   },
+   {
+    "faixa": "13h30",
+    "pratos": 26,
+    "kg": 12.6,
+    "mix_pct": {
+     "nobre": 20.2,
+     "comum": 19.3,
+     "base": 39.2,
+     "salada": 21.3
+    },
+    "proteina_pct": 39.5,
+    "receita": 1509.2,
+    "custo_insumo": 313.07,
+    "margem_bruta_pct": 79.3
+   },
+   {
+    "faixa": "13h45",
+    "pratos": 18,
+    "kg": 8.5,
+    "mix_pct": {
+     "nobre": 21.7,
+     "comum": 22.5,
+     "base": 37.7,
+     "salada": 18.1
+    },
+    "proteina_pct": 44.2,
+    "receita": 1015.2,
+    "custo_insumo": 223.66,
+    "margem_bruta_pct": 78.0
+   },
+   {
+    "faixa": "14h00",
+    "pratos": 12,
+    "kg": 5.5,
+    "mix_pct": {
+     "nobre": 21.2,
+     "comum": 20.6,
+     "base": 35.4,
+     "salada": 22.8
+    },
+    "proteina_pct": 41.8,
+    "receita": 665.36,
+    "custo_insumo": 143.43,
+    "margem_bruta_pct": 78.4
+   },
+   {
+    "faixa": "14h15",
+    "pratos": 10,
+    "kg": 5.0,
+    "mix_pct": {
+     "nobre": 21.0,
+     "comum": 20.6,
+     "base": 37.7,
+     "salada": 20.7
+    },
+    "proteina_pct": 41.6,
+    "receita": 600.45,
+    "custo_insumo": 128.36,
+    "margem_bruta_pct": 78.6
+   }
+  ],
+  "pratos": [
+   {
+    "faixa": "11h30",
+    "peso_kg": 0.574,
+    "mix": {
+     "nobre": 0.322,
+     "comum": 0.206,
+     "base": 0.357,
+     "salada": 0.116
+    },
+    "custo": 19.18,
+    "receita": 68.86
+   },
+   {
+    "faixa": "11h30",
+    "peso_kg": 0.633,
+    "mix": {
+     "nobre": 0.322,
+     "comum": 0.124,
+     "base": 0.418,
+     "salada": 0.136
+    },
+    "custo": 20.26,
+    "receita": 75.87
+   },
+   {
+    "faixa": "11h30",
+    "peso_kg": 0.429,
+    "mix": {
+     "nobre": 0.302,
+     "comum": 0.118,
+     "base": 0.395,
+     "salada": 0.185
+    },
+    "custo": 13.12,
+    "receita": 51.39
+   },
+   {
+    "faixa": "11h30",
+    "peso_kg": 0.482,
+    "mix": {
+     "nobre": 0.318,
+     "comum": 0.161,
+     "base": 0.374,
+     "salada": 0.147
+    },
+    "custo": 15.64,
+    "receita": 57.83
+   },
+   {
+    "faixa": "11h30",
+    "peso_kg": 0.535,
+    "mix": {
+     "nobre": 0.211,
+     "comum": 0.266,
+     "base": 0.35,
+     "salada": 0.173
+    },
+    "custo": 14.29,
+    "receita": 64.17
+   },
+   {
+    "faixa": "11h30",
+    "peso_kg": 0.495,
+    "mix": {
+     "nobre": 0.283,
+     "comum": 0.18,
+     "base": 0.321,
+     "salada": 0.216
+    },
+    "custo": 15.07,
+    "receita": 59.31
+   },
+   {
+    "faixa": "11h30",
+    "peso_kg": 0.526,
+    "mix": {
+     "nobre": 0.354,
+     "comum": 0.223,
+     "base": 0.33,
+     "salada": 0.093
+    },
+    "custo": 18.89,
+    "receita": 63.02
+   },
+   {
+    "faixa": "11h30",
+    "peso_kg": 0.433,
+    "mix": {
+     "nobre": 0.324,
+     "comum": 0.161,
+     "base": 0.344,
+     "salada": 0.172
+    },
+    "custo": 14.25,
+    "receita": 51.96
+   },
+   {
+    "faixa": "11h30",
+    "peso_kg": 0.485,
+    "mix": {
+     "nobre": 0.335,
+     "comum": 0.171,
+     "base": 0.299,
+     "salada": 0.195
+    },
+    "custo": 16.45,
+    "receita": 58.13
+   },
+   {
+    "faixa": "11h30",
+    "peso_kg": 0.699,
+    "mix": {
+     "nobre": 0.354,
+     "comum": 0.175,
+     "base": 0.388,
+     "salada": 0.082
+    },
+    "custo": 24.52,
+    "receita": 83.77
+   },
+   {
+    "faixa": "11h45",
+    "peso_kg": 0.503,
+    "mix": {
+     "nobre": 0.345,
+     "comum": 0.142,
+     "base": 0.386,
+     "salada": 0.127
+    },
+    "custo": 17.1,
+    "receita": 60.33
+   },
+   {
+    "faixa": "11h45",
+    "peso_kg": 0.492,
+    "mix": {
+     "nobre": 0.398,
+     "comum": 0.116,
+     "base": 0.405,
+     "salada": 0.081
+    },
+    "custo": 18.31,
+    "receita": 59.03
+   },
+   {
+    "faixa": "11h45",
+    "peso_kg": 0.317,
+    "mix": {
+     "nobre": 0.387,
+     "comum": 0.056,
+     "base": 0.364,
+     "salada": 0.193
+    },
+    "custo": 11.3,
+    "receita": 38.02
+   },
+   {
+    "faixa": "11h45",
+    "peso_kg": 0.519,
+    "mix": {
+     "nobre": 0.317,
+     "comum": 0.163,
+     "base": 0.411,
+     "salada": 0.109
+    },
+    "custo": 16.78,
+    "receita": 62.22
+   },
+   {
+    "faixa": "11h45",
+    "peso_kg": 0.315,
+    "mix": {
+     "nobre": 0.236,
+     "comum": 0.134,
+     "base": 0.435,
+     "salada": 0.195
+    },
+    "custo": 8.25,
+    "receita": 37.71
+   },
+   {
+    "faixa": "11h45",
+    "peso_kg": 0.474,
+    "mix": {
+     "nobre": 0.343,
+     "comum": 0.166,
+     "base": 0.33,
+     "salada": 0.161
+    },
+    "custo": 16.29,
+    "receita": 56.89
+   },
+   {
+    "faixa": "11h45",
+    "peso_kg": 0.346,
+    "mix": {
+     "nobre": 0.322,
+     "comum": 0.127,
+     "base": 0.352,
+     "salada": 0.199
+    },
+    "custo": 11.14,
+    "receita": 41.44
+   },
+   {
+    "faixa": "11h45",
+    "peso_kg": 0.475,
+    "mix": {
+     "nobre": 0.272,
+     "comum": 0.094,
+     "base": 0.442,
+     "salada": 0.192
+    },
+    "custo": 13.34,
+    "receita": 56.91
+   },
+   {
+    "faixa": "11h45",
+    "peso_kg": 0.524,
+    "mix": {
+     "nobre": 0.187,
+     "comum": 0.199,
+     "base": 0.372,
+     "salada": 0.243
+    },
+    "custo": 12.56,
+    "receita": 62.84
+   },
+   {
+    "faixa": "11h45",
+    "peso_kg": 0.431,
+    "mix": {
+     "nobre": 0.348,
+     "comum": 0.162,
+     "base": 0.328,
+     "salada": 0.162
+    },
+    "custo": 14.95,
+    "receita": 51.73
+   },
+   {
+    "faixa": "11h45",
+    "peso_kg": 0.543,
+    "mix": {
+     "nobre": 0.331,
+     "comum": 0.228,
+     "base": 0.335,
+     "salada": 0.107
+    },
+    "custo": 18.67,
+    "receita": 65.07
+   },
+   {
+    "faixa": "11h45",
+    "peso_kg": 0.51,
+    "mix": {
+     "nobre": 0.288,
+     "comum": 0.156,
+     "base": 0.383,
+     "salada": 0.173
+    },
+    "custo": 15.45,
+    "receita": 61.18
+   },
+   {
+    "faixa": "11h45",
+    "peso_kg": 0.545,
+    "mix": {
+     "nobre": 0.333,
+     "comum": 0.19,
+     "base": 0.329,
+     "salada": 0.148
+    },
+    "custo": 18.52,
+    "receita": 65.29
+   },
+   {
+    "faixa": "11h45",
+    "peso_kg": 0.427,
+    "mix": {
+     "nobre": 0.323,
+     "comum": 0.124,
+     "base": 0.331,
+     "salada": 0.222
+    },
+    "custo": 13.8,
+    "receita": 51.19
+   },
+   {
+    "faixa": "12h00",
+    "peso_kg": 0.493,
+    "mix": {
+     "nobre": 0.319,
+     "comum": 0.239,
+     "base": 0.313,
+     "salada": 0.129
+    },
+    "custo": 16.69,
+    "receita": 59.14
+   },
+   {
+    "faixa": "12h00",
+    "peso_kg": 0.646,
+    "mix": {
+     "nobre": 0.229,
+     "comum": 0.174,
+     "base": 0.367,
+     "salada": 0.23
+    },
+    "custo": 17.1,
+    "receita": 77.47
+   },
+   {
+    "faixa": "12h00",
+    "peso_kg": 0.412,
+    "mix": {
+     "nobre": 0.311,
+     "comum": 0.226,
+     "base": 0.33,
+     "salada": 0.133
+    },
+    "custo": 13.62,
+    "receita": 49.44
+   },
+   {
+    "faixa": "12h00",
+    "peso_kg": 0.542,
+    "mix": {
+     "nobre": 0.257,
+     "comum": 0.2,
+     "base": 0.388,
+     "salada": 0.155
+    },
+    "custo": 15.59,
+    "receita": 64.95
+   },
+   {
+    "faixa": "12h00",
+    "peso_kg": 0.352,
+    "mix": {
+     "nobre": 0.321,
+     "comum": 0.111,
+     "base": 0.32,
+     "salada": 0.248
+    },
+    "custo": 11.25,
+    "receita": 42.16
+   },
+   {
+    "faixa": "12h00",
+    "peso_kg": 0.526,
+    "mix": {
+     "nobre": 0.322,
+     "comum": 0.186,
+     "base": 0.404,
+     "salada": 0.089
+    },
+    "custo": 17.34,
+    "receita": 63.08
+   },
+   {
+    "faixa": "12h00",
+    "peso_kg": 0.346,
+    "mix": {
+     "nobre": 0.357,
+     "comum": 0.027,
+     "base": 0.383,
+     "salada": 0.233
+    },
+    "custo": 11.45,
+    "receita": 41.52
+   },
+   {
+    "faixa": "12h00",
+    "peso_kg": 0.526,
+    "mix": {
+     "nobre": 0.3,
+     "comum": 0.165,
+     "base": 0.342,
+     "salada": 0.193
+    },
+    "custo": 16.48,
+    "receita": 63.12
+   },
+   {
+    "faixa": "12h00",
+    "peso_kg": 0.418,
+    "mix": {
+     "nobre": 0.283,
+     "comum": 0.179,
+     "base": 0.429,
+     "salada": 0.108
+    },
+    "custo": 12.62,
+    "receita": 50.18
+   },
+   {
+    "faixa": "12h00",
+    "peso_kg": 0.367,
+    "mix": {
+     "nobre": 0.32,
+     "comum": 0.137,
+     "base": 0.424,
+     "salada": 0.118
+    },
+    "custo": 11.79,
+    "receita": 44.02
+   },
+   {
+    "faixa": "12h00",
+    "peso_kg": 0.448,
+    "mix": {
+     "nobre": 0.232,
+     "comum": 0.162,
+     "base": 0.411,
+     "salada": 0.195
+    },
+    "custo": 11.83,
+    "receita": 53.76
+   },
+   {
+    "faixa": "12h00",
+    "peso_kg": 0.484,
+    "mix": {
+     "nobre": 0.328,
+     "comum": 0.171,
+     "base": 0.36,
+     "salada": 0.142
+    },
+    "custo": 16.12,
+    "receita": 58.04
+   },
+   {
+    "faixa": "12h00",
+    "peso_kg": 0.475,
+    "mix": {
+     "nobre": 0.301,
+     "comum": 0.203,
+     "base": 0.355,
+     "salada": 0.141
+    },
+    "custo": 15.17,
+    "receita": 56.96
+   },
+   {
+    "faixa": "12h00",
+    "peso_kg": 0.549,
+    "mix": {
+     "nobre": 0.262,
+     "comum": 0.146,
+     "base": 0.447,
+     "salada": 0.145
+    },
+    "custo": 15.45,
+    "receita": 65.81
+   },
+   {
+    "faixa": "12h00",
+    "peso_kg": 0.558,
+    "mix": {
+     "nobre": 0.249,
+     "comum": 0.206,
+     "base": 0.327,
+     "salada": 0.218
+    },
+    "custo": 15.87,
+    "receita": 66.9
+   },
+   {
+    "faixa": "12h00",
+    "peso_kg": 0.57,
+    "mix": {
+     "nobre": 0.189,
+     "comum": 0.257,
+     "base": 0.334,
+     "salada": 0.22
+    },
+    "custo": 14.28,
+    "receita": 68.37
+   },
+   {
+    "faixa": "12h00",
+    "peso_kg": 0.382,
+    "mix": {
+     "nobre": 0.429,
+     "comum": 0.146,
+     "base": 0.302,
+     "salada": 0.123
+    },
+    "custo": 15.31,
+    "receita": 45.82
+   },
+   {
+    "faixa": "12h00",
+    "peso_kg": 0.413,
+    "mix": {
+     "nobre": 0.256,
+     "comum": 0.179,
+     "base": 0.396,
+     "salada": 0.169
+    },
+    "custo": 11.73,
+    "receita": 49.58
+   },
+   {
+    "faixa": "12h00",
+    "peso_kg": 0.543,
+    "mix": {
+     "nobre": 0.288,
+     "comum": 0.046,
+     "base": 0.398,
+     "salada": 0.269
+    },
+    "custo": 15.51,
+    "receita": 65.11
+   },
+   {
+    "faixa": "12h00",
+    "peso_kg": 0.55,
+    "mix": {
+     "nobre": 0.359,
+     "comum": 0.19,
+     "base": 0.361,
+     "salada": 0.09
+    },
+    "custo": 19.67,
+    "receita": 65.98
+   },
+   {
+    "faixa": "12h00",
+    "peso_kg": 0.641,
+    "mix": {
+     "nobre": 0.283,
+     "comum": 0.192,
+     "base": 0.332,
+     "salada": 0.192
+    },
+    "custo": 19.63,
+    "receita": 76.9
+   },
+   {
+    "faixa": "12h00",
+    "peso_kg": 0.513,
+    "mix": {
+     "nobre": 0.315,
+     "comum": 0.196,
+     "base": 0.34,
+     "salada": 0.149
+    },
+    "custo": 16.82,
+    "receita": 61.47
+   },
+   {
+    "faixa": "12h00",
+    "peso_kg": 0.604,
+    "mix": {
+     "nobre": 0.322,
+     "comum": 0.184,
+     "base": 0.329,
+     "salada": 0.164
+    },
+    "custo": 20.04,
+    "receita": 72.43
+   },
+   {
+    "faixa": "12h00",
+    "peso_kg": 0.717,
+    "mix": {
+     "nobre": 0.348,
+     "comum": 0.1,
+     "base": 0.383,
+     "salada": 0.169
+    },
+    "custo": 24.05,
+    "receita": 86.0
+   },
+   {
+    "faixa": "12h00",
+    "peso_kg": 0.586,
+    "mix": {
+     "nobre": 0.277,
+     "comum": 0.21,
+     "base": 0.376,
+     "salada": 0.138
+    },
+    "custo": 17.74,
+    "receita": 70.21
+   },
+   {
+    "faixa": "12h00",
+    "peso_kg": 0.56,
+    "mix": {
+     "nobre": 0.22,
+     "comum": 0.161,
+     "base": 0.411,
+     "salada": 0.208
+    },
+    "custo": 14.32,
+    "receita": 67.17
+   },
+   {
+    "faixa": "12h15",
+    "peso_kg": 0.554,
+    "mix": {
+     "nobre": 0.418,
+     "comum": 0.147,
+     "base": 0.336,
+     "salada": 0.099
+    },
+    "custo": 21.74,
+    "receita": 66.45
+   },
+   {
+    "faixa": "12h15",
+    "peso_kg": 0.27,
+    "mix": {
+     "nobre": 0.449,
+     "comum": 0.209,
+     "base": 0.284,
+     "salada": 0.057
+    },
+    "custo": 11.46,
+    "receita": 32.38
+   },
+   {
+    "faixa": "12h15",
+    "peso_kg": 0.399,
+    "mix": {
+     "nobre": 0.346,
+     "comum": 0.125,
+     "base": 0.326,
+     "salada": 0.203
+    },
+    "custo": 13.54,
+    "receita": 47.82
+   },
+   {
+    "faixa": "12h15",
+    "peso_kg": 0.672,
+    "mix": {
+     "nobre": 0.355,
+     "comum": 0.165,
+     "base": 0.272,
+     "salada": 0.208
+    },
+    "custo": 23.71,
+    "receita": 80.6
+   },
+   {
+    "faixa": "12h15",
+    "peso_kg": 0.437,
+    "mix": {
+     "nobre": 0.48,
+     "comum": 0.178,
+     "base": 0.187,
+     "salada": 0.154
+    },
+    "custo": 19.38,
+    "receita": 52.38
+   },
+   {
+    "faixa": "12h15",
+    "peso_kg": 0.632,
+    "mix": {
+     "nobre": 0.442,
+     "comum": 0.227,
+     "base": 0.219,
+     "salada": 0.112
+    },
+    "custo": 26.79,
+    "receita": 75.83
+   },
+   {
+    "faixa": "12h15",
+    "peso_kg": 0.65,
+    "mix": {
+     "nobre": 0.435,
+     "comum": 0.176,
+     "base": 0.297,
+     "salada": 0.092
+    },
+    "custo": 26.62,
+    "receita": 77.99
+   },
+   {
+    "faixa": "12h15",
+    "peso_kg": 0.323,
+    "mix": {
+     "nobre": 0.44,
+     "comum": 0.136,
+     "base": 0.215,
+     "salada": 0.209
+    },
+    "custo": 13.18,
+    "receita": 38.68
+   },
+   {
+    "faixa": "12h15",
+    "peso_kg": 0.392,
+    "mix": {
+     "nobre": 0.545,
+     "comum": 0.163,
+     "base": 0.197,
+     "salada": 0.095
+    },
+    "custo": 19.01,
+    "receita": 46.97
+   },
+   {
+    "faixa": "12h15",
+    "peso_kg": 0.614,
+    "mix": {
+     "nobre": 0.394,
+     "comum": 0.189,
+     "base": 0.284,
+     "salada": 0.133
+    },
+    "custo": 23.5,
+    "receita": 73.56
+   },
+   {
+    "faixa": "12h15",
+    "peso_kg": 0.489,
+    "mix": {
+     "nobre": 0.359,
+     "comum": 0.123,
+     "base": 0.38,
+     "salada": 0.138
+    },
+    "custo": 16.96,
+    "receita": 58.67
+   },
+   {
+    "faixa": "12h15",
+    "peso_kg": 0.49,
+    "mix": {
+     "nobre": 0.497,
+     "comum": 0.133,
+     "base": 0.171,
+     "salada": 0.199
+    },
+    "custo": 21.99,
+    "receita": 58.76
+   },
+   {
+    "faixa": "12h15",
+    "peso_kg": 0.499,
+    "mix": {
+     "nobre": 0.418,
+     "comum": 0.155,
+     "base": 0.288,
+     "salada": 0.139
+    },
+    "custo": 19.69,
+    "receita": 59.86
+   },
+   {
+    "faixa": "12h15",
+    "peso_kg": 0.534,
+    "mix": {
+     "nobre": 0.406,
+     "comum": 0.201,
+     "base": 0.231,
+     "salada": 0.161
+    },
+    "custo": 21.06,
+    "receita": 63.99
+   },
+   {
+    "faixa": "12h15",
+    "peso_kg": 0.55,
+    "mix": {
+     "nobre": 0.377,
+     "comum": 0.115,
+     "base": 0.342,
+     "salada": 0.166
+    },
+    "custo": 19.72,
+    "receita": 65.93
+   },
+   {
+    "faixa": "12h15",
+    "peso_kg": 0.355,
+    "mix": {
+     "nobre": 0.406,
+     "comum": 0.127,
+     "base": 0.334,
+     "salada": 0.133
+    },
+    "custo": 13.52,
+    "receita": 42.54
+   },
+   {
+    "faixa": "12h15",
+    "peso_kg": 0.434,
+    "mix": {
+     "nobre": 0.389,
+     "comum": 0.126,
+     "base": 0.385,
+     "salada": 0.099
+    },
+    "custo": 15.95,
+    "receita": 52.01
+   },
+   {
+    "faixa": "12h15",
+    "peso_kg": 0.451,
+    "mix": {
+     "nobre": 0.398,
+     "comum": 0.133,
+     "base": 0.245,
+     "salada": 0.224
+    },
+    "custo": 17.07,
+    "receita": 54.11
+   },
+   {
+    "faixa": "12h15",
+    "peso_kg": 0.307,
+    "mix": {
+     "nobre": 0.329,
+     "comum": 0.166,
+     "base": 0.311,
+     "salada": 0.195
+    },
+    "custo": 10.26,
+    "receita": 36.83
+   },
+   {
+    "faixa": "12h15",
+    "peso_kg": 0.381,
+    "mix": {
+     "nobre": 0.371,
+     "comum": 0.147,
+     "base": 0.257,
+     "salada": 0.225
+    },
+    "custo": 13.8,
+    "receita": 45.72
+   },
+   {
+    "faixa": "12h15",
+    "peso_kg": 0.488,
+    "mix": {
+     "nobre": 0.381,
+     "comum": 0.215,
+     "base": 0.229,
+     "salada": 0.175
+    },
+    "custo": 18.52,
+    "receita": 58.47
+   },
+   {
+    "faixa": "12h15",
+    "peso_kg": 0.581,
+    "mix": {
+     "nobre": 0.326,
+     "comum": 0.23,
+     "base": 0.236,
+     "salada": 0.208
+    },
+    "custo": 19.98,
+    "receita": 69.67
+   },
+   {
+    "faixa": "12h15",
+    "peso_kg": 0.525,
+    "mix": {
+     "nobre": 0.382,
+     "comum": 0.219,
+     "base": 0.263,
+     "salada": 0.136
+    },
+    "custo": 19.97,
+    "receita": 63.0
+   },
+   {
+    "faixa": "12h15",
+    "peso_kg": 0.376,
+    "mix": {
+     "nobre": 0.316,
+     "comum": 0.229,
+     "base": 0.245,
+     "salada": 0.21
+    },
+    "custo": 12.65,
+    "receita": 45.04
+   },
+   {
+    "faixa": "12h15",
+    "peso_kg": 0.408,
+    "mix": {
+     "nobre": 0.403,
+     "comum": 0.169,
+     "base": 0.269,
+     "salada": 0.159
+    },
+    "custo": 15.8,
+    "receita": 48.96
+   },
+   {
+    "faixa": "12h15",
+    "peso_kg": 0.567,
+    "mix": {
+     "nobre": 0.345,
+     "comum": 0.191,
+     "base": 0.249,
+     "salada": 0.215
+    },
+    "custo": 19.88,
+    "receita": 67.96
+   },
+   {
+    "faixa": "12h15",
+    "peso_kg": 0.37,
+    "mix": {
+     "nobre": 0.378,
+     "comum": 0.162,
+     "base": 0.261,
+     "salada": 0.199
+    },
+    "custo": 13.66,
+    "receita": 44.41
+   },
+   {
+    "faixa": "12h15",
+    "peso_kg": 0.389,
+    "mix": {
+     "nobre": 0.437,
+     "comum": 0.228,
+     "base": 0.223,
+     "salada": 0.113
+    },
+    "custo": 16.35,
+    "receita": 46.66
+   },
+   {
+    "faixa": "12h15",
+    "peso_kg": 0.558,
+    "mix": {
+     "nobre": 0.391,
+     "comum": 0.106,
+     "base": 0.294,
+     "salada": 0.209
+    },
+    "custo": 20.56,
+    "receita": 66.93
+   },
+   {
+    "faixa": "12h15",
+    "peso_kg": 0.544,
+    "mix": {
+     "nobre": 0.427,
+     "comum": 0.155,
+     "base": 0.284,
+     "salada": 0.133
+    },
+    "custo": 21.79,
+    "receita": 65.17
+   },
+   {
+    "faixa": "12h15",
+    "peso_kg": 0.598,
+    "mix": {
+     "nobre": 0.409,
+     "comum": 0.217,
+     "base": 0.248,
+     "salada": 0.125
+    },
+    "custo": 23.83,
+    "receita": 71.65
+   },
+   {
+    "faixa": "12h15",
+    "peso_kg": 0.745,
+    "mix": {
+     "nobre": 0.333,
+     "comum": 0.169,
+     "base": 0.312,
+     "salada": 0.186
+    },
+    "custo": 25.1,
+    "receita": 89.3
+   },
+   {
+    "faixa": "12h15",
+    "peso_kg": 0.549,
+    "mix": {
+     "nobre": 0.442,
+     "comum": 0.145,
+     "base": 0.181,
+     "salada": 0.232
+    },
+    "custo": 22.62,
+    "receita": 65.82
+   },
+   {
+    "faixa": "12h15",
+    "peso_kg": 0.289,
+    "mix": {
+     "nobre": 0.378,
+     "comum": 0.205,
+     "base": 0.315,
+     "salada": 0.102
+    },
+    "custo": 10.78,
+    "receita": 34.6
+   },
+   {
+    "faixa": "12h15",
+    "peso_kg": 0.413,
+    "mix": {
+     "nobre": 0.458,
+     "comum": 0.174,
+     "base": 0.221,
+     "salada": 0.148
+    },
+    "custo": 17.61,
+    "receita": 49.51
+   },
+   {
+    "faixa": "12h15",
+    "peso_kg": 0.459,
+    "mix": {
+     "nobre": 0.405,
+     "comum": 0.137,
+     "base": 0.269,
+     "salada": 0.189
+    },
+    "custo": 17.59,
+    "receita": 54.99
+   },
+   {
+    "faixa": "12h15",
+    "peso_kg": 0.559,
+    "mix": {
+     "nobre": 0.384,
+     "comum": 0.204,
+     "base": 0.293,
+     "salada": 0.12
+    },
+    "custo": 21.14,
+    "receita": 67.06
+   },
+   {
+    "faixa": "12h15",
+    "peso_kg": 0.521,
+    "mix": {
+     "nobre": 0.422,
+     "comum": 0.177,
+     "base": 0.216,
+     "salada": 0.185
+    },
+    "custo": 20.96,
+    "receita": 62.44
+   },
+   {
+    "faixa": "12h30",
+    "peso_kg": 0.465,
+    "mix": {
+     "nobre": 0.356,
+     "comum": 0.184,
+     "base": 0.284,
+     "salada": 0.175
+    },
+    "custo": 16.56,
+    "receita": 55.72
+   },
+   {
+    "faixa": "12h30",
+    "peso_kg": 0.408,
+    "mix": {
+     "nobre": 0.372,
+     "comum": 0.172,
+     "base": 0.281,
+     "salada": 0.176
+    },
+    "custo": 14.91,
+    "receita": 48.92
+   },
+   {
+    "faixa": "12h30",
+    "peso_kg": 0.591,
+    "mix": {
+     "nobre": 0.394,
+     "comum": 0.137,
+     "base": 0.315,
+     "salada": 0.153
+    },
+    "custo": 22.16,
+    "receita": 70.91
+   },
+   {
+    "faixa": "12h30",
+    "peso_kg": 0.514,
+    "mix": {
+     "nobre": 0.381,
+     "comum": 0.191,
+     "base": 0.265,
+     "salada": 0.163
+    },
+    "custo": 19.26,
+    "receita": 61.6
+   },
+   {
+    "faixa": "12h30",
+    "peso_kg": 0.43,
+    "mix": {
+     "nobre": 0.388,
+     "comum": 0.205,
+     "base": 0.22,
+     "salada": 0.186
+    },
+    "custo": 16.49,
+    "receita": 51.6
+   },
+   {
+    "faixa": "12h30",
+    "peso_kg": 0.37,
+    "mix": {
+     "nobre": 0.458,
+     "comum": 0.134,
+     "base": 0.261,
+     "salada": 0.147
+    },
+    "custo": 15.54,
+    "receita": 44.37
+   },
+   {
+    "faixa": "12h30",
+    "peso_kg": 0.679,
+    "mix": {
+     "nobre": 0.411,
+     "comum": 0.148,
+     "base": 0.175,
+     "salada": 0.265
+    },
+    "custo": 26.61,
+    "receita": 81.43
+   },
+   {
+    "faixa": "12h30",
+    "peso_kg": 0.367,
+    "mix": {
+     "nobre": 0.443,
+     "comum": 0.186,
+     "base": 0.267,
+     "salada": 0.104
+    },
+    "custo": 15.29,
+    "receita": 43.99
+   },
+   {
+    "faixa": "12h30",
+    "peso_kg": 0.448,
+    "mix": {
+     "nobre": 0.374,
+     "comum": 0.15,
+     "base": 0.301,
+     "salada": 0.176
+    },
+    "custo": 16.26,
+    "receita": 53.74
+   },
+   {
+    "faixa": "12h30",
+    "peso_kg": 0.553,
+    "mix": {
+     "nobre": 0.348,
+     "comum": 0.157,
+     "base": 0.261,
+     "salada": 0.234
+    },
+    "custo": 19.21,
+    "receita": 66.32
+   },
+   {
+    "faixa": "12h30",
+    "peso_kg": 0.392,
+    "mix": {
+     "nobre": 0.392,
+     "comum": 0.138,
+     "base": 0.21,
+     "salada": 0.26
+    },
+    "custo": 14.73,
+    "receita": 46.96
+   },
+   {
+    "faixa": "12h30",
+    "peso_kg": 0.531,
+    "mix": {
+     "nobre": 0.342,
+     "comum": 0.144,
+     "base": 0.249,
+     "salada": 0.265
+    },
+    "custo": 18.12,
+    "receita": 63.66
+   },
+   {
+    "faixa": "12h30",
+    "peso_kg": 0.408,
+    "mix": {
+     "nobre": 0.428,
+     "comum": 0.126,
+     "base": 0.199,
+     "salada": 0.247
+    },
+    "custo": 16.3,
+    "receita": 48.98
+   },
+   {
+    "faixa": "12h30",
+    "peso_kg": 0.634,
+    "mix": {
+     "nobre": 0.37,
+     "comum": 0.202,
+     "base": 0.211,
+     "salada": 0.217
+    },
+    "custo": 23.45,
+    "receita": 75.99
+   },
+   {
+    "faixa": "12h30",
+    "peso_kg": 0.422,
+    "mix": {
+     "nobre": 0.421,
+     "comum": 0.18,
+     "base": 0.275,
+     "salada": 0.125
+    },
+    "custo": 16.91,
+    "receita": 50.65
+   },
+   {
+    "faixa": "12h30",
+    "peso_kg": 0.357,
+    "mix": {
+     "nobre": 0.412,
+     "comum": 0.198,
+     "base": 0.222,
+     "salada": 0.169
+    },
+    "custo": 14.23,
+    "receita": 42.85
+   },
+   {
+    "faixa": "12h30",
+    "peso_kg": 0.609,
+    "mix": {
+     "nobre": 0.456,
+     "comum": 0.095,
+     "base": 0.255,
+     "salada": 0.194
+    },
+    "custo": 25.14,
+    "receita": 73.08
+   },
+   {
+    "faixa": "12h30",
+    "peso_kg": 0.558,
+    "mix": {
+     "nobre": 0.395,
+     "comum": 0.252,
+     "base": 0.221,
+     "salada": 0.132
+    },
+    "custo": 22.0,
+    "receita": 66.85
+   },
+   {
+    "faixa": "12h30",
+    "peso_kg": 0.484,
+    "mix": {
+     "nobre": 0.461,
+     "comum": 0.158,
+     "base": 0.274,
+     "salada": 0.106
+    },
+    "custo": 20.58,
+    "receita": 58.05
+   },
+   {
+    "faixa": "12h30",
+    "peso_kg": 0.438,
+    "mix": {
+     "nobre": 0.408,
+     "comum": 0.145,
+     "base": 0.278,
+     "salada": 0.169
+    },
+    "custo": 16.92,
+    "receita": 52.53
+   },
+   {
+    "faixa": "12h30",
+    "peso_kg": 0.47,
+    "mix": {
+     "nobre": 0.39,
+     "comum": 0.201,
+     "base": 0.276,
+     "salada": 0.134
+    },
+    "custo": 17.97,
+    "receita": 56.35
+   },
+   {
+    "faixa": "12h30",
+    "peso_kg": 0.436,
+    "mix": {
+     "nobre": 0.391,
+     "comum": 0.178,
+     "base": 0.286,
+     "salada": 0.145
+    },
+    "custo": 16.55,
+    "receita": 52.3
+   },
+   {
+    "faixa": "12h30",
+    "peso_kg": 0.416,
+    "mix": {
+     "nobre": 0.449,
+     "comum": 0.07,
+     "base": 0.352,
+     "salada": 0.13
+    },
+    "custo": 16.72,
+    "receita": 49.9
+   },
+   {
+    "faixa": "12h30",
+    "peso_kg": 0.44,
+    "mix": {
+     "nobre": 0.449,
+     "comum": 0.135,
+     "base": 0.254,
+     "salada": 0.161
+    },
+    "custo": 18.23,
+    "receita": 52.78
+   },
+   {
+    "faixa": "12h30",
+    "peso_kg": 0.483,
+    "mix": {
+     "nobre": 0.367,
+     "comum": 0.17,
+     "base": 0.242,
+     "salada": 0.221
+    },
+    "custo": 17.51,
+    "receita": 57.87
+   },
+   {
+    "faixa": "12h30",
+    "peso_kg": 0.384,
+    "mix": {
+     "nobre": 0.434,
+     "comum": 0.177,
+     "base": 0.177,
+     "salada": 0.212
+    },
+    "custo": 15.79,
+    "receita": 46.0
+   },
+   {
+    "faixa": "12h30",
+    "peso_kg": 0.573,
+    "mix": {
+     "nobre": 0.366,
+     "comum": 0.174,
+     "base": 0.225,
+     "salada": 0.235
+    },
+    "custo": 20.79,
+    "receita": 68.7
+   },
+   {
+    "faixa": "12h30",
+    "peso_kg": 0.369,
+    "mix": {
+     "nobre": 0.369,
+     "comum": 0.188,
+     "base": 0.251,
+     "salada": 0.192
+    },
+    "custo": 13.53,
+    "receita": 44.28
+   },
+   {
+    "faixa": "12h30",
+    "peso_kg": 0.435,
+    "mix": {
+     "nobre": 0.361,
+     "comum": 0.17,
+     "base": 0.299,
+     "salada": 0.171
+    },
+    "custo": 15.54,
+    "receita": 52.2
+   },
+   {
+    "faixa": "12h30",
+    "peso_kg": 0.492,
+    "mix": {
+     "nobre": 0.401,
+     "comum": 0.18,
+     "base": 0.241,
+     "salada": 0.178
+    },
+    "custo": 19.09,
+    "receita": 59.02
+   },
+   {
+    "faixa": "12h30",
+    "peso_kg": 0.48,
+    "mix": {
+     "nobre": 0.371,
+     "comum": 0.245,
+     "base": 0.177,
+     "salada": 0.207
+    },
+    "custo": 18.18,
+    "receita": 57.61
+   },
+   {
+    "faixa": "12h30",
+    "peso_kg": 0.389,
+    "mix": {
+     "nobre": 0.334,
+     "comum": 0.2,
+     "base": 0.309,
+     "salada": 0.158
+    },
+    "custo": 13.32,
+    "receita": 46.59
+   },
+   {
+    "faixa": "12h30",
+    "peso_kg": 0.473,
+    "mix": {
+     "nobre": 0.317,
+     "comum": 0.222,
+     "base": 0.332,
+     "salada": 0.13
+    },
+    "custo": 15.77,
+    "receita": 56.72
+   },
+   {
+    "faixa": "12h30",
+    "peso_kg": 0.466,
+    "mix": {
+     "nobre": 0.454,
+     "comum": 0.197,
+     "base": 0.222,
+     "salada": 0.127
+    },
+    "custo": 19.9,
+    "receita": 55.85
+   },
+   {
+    "faixa": "12h30",
+    "peso_kg": 0.377,
+    "mix": {
+     "nobre": 0.387,
+     "comum": 0.25,
+     "base": 0.183,
+     "salada": 0.18
+    },
+    "custo": 14.7,
+    "receita": 45.22
+   },
+   {
+    "faixa": "12h30",
+    "peso_kg": 0.38,
+    "mix": {
+     "nobre": 0.404,
+     "comum": 0.126,
+     "base": 0.334,
+     "salada": 0.136
+    },
+    "custo": 14.4,
+    "receita": 45.54
+   },
+   {
+    "faixa": "12h30",
+    "peso_kg": 0.309,
+    "mix": {
+     "nobre": 0.362,
+     "comum": 0.144,
+     "base": 0.274,
+     "salada": 0.22
+    },
+    "custo": 10.96,
+    "receita": 37.04
+   },
+   {
+    "faixa": "12h30",
+    "peso_kg": 0.316,
+    "mix": {
+     "nobre": 0.398,
+     "comum": 0.193,
+     "base": 0.216,
+     "salada": 0.192
+    },
+    "custo": 12.27,
+    "receita": 37.88
+   },
+   {
+    "faixa": "12h30",
+    "peso_kg": 0.562,
+    "mix": {
+     "nobre": 0.332,
+     "comum": 0.158,
+     "base": 0.285,
+     "salada": 0.225
+    },
+    "custo": 18.86,
+    "receita": 67.37
+   },
+   {
+    "faixa": "12h30",
+    "peso_kg": 0.415,
+    "mix": {
+     "nobre": 0.432,
+     "comum": 0.182,
+     "base": 0.205,
+     "salada": 0.182
+    },
+    "custo": 17.03,
+    "receita": 49.79
+   },
+   {
+    "faixa": "12h30",
+    "peso_kg": 0.493,
+    "mix": {
+     "nobre": 0.464,
+     "comum": 0.103,
+     "base": 0.29,
+     "salada": 0.143
+    },
+    "custo": 20.61,
+    "receita": 59.05
+   },
+   {
+    "faixa": "12h30",
+    "peso_kg": 0.41,
+    "mix": {
+     "nobre": 0.376,
+     "comum": 0.167,
+     "base": 0.331,
+     "salada": 0.126
+    },
+    "custo": 14.99,
+    "receita": 49.1
+   },
+   {
+    "faixa": "12h30",
+    "peso_kg": 0.649,
+    "mix": {
+     "nobre": 0.44,
+     "comum": 0.127,
+     "base": 0.294,
+     "salada": 0.138
+    },
+    "custo": 26.33,
+    "receita": 77.87
+   },
+   {
+    "faixa": "12h30",
+    "peso_kg": 0.269,
+    "mix": {
+     "nobre": 0.432,
+     "comum": 0.21,
+     "base": 0.201,
+     "salada": 0.157
+    },
+    "custo": 11.14,
+    "receita": 32.24
+   },
+   {
+    "faixa": "12h45",
+    "peso_kg": 0.399,
+    "mix": {
+     "nobre": 0.46,
+     "comum": 0.158,
+     "base": 0.281,
+     "salada": 0.101
+    },
+    "custo": 16.92,
+    "receita": 47.82
+   },
+   {
+    "faixa": "12h45",
+    "peso_kg": 0.493,
+    "mix": {
+     "nobre": 0.413,
+     "comum": 0.25,
+     "base": 0.229,
+     "salada": 0.107
+    },
+    "custo": 20.05,
+    "receita": 59.1
+   },
+   {
+    "faixa": "12h45",
+    "peso_kg": 0.372,
+    "mix": {
+     "nobre": 0.422,
+     "comum": 0.173,
+     "base": 0.213,
+     "salada": 0.192
+    },
+    "custo": 14.96,
+    "receita": 44.64
+   },
+   {
+    "faixa": "12h45",
+    "peso_kg": 0.458,
+    "mix": {
+     "nobre": 0.457,
+     "comum": 0.252,
+     "base": 0.134,
+     "salada": 0.157
+    },
+    "custo": 20.16,
+    "receita": 54.95
+   },
+   {
+    "faixa": "12h45",
+    "peso_kg": 0.473,
+    "mix": {
+     "nobre": 0.469,
+     "comum": 0.135,
+     "base": 0.224,
+     "salada": 0.172
+    },
+    "custo": 20.25,
+    "receita": 56.7
+   },
+   {
+    "faixa": "12h45",
+    "peso_kg": 0.507,
+    "mix": {
+     "nobre": 0.443,
+     "comum": 0.225,
+     "base": 0.213,
+     "salada": 0.119
+    },
+    "custo": 21.52,
+    "receita": 60.84
+   },
+   {
+    "faixa": "12h45",
+    "peso_kg": 0.654,
+    "mix": {
+     "nobre": 0.343,
+     "comum": 0.15,
+     "base": 0.328,
+     "salada": 0.179
+    },
+    "custo": 22.29,
+    "receita": 78.44
+   },
+   {
+    "faixa": "12h45",
+    "peso_kg": 0.52,
+    "mix": {
+     "nobre": 0.396,
+     "comum": 0.16,
+     "base": 0.253,
+     "salada": 0.192
+    },
+    "custo": 19.8,
+    "receita": 62.35
+   },
+   {
+    "faixa": "12h45",
+    "peso_kg": 0.528,
+    "mix": {
+     "nobre": 0.404,
+     "comum": 0.228,
+     "base": 0.226,
+     "salada": 0.142
+    },
+    "custo": 20.99,
+    "receita": 63.36
+   },
+   {
+    "faixa": "12h45",
+    "peso_kg": 0.455,
+    "mix": {
+     "nobre": 0.351,
+     "comum": 0.235,
+     "base": 0.305,
+     "salada": 0.109
+    },
+    "custo": 16.35,
+    "receita": 54.54
+   },
+   {
+    "faixa": "12h45",
+    "peso_kg": 0.517,
+    "mix": {
+     "nobre": 0.411,
+     "comum": 0.24,
+     "base": 0.231,
+     "salada": 0.118
+    },
+    "custo": 20.89,
+    "receita": 62.04
+   },
+   {
+    "faixa": "12h45",
+    "peso_kg": 0.598,
+    "mix": {
+     "nobre": 0.395,
+     "comum": 0.222,
+     "base": 0.18,
+     "salada": 0.204
+    },
+    "custo": 23.38,
+    "receita": 71.69
+   },
+   {
+    "faixa": "12h45",
+    "peso_kg": 0.61,
+    "mix": {
+     "nobre": 0.411,
+     "comum": 0.129,
+     "base": 0.234,
+     "salada": 0.226
+    },
+    "custo": 23.61,
+    "receita": 73.16
+   },
+   {
+    "faixa": "12h45",
+    "peso_kg": 0.465,
+    "mix": {
+     "nobre": 0.301,
+     "comum": 0.157,
+     "base": 0.255,
+     "salada": 0.288
+    },
+    "custo": 14.65,
+    "receita": 55.79
+   },
+   {
+    "faixa": "12h45",
+    "peso_kg": 0.66,
+    "mix": {
+     "nobre": 0.464,
+     "comum": 0.196,
+     "base": 0.209,
+     "salada": 0.131
+    },
+    "custo": 28.64,
+    "receita": 79.1
+   },
+   {
+    "faixa": "12h45",
+    "peso_kg": 0.501,
+    "mix": {
+     "nobre": 0.432,
+     "comum": 0.116,
+     "base": 0.274,
+     "salada": 0.179
+    },
+    "custo": 19.96,
+    "receita": 60.06
+   },
+   {
+    "faixa": "12h45",
+    "peso_kg": 0.561,
+    "mix": {
+     "nobre": 0.421,
+     "comum": 0.114,
+     "base": 0.222,
+     "salada": 0.243
+    },
+    "custo": 21.97,
+    "receita": 67.23
+   },
+   {
+    "faixa": "12h45",
+    "peso_kg": 0.488,
+    "mix": {
+     "nobre": 0.357,
+     "comum": 0.188,
+     "base": 0.307,
+     "salada": 0.149
+    },
+    "custo": 17.42,
+    "receita": 58.56
+   },
+   {
+    "faixa": "12h45",
+    "peso_kg": 0.397,
+    "mix": {
+     "nobre": 0.422,
+     "comum": 0.246,
+     "base": 0.218,
+     "salada": 0.115
+    },
+    "custo": 16.37,
+    "receita": 47.59
+   },
+   {
+    "faixa": "12h45",
+    "peso_kg": 0.377,
+    "mix": {
+     "nobre": 0.359,
+     "comum": 0.207,
+     "base": 0.251,
+     "salada": 0.183
+    },
+    "custo": 13.66,
+    "receita": 45.19
+   },
+   {
+    "faixa": "12h45",
+    "peso_kg": 0.562,
+    "mix": {
+     "nobre": 0.388,
+     "comum": 0.253,
+     "base": 0.205,
+     "salada": 0.155
+    },
+    "custo": 21.92,
+    "receita": 67.34
+   },
+   {
+    "faixa": "12h45",
+    "peso_kg": 0.526,
+    "mix": {
+     "nobre": 0.365,
+     "comum": 0.169,
+     "base": 0.298,
+     "salada": 0.168
+    },
+    "custo": 18.92,
+    "receita": 63.07
+   },
+   {
+    "faixa": "12h45",
+    "peso_kg": 0.255,
+    "mix": {
+     "nobre": 0.465,
+     "comum": 0.162,
+     "base": 0.205,
+     "salada": 0.168
+    },
+    "custo": 10.97,
+    "receita": 30.56
+   },
+   {
+    "faixa": "12h45",
+    "peso_kg": 0.538,
+    "mix": {
+     "nobre": 0.375,
+     "comum": 0.156,
+     "base": 0.289,
+     "salada": 0.18
+    },
+    "custo": 19.63,
+    "receita": 64.51
+   },
+   {
+    "faixa": "12h45",
+    "peso_kg": 0.36,
+    "mix": {
+     "nobre": 0.391,
+     "comum": 0.159,
+     "base": 0.252,
+     "salada": 0.198
+    },
+    "custo": 13.59,
+    "receita": 43.2
+   },
+   {
+    "faixa": "12h45",
+    "peso_kg": 0.493,
+    "mix": {
+     "nobre": 0.422,
+     "comum": 0.218,
+     "base": 0.252,
+     "salada": 0.109
+    },
+    "custo": 20.06,
+    "receita": 59.07
+   },
+   {
+    "faixa": "12h45",
+    "peso_kg": 0.331,
+    "mix": {
+     "nobre": 0.463,
+     "comum": 0.193,
+     "base": 0.214,
+     "salada": 0.13
+    },
+    "custo": 14.33,
+    "receita": 39.67
+   },
+   {
+    "faixa": "12h45",
+    "peso_kg": 0.578,
+    "mix": {
+     "nobre": 0.479,
+     "comum": 0.149,
+     "base": 0.191,
+     "salada": 0.181
+    },
+    "custo": 25.31,
+    "receita": 69.26
+   },
+   {
+    "faixa": "12h45",
+    "peso_kg": 0.535,
+    "mix": {
+     "nobre": 0.365,
+     "comum": 0.206,
+     "base": 0.225,
+     "salada": 0.204
+    },
+    "custo": 19.64,
+    "receita": 64.1
+   },
+   {
+    "faixa": "12h45",
+    "peso_kg": 0.543,
+    "mix": {
+     "nobre": 0.325,
+     "comum": 0.171,
+     "base": 0.283,
+     "salada": 0.222
+    },
+    "custo": 18.04,
+    "receita": 65.06
+   },
+   {
+    "faixa": "12h45",
+    "peso_kg": 0.535,
+    "mix": {
+     "nobre": 0.391,
+     "comum": 0.187,
+     "base": 0.285,
+     "salada": 0.137
+    },
+    "custo": 20.37,
+    "receita": 64.17
+   },
+   {
+    "faixa": "12h45",
+    "peso_kg": 0.329,
+    "mix": {
+     "nobre": 0.415,
+     "comum": 0.165,
+     "base": 0.321,
+     "salada": 0.1
+    },
+    "custo": 12.94,
+    "receita": 39.5
+   },
+   {
+    "faixa": "12h45",
+    "peso_kg": 0.525,
+    "mix": {
+     "nobre": 0.428,
+     "comum": 0.158,
+     "base": 0.288,
+     "salada": 0.126
+    },
+    "custo": 21.08,
+    "receita": 62.91
+   },
+   {
+    "faixa": "12h45",
+    "peso_kg": 0.608,
+    "mix": {
+     "nobre": 0.36,
+     "comum": 0.267,
+     "base": 0.25,
+     "salada": 0.123
+    },
+    "custo": 22.62,
+    "receita": 72.88
+   },
+   {
+    "faixa": "12h45",
+    "peso_kg": 0.475,
+    "mix": {
+     "nobre": 0.436,
+     "comum": 0.123,
+     "base": 0.283,
+     "salada": 0.158
+    },
+    "custo": 19.11,
+    "receita": 56.99
+   },
+   {
+    "faixa": "12h45",
+    "peso_kg": 0.676,
+    "mix": {
+     "nobre": 0.426,
+     "comum": 0.204,
+     "base": 0.205,
+     "salada": 0.165
+    },
+    "custo": 27.65,
+    "receita": 81.02
+   },
+   {
+    "faixa": "12h45",
+    "peso_kg": 0.524,
+    "mix": {
+     "nobre": 0.448,
+     "comum": 0.163,
+     "base": 0.22,
+     "salada": 0.168
+    },
+    "custo": 21.93,
+    "receita": 62.84
+   },
+   {
+    "faixa": "12h45",
+    "peso_kg": 0.546,
+    "mix": {
+     "nobre": 0.434,
+     "comum": 0.144,
+     "base": 0.228,
+     "salada": 0.194
+    },
+    "custo": 22.14,
+    "receita": 65.48
+   },
+   {
+    "faixa": "12h45",
+    "peso_kg": 0.605,
+    "mix": {
+     "nobre": 0.344,
+     "comum": 0.202,
+     "base": 0.299,
+     "salada": 0.154
+    },
+    "custo": 21.2,
+    "receita": 72.54
+   },
+   {
+    "faixa": "12h45",
+    "peso_kg": 0.848,
+    "mix": {
+     "nobre": 0.329,
+     "comum": 0.218,
+     "base": 0.284,
+     "salada": 0.169
+    },
+    "custo": 29.04,
+    "receita": 101.7
+   },
+   {
+    "faixa": "12h45",
+    "peso_kg": 0.597,
+    "mix": {
+     "nobre": 0.426,
+     "comum": 0.187,
+     "base": 0.253,
+     "salada": 0.134
+    },
+    "custo": 24.2,
+    "receita": 71.55
+   },
+   {
+    "faixa": "12h45",
+    "peso_kg": 0.456,
+    "mix": {
+     "nobre": 0.385,
+     "comum": 0.19,
+     "base": 0.225,
+     "salada": 0.2
+    },
+    "custo": 17.27,
+    "receita": 54.72
+   },
+   {
+    "faixa": "12h45",
+    "peso_kg": 0.54,
+    "mix": {
+     "nobre": 0.411,
+     "comum": 0.175,
+     "base": 0.323,
+     "salada": 0.092
+    },
+    "custo": 21.13,
+    "receita": 64.69
+   },
+   {
+    "faixa": "12h45",
+    "peso_kg": 0.46,
+    "mix": {
+     "nobre": 0.503,
+     "comum": 0.134,
+     "base": 0.142,
+     "salada": 0.222
+    },
+    "custo": 20.88,
+    "receita": 55.21
+   },
+   {
+    "faixa": "12h45",
+    "peso_kg": 0.346,
+    "mix": {
+     "nobre": 0.406,
+     "comum": 0.09,
+     "base": 0.312,
+     "salada": 0.192
+    },
+    "custo": 13.02,
+    "receita": 41.49
+   },
+   {
+    "faixa": "12h45",
+    "peso_kg": 0.428,
+    "mix": {
+     "nobre": 0.377,
+     "comum": 0.192,
+     "base": 0.232,
+     "salada": 0.199
+    },
+    "custo": 15.98,
+    "receita": 51.34
+   },
+   {
+    "faixa": "13h00",
+    "peso_kg": 0.414,
+    "mix": {
+     "nobre": 0.289,
+     "comum": 0.218,
+     "base": 0.335,
+     "salada": 0.158
+    },
+    "custo": 12.99,
+    "receita": 49.66
+   },
+   {
+    "faixa": "13h00",
+    "peso_kg": 0.495,
+    "mix": {
+     "nobre": 0.383,
+     "comum": 0.106,
+     "base": 0.265,
+     "salada": 0.246
+    },
+    "custo": 18.02,
+    "receita": 59.4
+   },
+   {
+    "faixa": "13h00",
+    "peso_kg": 0.526,
+    "mix": {
+     "nobre": 0.28,
+     "comum": 0.273,
+     "base": 0.261,
+     "salada": 0.187
+    },
+    "custo": 16.69,
+    "receita": 63.05
+   },
+   {
+    "faixa": "13h00",
+    "peso_kg": 0.479,
+    "mix": {
+     "nobre": 0.365,
+     "comum": 0.176,
+     "base": 0.251,
+     "salada": 0.208
+    },
+    "custo": 17.35,
+    "receita": 57.44
+   },
+   {
+    "faixa": "13h00",
+    "peso_kg": 0.599,
+    "mix": {
+     "nobre": 0.257,
+     "comum": 0.19,
+     "base": 0.332,
+     "salada": 0.221
+    },
+    "custo": 17.2,
+    "receita": 71.8
+   },
+   {
+    "faixa": "13h00",
+    "peso_kg": 0.444,
+    "mix": {
+     "nobre": 0.323,
+     "comum": 0.189,
+     "base": 0.268,
+     "salada": 0.22
+    },
+    "custo": 14.84,
+    "receita": 53.21
+   },
+   {
+    "faixa": "13h00",
+    "peso_kg": 0.403,
+    "mix": {
+     "nobre": 0.286,
+     "comum": 0.214,
+     "base": 0.366,
+     "salada": 0.134
+    },
+    "custo": 12.52,
+    "receita": 48.38
+   },
+   {
+    "faixa": "13h00",
+    "peso_kg": 0.449,
+    "mix": {
+     "nobre": 0.329,
+     "comum": 0.178,
+     "base": 0.254,
+     "salada": 0.239
+    },
+    "custo": 15.15,
+    "receita": 53.84
+   },
+   {
+    "faixa": "13h00",
+    "peso_kg": 0.477,
+    "mix": {
+     "nobre": 0.371,
+     "comum": 0.204,
+     "base": 0.208,
+     "salada": 0.216
+    },
+    "custo": 17.71,
+    "receita": 57.14
+   },
+   {
+    "faixa": "13h00",
+    "peso_kg": 0.616,
+    "mix": {
+     "nobre": 0.338,
+     "comum": 0.126,
+     "base": 0.229,
+     "salada": 0.307
+    },
+    "custo": 20.73,
+    "receita": 73.84
+   },
+   {
+    "faixa": "13h00",
+    "peso_kg": 0.492,
+    "mix": {
+     "nobre": 0.364,
+     "comum": 0.211,
+     "base": 0.305,
+     "salada": 0.121
+    },
+    "custo": 17.95,
+    "receita": 58.98
+   },
+   {
+    "faixa": "13h00",
+    "peso_kg": 0.546,
+    "mix": {
+     "nobre": 0.288,
+     "comum": 0.22,
+     "base": 0.374,
+     "salada": 0.119
+    },
+    "custo": 17.05,
+    "receita": 65.48
+   },
+   {
+    "faixa": "13h00",
+    "peso_kg": 0.525,
+    "mix": {
+     "nobre": 0.35,
+     "comum": 0.24,
+     "base": 0.252,
+     "salada": 0.158
+    },
+    "custo": 18.94,
+    "receita": 62.93
+   },
+   {
+    "faixa": "13h00",
+    "peso_kg": 0.581,
+    "mix": {
+     "nobre": 0.373,
+     "comum": 0.208,
+     "base": 0.239,
+     "salada": 0.18
+    },
+    "custo": 21.64,
+    "receita": 69.71
+   },
+   {
+    "faixa": "13h00",
+    "peso_kg": 0.501,
+    "mix": {
+     "nobre": 0.363,
+     "comum": 0.199,
+     "base": 0.178,
+     "salada": 0.259
+    },
+    "custo": 18.33,
+    "receita": 60.02
+   },
+   {
+    "faixa": "13h00",
+    "peso_kg": 0.503,
+    "mix": {
+     "nobre": 0.274,
+     "comum": 0.181,
+     "base": 0.233,
+     "salada": 0.312
+    },
+    "custo": 15.11,
+    "receita": 60.3
+   },
+   {
+    "faixa": "13h00",
+    "peso_kg": 0.381,
+    "mix": {
+     "nobre": 0.235,
+     "comum": 0.248,
+     "base": 0.394,
+     "salada": 0.123
+    },
+    "custo": 10.66,
+    "receita": 45.72
+   },
+   {
+    "faixa": "13h00",
+    "peso_kg": 0.559,
+    "mix": {
+     "nobre": 0.258,
+     "comum": 0.23,
+     "base": 0.235,
+     "salada": 0.277
+    },
+    "custo": 16.58,
+    "receita": 67.07
+   },
+   {
+    "faixa": "13h00",
+    "peso_kg": 0.396,
+    "mix": {
+     "nobre": 0.253,
+     "comum": 0.166,
+     "base": 0.333,
+     "salada": 0.248
+    },
+    "custo": 11.13,
+    "receita": 47.44
+   },
+   {
+    "faixa": "13h00",
+    "peso_kg": 0.566,
+    "mix": {
+     "nobre": 0.153,
+     "comum": 0.264,
+     "base": 0.354,
+     "salada": 0.229
+    },
+    "custo": 12.83,
+    "receita": 67.9
+   },
+   {
+    "faixa": "13h00",
+    "peso_kg": 0.549,
+    "mix": {
+     "nobre": 0.326,
+     "comum": 0.179,
+     "base": 0.284,
+     "salada": 0.212
+    },
+    "custo": 18.37,
+    "receita": 65.84
+   },
+   {
+    "faixa": "13h00",
+    "peso_kg": 0.52,
+    "mix": {
+     "nobre": 0.405,
+     "comum": 0.197,
+     "base": 0.142,
+     "salada": 0.256
+    },
+    "custo": 20.56,
+    "receita": 62.32
+   },
+   {
+    "faixa": "13h00",
+    "peso_kg": 0.457,
+    "mix": {
+     "nobre": 0.333,
+     "comum": 0.198,
+     "base": 0.261,
+     "salada": 0.208
+    },
+    "custo": 15.69,
+    "receita": 54.83
+   },
+   {
+    "faixa": "13h00",
+    "peso_kg": 0.36,
+    "mix": {
+     "nobre": 0.254,
+     "comum": 0.231,
+     "base": 0.338,
+     "salada": 0.177
+    },
+    "custo": 10.47,
+    "receita": 43.11
+   },
+   {
+    "faixa": "13h00",
+    "peso_kg": 0.428,
+    "mix": {
+     "nobre": 0.398,
+     "comum": 0.248,
+     "base": 0.167,
+     "salada": 0.187
+    },
+    "custo": 17.04,
+    "receita": 51.36
+   },
+   {
+    "faixa": "13h00",
+    "peso_kg": 0.537,
+    "mix": {
+     "nobre": 0.408,
+     "comum": 0.108,
+     "base": 0.26,
+     "salada": 0.224
+    },
+    "custo": 20.47,
+    "receita": 64.4
+   },
+   {
+    "faixa": "13h00",
+    "peso_kg": 0.472,
+    "mix": {
+     "nobre": 0.335,
+     "comum": 0.125,
+     "base": 0.311,
+     "salada": 0.229
+    },
+    "custo": 15.7,
+    "receita": 56.62
+   },
+   {
+    "faixa": "13h00",
+    "peso_kg": 0.449,
+    "mix": {
+     "nobre": 0.303,
+     "comum": 0.152,
+     "base": 0.284,
+     "salada": 0.261
+    },
+    "custo": 14.13,
+    "receita": 53.84
+   },
+   {
+    "faixa": "13h00",
+    "peso_kg": 0.678,
+    "mix": {
+     "nobre": 0.372,
+     "comum": 0.231,
+     "base": 0.258,
+     "salada": 0.138
+    },
+    "custo": 25.41,
+    "receita": 81.25
+   },
+   {
+    "faixa": "13h00",
+    "peso_kg": 0.509,
+    "mix": {
+     "nobre": 0.334,
+     "comum": 0.201,
+     "base": 0.252,
+     "salada": 0.214
+    },
+    "custo": 17.51,
+    "receita": 61.01
+   },
+   {
+    "faixa": "13h00",
+    "peso_kg": 0.503,
+    "mix": {
+     "nobre": 0.362,
+     "comum": 0.261,
+     "base": 0.25,
+     "salada": 0.127
+    },
+    "custo": 18.74,
+    "receita": 60.32
+   },
+   {
+    "faixa": "13h00",
+    "peso_kg": 0.464,
+    "mix": {
+     "nobre": 0.35,
+     "comum": 0.206,
+     "base": 0.245,
+     "salada": 0.198
+    },
+    "custo": 16.56,
+    "receita": 55.69
+   },
+   {
+    "faixa": "13h00",
+    "peso_kg": 0.513,
+    "mix": {
+     "nobre": 0.395,
+     "comum": 0.134,
+     "base": 0.325,
+     "salada": 0.146
+    },
+    "custo": 19.21,
+    "receita": 61.48
+   },
+   {
+    "faixa": "13h00",
+    "peso_kg": 0.42,
+    "mix": {
+     "nobre": 0.284,
+     "comum": 0.207,
+     "base": 0.275,
+     "salada": 0.235
+    },
+    "custo": 13.0,
+    "receita": 50.32
+   },
+   {
+    "faixa": "13h00",
+    "peso_kg": 0.368,
+    "mix": {
+     "nobre": 0.342,
+     "comum": 0.181,
+     "base": 0.228,
+     "salada": 0.249
+    },
+    "custo": 12.77,
+    "receita": 44.09
+   },
+   {
+    "faixa": "13h00",
+    "peso_kg": 0.643,
+    "mix": {
+     "nobre": 0.341,
+     "comum": 0.196,
+     "base": 0.25,
+     "salada": 0.213
+    },
+    "custo": 22.39,
+    "receita": 77.1
+   },
+   {
+    "faixa": "13h00",
+    "peso_kg": 0.453,
+    "mix": {
+     "nobre": 0.349,
+     "comum": 0.191,
+     "base": 0.26,
+     "salada": 0.2
+    },
+    "custo": 16.0,
+    "receita": 54.34
+   },
+   {
+    "faixa": "13h00",
+    "peso_kg": 0.663,
+    "mix": {
+     "nobre": 0.264,
+     "comum": 0.215,
+     "base": 0.327,
+     "salada": 0.194
+    },
+    "custo": 19.63,
+    "receita": 79.54
+   },
+   {
+    "faixa": "13h00",
+    "peso_kg": 0.537,
+    "mix": {
+     "nobre": 0.311,
+     "comum": 0.219,
+     "base": 0.203,
+     "salada": 0.267
+    },
+    "custo": 17.84,
+    "receita": 64.41
+   },
+   {
+    "faixa": "13h00",
+    "peso_kg": 0.409,
+    "mix": {
+     "nobre": 0.319,
+     "comum": 0.208,
+     "base": 0.198,
+     "salada": 0.275
+    },
+    "custo": 13.76,
+    "receita": 49.06
+   },
+   {
+    "faixa": "13h00",
+    "peso_kg": 0.624,
+    "mix": {
+     "nobre": 0.323,
+     "comum": 0.185,
+     "base": 0.354,
+     "salada": 0.137
+    },
+    "custo": 20.71,
+    "receita": 74.81
+   },
+   {
+    "faixa": "13h00",
+    "peso_kg": 0.362,
+    "mix": {
+     "nobre": 0.335,
+     "comum": 0.198,
+     "base": 0.31,
+     "salada": 0.157
+    },
+    "custo": 12.43,
+    "receita": 43.44
+   },
+   {
+    "faixa": "13h15",
+    "peso_kg": 0.567,
+    "mix": {
+     "nobre": 0.329,
+     "comum": 0.157,
+     "base": 0.31,
+     "salada": 0.204
+    },
+    "custo": 18.85,
+    "receita": 67.93
+   },
+   {
+    "faixa": "13h15",
+    "peso_kg": 0.465,
+    "mix": {
+     "nobre": 0.263,
+     "comum": 0.194,
+     "base": 0.262,
+     "salada": 0.282
+    },
+    "custo": 13.65,
+    "receita": 55.72
+   },
+   {
+    "faixa": "13h15",
+    "peso_kg": 0.556,
+    "mix": {
+     "nobre": 0.272,
+     "comum": 0.269,
+     "base": 0.252,
+     "salada": 0.207
+    },
+    "custo": 17.33,
+    "receita": 66.72
+   },
+   {
+    "faixa": "13h15",
+    "peso_kg": 0.59,
+    "mix": {
+     "nobre": 0.27,
+     "comum": 0.213,
+     "base": 0.281,
+     "salada": 0.236
+    },
+    "custo": 17.75,
+    "receita": 70.7
+   },
+   {
+    "faixa": "13h15",
+    "peso_kg": 0.482,
+    "mix": {
+     "nobre": 0.285,
+     "comum": 0.299,
+     "base": 0.206,
+     "salada": 0.211
+    },
+    "custo": 15.71,
+    "receita": 57.75
+   },
+   {
+    "faixa": "13h15",
+    "peso_kg": 0.442,
+    "mix": {
+     "nobre": 0.328,
+     "comum": 0.137,
+     "base": 0.277,
+     "salada": 0.257
+    },
+    "custo": 14.6,
+    "receita": 53.0
+   },
+   {
+    "faixa": "13h15",
+    "peso_kg": 0.487,
+    "mix": {
+     "nobre": 0.355,
+     "comum": 0.259,
+     "base": 0.209,
+     "salada": 0.177
+    },
+    "custo": 17.94,
+    "receita": 58.38
+   },
+   {
+    "faixa": "13h15",
+    "peso_kg": 0.644,
+    "mix": {
+     "nobre": 0.265,
+     "comum": 0.278,
+     "base": 0.293,
+     "salada": 0.164
+    },
+    "custo": 19.8,
+    "receita": 77.27
+   },
+   {
+    "faixa": "13h15",
+    "peso_kg": 0.453,
+    "mix": {
+     "nobre": 0.336,
+     "comum": 0.202,
+     "base": 0.267,
+     "salada": 0.195
+    },
+    "custo": 15.66,
+    "receita": 54.34
+   },
+   {
+    "faixa": "13h15",
+    "peso_kg": 0.621,
+    "mix": {
+     "nobre": 0.253,
+     "comum": 0.219,
+     "base": 0.282,
+     "salada": 0.247
+    },
+    "custo": 18.0,
+    "receita": 74.41
+   },
+   {
+    "faixa": "13h15",
+    "peso_kg": 0.433,
+    "mix": {
+     "nobre": 0.333,
+     "comum": 0.18,
+     "base": 0.255,
+     "salada": 0.232
+    },
+    "custo": 14.74,
+    "receita": 51.96
+   },
+   {
+    "faixa": "13h15",
+    "peso_kg": 0.328,
+    "mix": {
+     "nobre": 0.256,
+     "comum": 0.217,
+     "base": 0.257,
+     "salada": 0.27
+    },
+    "custo": 9.61,
+    "receita": 39.34
+   },
+   {
+    "faixa": "13h15",
+    "peso_kg": 0.588,
+    "mix": {
+     "nobre": 0.278,
+     "comum": 0.165,
+     "base": 0.33,
+     "salada": 0.227
+    },
+    "custo": 17.55,
+    "receita": 70.54
+   },
+   {
+    "faixa": "13h15",
+    "peso_kg": 0.502,
+    "mix": {
+     "nobre": 0.294,
+     "comum": 0.249,
+     "base": 0.253,
+     "salada": 0.203
+    },
+    "custo": 16.27,
+    "receita": 60.16
+   },
+   {
+    "faixa": "13h15",
+    "peso_kg": 0.319,
+    "mix": {
+     "nobre": 0.253,
+     "comum": 0.277,
+     "base": 0.247,
+     "salada": 0.223
+    },
+    "custo": 9.58,
+    "receita": 38.31
+   },
+   {
+    "faixa": "13h15",
+    "peso_kg": 0.435,
+    "mix": {
+     "nobre": 0.294,
+     "comum": 0.273,
+     "base": 0.317,
+     "salada": 0.116
+    },
+    "custo": 14.17,
+    "receita": 52.13
+   },
+   {
+    "faixa": "13h15",
+    "peso_kg": 0.401,
+    "mix": {
+     "nobre": 0.359,
+     "comum": 0.141,
+     "base": 0.269,
+     "salada": 0.231
+    },
+    "custo": 14.13,
+    "receita": 48.1
+   },
+   {
+    "faixa": "13h15",
+    "peso_kg": 0.538,
+    "mix": {
+     "nobre": 0.288,
+     "comum": 0.199,
+     "base": 0.366,
+     "salada": 0.147
+    },
+    "custo": 16.64,
+    "receita": 64.55
+   },
+   {
+    "faixa": "13h15",
+    "peso_kg": 0.391,
+    "mix": {
+     "nobre": 0.321,
+     "comum": 0.162,
+     "base": 0.289,
+     "salada": 0.228
+    },
+    "custo": 12.86,
+    "receita": 46.86
+   },
+   {
+    "faixa": "13h15",
+    "peso_kg": 0.591,
+    "mix": {
+     "nobre": 0.257,
+     "comum": 0.147,
+     "base": 0.292,
+     "salada": 0.303
+    },
+    "custo": 16.7,
+    "receita": 70.9
+   },
+   {
+    "faixa": "13h15",
+    "peso_kg": 0.524,
+    "mix": {
+     "nobre": 0.254,
+     "comum": 0.231,
+     "base": 0.264,
+     "salada": 0.252
+    },
+    "custo": 15.36,
+    "receita": 62.88
+   },
+   {
+    "faixa": "13h15",
+    "peso_kg": 0.472,
+    "mix": {
+     "nobre": 0.35,
+     "comum": 0.164,
+     "base": 0.253,
+     "salada": 0.233
+    },
+    "custo": 16.53,
+    "receita": 56.63
+   },
+   {
+    "faixa": "13h15",
+    "peso_kg": 0.252,
+    "mix": {
+     "nobre": 0.332,
+     "comum": 0.231,
+     "base": 0.212,
+     "salada": 0.225
+    },
+    "custo": 8.8,
+    "receita": 30.27
+   },
+   {
+    "faixa": "13h15",
+    "peso_kg": 0.499,
+    "mix": {
+     "nobre": 0.327,
+     "comum": 0.242,
+     "base": 0.209,
+     "salada": 0.223
+    },
+    "custo": 17.29,
+    "receita": 59.8
+   },
+   {
+    "faixa": "13h15",
+    "peso_kg": 0.342,
+    "mix": {
+     "nobre": 0.387,
+     "comum": 0.215,
+     "base": 0.238,
+     "salada": 0.159
+    },
+    "custo": 13.13,
+    "receita": 41.06
+   },
+   {
+    "faixa": "13h15",
+    "peso_kg": 0.735,
+    "mix": {
+     "nobre": 0.358,
+     "comum": 0.167,
+     "base": 0.289,
+     "salada": 0.186
+    },
+    "custo": 26.1,
+    "receita": 88.1
+   },
+   {
+    "faixa": "13h15",
+    "peso_kg": 0.464,
+    "mix": {
+     "nobre": 0.348,
+     "comum": 0.203,
+     "base": 0.312,
+     "salada": 0.136
+    },
+    "custo": 16.37,
+    "receita": 55.61
+   },
+   {
+    "faixa": "13h15",
+    "peso_kg": 0.42,
+    "mix": {
+     "nobre": 0.344,
+     "comum": 0.224,
+     "base": 0.263,
+     "salada": 0.169
+    },
+    "custo": 14.87,
+    "receita": 50.35
+   },
+   {
+    "faixa": "13h15",
+    "peso_kg": 0.601,
+    "mix": {
+     "nobre": 0.303,
+     "comum": 0.248,
+     "base": 0.294,
+     "salada": 0.156
+    },
+    "custo": 19.75,
+    "receita": 72.07
+   },
+   {
+    "faixa": "13h15",
+    "peso_kg": 0.451,
+    "mix": {
+     "nobre": 0.291,
+     "comum": 0.164,
+     "base": 0.317,
+     "salada": 0.229
+    },
+    "custo": 13.86,
+    "receita": 54.09
+   },
+   {
+    "faixa": "13h15",
+    "peso_kg": 0.486,
+    "mix": {
+     "nobre": 0.305,
+     "comum": 0.18,
+     "base": 0.265,
+     "salada": 0.25
+    },
+    "custo": 15.58,
+    "receita": 58.28
+   },
+   {
+    "faixa": "13h15",
+    "peso_kg": 0.545,
+    "mix": {
+     "nobre": 0.281,
+     "comum": 0.317,
+     "base": 0.25,
+     "salada": 0.151
+    },
+    "custo": 17.72,
+    "receita": 65.29
+   },
+   {
+    "faixa": "13h15",
+    "peso_kg": 0.576,
+    "mix": {
+     "nobre": 0.405,
+     "comum": 0.165,
+     "base": 0.272,
+     "salada": 0.158
+    },
+    "custo": 22.32,
+    "receita": 69.08
+   },
+   {
+    "faixa": "13h15",
+    "peso_kg": 0.31,
+    "mix": {
+     "nobre": 0.277,
+     "comum": 0.207,
+     "base": 0.296,
+     "salada": 0.219
+    },
+    "custo": 9.46,
+    "receita": 37.19
+   },
+   {
+    "faixa": "13h30",
+    "peso_kg": 0.46,
+    "mix": {
+     "nobre": 0.172,
+     "comum": 0.22,
+     "base": 0.409,
+     "salada": 0.199
+    },
+    "custo": 10.66,
+    "receita": 55.18
+   },
+   {
+    "faixa": "13h30",
+    "peso_kg": 0.42,
+    "mix": {
+     "nobre": 0.228,
+     "comum": 0.233,
+     "base": 0.338,
+     "salada": 0.2
+    },
+    "custo": 11.51,
+    "receita": 50.37
+   },
+   {
+    "faixa": "13h30",
+    "peso_kg": 0.439,
+    "mix": {
+     "nobre": 0.143,
+     "comum": 0.227,
+     "base": 0.403,
+     "salada": 0.227
+    },
+    "custo": 9.33,
+    "receita": 52.64
+   },
+   {
+    "faixa": "13h30",
+    "peso_kg": 0.544,
+    "mix": {
+     "nobre": 0.2,
+     "comum": 0.185,
+     "base": 0.437,
+     "salada": 0.179
+    },
+    "custo": 13.29,
+    "receita": 65.2
+   },
+   {
+    "faixa": "13h30",
+    "peso_kg": 0.42,
+    "mix": {
+     "nobre": 0.205,
+     "comum": 0.146,
+     "base": 0.433,
+     "salada": 0.216
+    },
+    "custo": 10.19,
+    "receita": 50.37
+   },
+   {
+    "faixa": "13h30",
+    "peso_kg": 0.497,
+    "mix": {
+     "nobre": 0.138,
+     "comum": 0.201,
+     "base": 0.415,
+     "salada": 0.246
+    },
+    "custo": 10.17,
+    "receita": 59.53
+   },
+   {
+    "faixa": "13h30",
+    "peso_kg": 0.355,
+    "mix": {
+     "nobre": 0.16,
+     "comum": 0.194,
+     "base": 0.371,
+     "salada": 0.275
+    },
+    "custo": 7.81,
+    "receita": 42.55
+   },
+   {
+    "faixa": "13h30",
+    "peso_kg": 0.536,
+    "mix": {
+     "nobre": 0.166,
+     "comum": 0.089,
+     "base": 0.46,
+     "salada": 0.285
+    },
+    "custo": 11.06,
+    "receita": 64.23
+   },
+   {
+    "faixa": "13h30",
+    "peso_kg": 0.404,
+    "mix": {
+     "nobre": 0.194,
+     "comum": 0.202,
+     "base": 0.387,
+     "salada": 0.217
+    },
+    "custo": 9.86,
+    "receita": 48.39
+   },
+   {
+    "faixa": "13h30",
+    "peso_kg": 0.496,
+    "mix": {
+     "nobre": 0.212,
+     "comum": 0.17,
+     "base": 0.425,
+     "salada": 0.194
+    },
+    "custo": 12.45,
+    "receita": 59.5
+   },
+   {
+    "faixa": "13h30",
+    "peso_kg": 0.65,
+    "mix": {
+     "nobre": 0.274,
+     "comum": 0.199,
+     "base": 0.301,
+     "salada": 0.225
+    },
+    "custo": 19.61,
+    "receita": 77.94
+   },
+   {
+    "faixa": "13h30",
+    "peso_kg": 0.422,
+    "mix": {
+     "nobre": 0.158,
+     "comum": 0.198,
+     "base": 0.437,
+     "salada": 0.206
+    },
+    "custo": 9.2,
+    "receita": 50.6
+   },
+   {
+    "faixa": "13h30",
+    "peso_kg": 0.559,
+    "mix": {
+     "nobre": 0.173,
+     "comum": 0.259,
+     "base": 0.344,
+     "salada": 0.224
+    },
+    "custo": 13.39,
+    "receita": 67.0
+   },
+   {
+    "faixa": "13h30",
+    "peso_kg": 0.534,
+    "mix": {
+     "nobre": 0.329,
+     "comum": 0.216,
+     "base": 0.296,
+     "salada": 0.159
+    },
+    "custo": 18.27,
+    "receita": 64.03
+   },
+   {
+    "faixa": "13h30",
+    "peso_kg": 0.505,
+    "mix": {
+     "nobre": 0.136,
+     "comum": 0.133,
+     "base": 0.49,
+     "salada": 0.241
+    },
+    "custo": 9.66,
+    "receita": 60.5
+   },
+   {
+    "faixa": "13h30",
+    "peso_kg": 0.574,
+    "mix": {
+     "nobre": 0.17,
+     "comum": 0.232,
+     "base": 0.371,
+     "salada": 0.227
+    },
+    "custo": 13.37,
+    "receita": 68.82
+   },
+   {
+    "faixa": "13h30",
+    "peso_kg": 0.512,
+    "mix": {
+     "nobre": 0.194,
+     "comum": 0.229,
+     "base": 0.396,
+     "salada": 0.181
+    },
+    "custo": 12.7,
+    "receita": 61.35
+   },
+   {
+    "faixa": "13h30",
+    "peso_kg": 0.509,
+    "mix": {
+     "nobre": 0.207,
+     "comum": 0.132,
+     "base": 0.441,
+     "salada": 0.219
+    },
+    "custo": 12.31,
+    "receita": 61.01
+   },
+   {
+    "faixa": "13h30",
+    "peso_kg": 0.454,
+    "mix": {
+     "nobre": 0.164,
+     "comum": 0.191,
+     "base": 0.429,
+     "salada": 0.216
+    },
+    "custo": 10.03,
+    "receita": 54.43
+   },
+   {
+    "faixa": "13h30",
+    "peso_kg": 0.373,
+    "mix": {
+     "nobre": 0.234,
+     "comum": 0.194,
+     "base": 0.396,
+     "salada": 0.175
+    },
+    "custo": 10.1,
+    "receita": 44.76
+   },
+   {
+    "faixa": "13h30",
+    "peso_kg": 0.486,
+    "mix": {
+     "nobre": 0.17,
+     "comum": 0.191,
+     "base": 0.426,
+     "salada": 0.213
+    },
+    "custo": 10.94,
+    "receita": 58.31
+   },
+   {
+    "faixa": "13h30",
+    "peso_kg": 0.603,
+    "mix": {
+     "nobre": 0.249,
+     "comum": 0.245,
+     "base": 0.375,
+     "salada": 0.13
+    },
+    "custo": 17.44,
+    "receita": 72.3
+   },
+   {
+    "faixa": "13h30",
+    "peso_kg": 0.364,
+    "mix": {
+     "nobre": 0.278,
+     "comum": 0.202,
+     "base": 0.361,
+     "salada": 0.16
+    },
+    "custo": 11.03,
+    "receita": 43.68
+   },
+   {
+    "faixa": "13h30",
+    "peso_kg": 0.52,
+    "mix": {
+     "nobre": 0.248,
+     "comum": 0.2,
+     "base": 0.294,
+     "salada": 0.258
+    },
+    "custo": 14.75,
+    "receita": 62.37
+   },
+   {
+    "faixa": "13h30",
+    "peso_kg": 0.559,
+    "mix": {
+     "nobre": 0.241,
+     "comum": 0.138,
+     "base": 0.39,
+     "salada": 0.231
+    },
+    "custo": 14.94,
+    "receita": 67.08
+   },
+   {
+    "faixa": "13h30",
+    "peso_kg": 0.393,
+    "mix": {
+     "nobre": 0.178,
+     "comum": 0.175,
+     "base": 0.405,
+     "salada": 0.242
+    },
+    "custo": 8.98,
+    "receita": 47.07
+   },
+   {
+    "faixa": "13h45",
+    "peso_kg": 0.415,
+    "mix": {
+     "nobre": 0.182,
+     "comum": 0.227,
+     "base": 0.359,
+     "salada": 0.232
+    },
+    "custo": 9.99,
+    "receita": 49.73
+   },
+   {
+    "faixa": "13h45",
+    "peso_kg": 0.432,
+    "mix": {
+     "nobre": 0.274,
+     "comum": 0.294,
+     "base": 0.248,
+     "salada": 0.184
+    },
+    "custo": 13.71,
+    "receita": 51.83
+   },
+   {
+    "faixa": "13h45",
+    "peso_kg": 0.391,
+    "mix": {
+     "nobre": 0.247,
+     "comum": 0.153,
+     "base": 0.362,
+     "salada": 0.238
+    },
+    "custo": 10.73,
+    "receita": 46.88
+   },
+   {
+    "faixa": "13h45",
+    "peso_kg": 0.428,
+    "mix": {
+     "nobre": 0.189,
+     "comum": 0.193,
+     "base": 0.371,
+     "salada": 0.247
+    },
+    "custo": 10.26,
+    "receita": 51.27
+   },
+   {
+    "faixa": "13h45",
+    "peso_kg": 0.374,
+    "mix": {
+     "nobre": 0.144,
+     "comum": 0.202,
+     "base": 0.398,
+     "salada": 0.256
+    },
+    "custo": 7.86,
+    "receita": 44.86
+   },
+   {
+    "faixa": "13h45",
+    "peso_kg": 0.593,
+    "mix": {
+     "nobre": 0.222,
+     "comum": 0.23,
+     "base": 0.519,
+     "salada": 0.029
+    },
+    "custo": 15.7,
+    "receita": 71.09
+   },
+   {
+    "faixa": "13h45",
+    "peso_kg": 0.528,
+    "mix": {
+     "nobre": 0.208,
+     "comum": 0.213,
+     "base": 0.401,
+     "salada": 0.177
+    },
+    "custo": 13.5,
+    "receita": 63.31
+   },
+   {
+    "faixa": "13h45",
+    "peso_kg": 0.402,
+    "mix": {
+     "nobre": 0.205,
+     "comum": 0.204,
+     "base": 0.358,
+     "salada": 0.232
+    },
+    "custo": 10.16,
+    "receita": 48.18
+   },
+   {
+    "faixa": "13h45",
+    "peso_kg": 0.49,
+    "mix": {
+     "nobre": 0.154,
+     "comum": 0.298,
+     "base": 0.425,
+     "salada": 0.124
+    },
+    "custo": 11.29,
+    "receita": 58.73
+   },
+   {
+    "faixa": "13h45",
+    "peso_kg": 0.564,
+    "mix": {
+     "nobre": 0.227,
+     "comum": 0.229,
+     "base": 0.331,
+     "salada": 0.214
+    },
+    "custo": 15.37,
+    "receita": 67.57
+   },
+   {
+    "faixa": "13h45",
+    "peso_kg": 0.428,
+    "mix": {
+     "nobre": 0.247,
+     "comum": 0.27,
+     "base": 0.27,
+     "salada": 0.213
+    },
+    "custo": 12.58,
+    "receita": 51.27
+   },
+   {
+    "faixa": "13h45",
+    "peso_kg": 0.584,
+    "mix": {
+     "nobre": 0.228,
+     "comum": 0.219,
+     "base": 0.386,
+     "salada": 0.167
+    },
+    "custo": 15.78,
+    "receita": 70.02
+   },
+   {
+    "faixa": "13h45",
+    "peso_kg": 0.581,
+    "mix": {
+     "nobre": 0.194,
+     "comum": 0.197,
+     "base": 0.415,
+     "salada": 0.194
+    },
+    "custo": 14.14,
+    "receita": 69.72
+   },
+   {
+    "faixa": "13h45",
+    "peso_kg": 0.427,
+    "mix": {
+     "nobre": 0.259,
+     "comum": 0.2,
+     "base": 0.33,
+     "salada": 0.211
+    },
+    "custo": 12.42,
+    "receita": 51.23
+   },
+   {
+    "faixa": "13h45",
+    "peso_kg": 0.632,
+    "mix": {
+     "nobre": 0.271,
+     "comum": 0.202,
+     "base": 0.381,
+     "salada": 0.147
+    },
+    "custo": 18.79,
+    "receita": 75.76
+   },
+   {
+    "faixa": "13h45",
+    "peso_kg": 0.394,
+    "mix": {
+     "nobre": 0.175,
+     "comum": 0.234,
+     "base": 0.353,
+     "salada": 0.238
+    },
+    "custo": 9.34,
+    "receita": 47.21
+   },
+   {
+    "faixa": "13h45",
+    "peso_kg": 0.474,
+    "mix": {
+     "nobre": 0.206,
+     "comum": 0.282,
+     "base": 0.407,
+     "salada": 0.106
+    },
+    "custo": 12.5,
+    "receita": 56.79
+   },
+   {
+    "faixa": "13h45",
+    "peso_kg": 0.331,
+    "mix": {
+     "nobre": 0.259,
+     "comum": 0.192,
+     "base": 0.408,
+     "salada": 0.14
+    },
+    "custo": 9.53,
+    "receita": 39.74
+   },
+   {
+    "faixa": "14h00",
+    "peso_kg": 0.473,
+    "mix": {
+     "nobre": 0.233,
+     "comum": 0.206,
+     "base": 0.383,
+     "salada": 0.179
+    },
+    "custo": 12.84,
+    "receita": 56.66
+   },
+   {
+    "faixa": "14h00",
+    "peso_kg": 0.416,
+    "mix": {
+     "nobre": 0.29,
+     "comum": 0.147,
+     "base": 0.375,
+     "salada": 0.188
+    },
+    "custo": 12.58,
+    "receita": 49.84
+   },
+   {
+    "faixa": "14h00",
+    "peso_kg": 0.452,
+    "mix": {
+     "nobre": 0.147,
+     "comum": 0.234,
+     "base": 0.459,
+     "salada": 0.159
+    },
+    "custo": 9.73,
+    "receita": 54.16
+   },
+   {
+    "faixa": "14h00",
+    "peso_kg": 0.463,
+    "mix": {
+     "nobre": 0.272,
+     "comum": 0.21,
+     "base": 0.278,
+     "salada": 0.239
+    },
+    "custo": 14.01,
+    "receita": 55.53
+   },
+   {
+    "faixa": "14h00",
+    "peso_kg": 0.68,
+    "mix": {
+     "nobre": 0.264,
+     "comum": 0.222,
+     "base": 0.304,
+     "salada": 0.209
+    },
+    "custo": 20.28,
+    "receita": 81.57
+   },
+   {
+    "faixa": "14h00",
+    "peso_kg": 0.55,
+    "mix": {
+     "nobre": 0.214,
+     "comum": 0.138,
+     "base": 0.388,
+     "salada": 0.26
+    },
+    "custo": 13.66,
+    "receita": 65.91
+   },
+   {
+    "faixa": "14h00",
+    "peso_kg": 0.244,
+    "mix": {
+     "nobre": 0.233,
+     "comum": 0.164,
+     "base": 0.32,
+     "salada": 0.283
+    },
+    "custo": 6.53,
+    "receita": 29.3
+   },
+   {
+    "faixa": "14h00",
+    "peso_kg": 0.385,
+    "mix": {
+     "nobre": 0.166,
+     "comum": 0.204,
+     "base": 0.349,
+     "salada": 0.282
+    },
+    "custo": 8.71,
+    "receita": 46.19
+   },
+   {
+    "faixa": "14h00",
+    "peso_kg": 0.524,
+    "mix": {
+     "nobre": 0.218,
+     "comum": 0.185,
+     "base": 0.328,
+     "salada": 0.269
+    },
+    "custo": 13.61,
+    "receita": 62.78
+   },
+   {
+    "faixa": "14h00",
+    "peso_kg": 0.567,
+    "mix": {
+     "nobre": 0.161,
+     "comum": 0.291,
+     "base": 0.299,
+     "salada": 0.249
+    },
+    "custo": 13.46,
+    "receita": 67.98
+   },
+   {
+    "faixa": "14h00",
+    "peso_kg": 0.451,
+    "mix": {
+     "nobre": 0.177,
+     "comum": 0.202,
+     "base": 0.401,
+     "salada": 0.22
+    },
+    "custo": 10.47,
+    "receita": 54.07
+   },
+   {
+    "faixa": "14h00",
+    "peso_kg": 0.345,
+    "mix": {
+     "nobre": 0.147,
+     "comum": 0.247,
+     "base": 0.392,
+     "salada": 0.215
+    },
+    "custo": 7.54,
+    "receita": 41.37
+   },
+   {
+    "faixa": "14h15",
+    "peso_kg": 0.47,
+    "mix": {
+     "nobre": 0.251,
+     "comum": 0.21,
+     "base": 0.346,
+     "salada": 0.192
+    },
+    "custo": 13.46,
+    "receita": 56.37
+   },
+   {
+    "faixa": "14h15",
+    "peso_kg": 0.533,
+    "mix": {
+     "nobre": 0.169,
+     "comum": 0.215,
+     "base": 0.396,
+     "salada": 0.22
+    },
+    "custo": 12.19,
+    "receita": 63.89
+   },
+   {
+    "faixa": "14h15",
+    "peso_kg": 0.462,
+    "mix": {
+     "nobre": 0.213,
+     "comum": 0.193,
+     "base": 0.381,
+     "salada": 0.212
+    },
+    "custo": 11.87,
+    "receita": 55.43
+   },
+   {
+    "faixa": "14h15",
+    "peso_kg": 0.641,
+    "mix": {
+     "nobre": 0.132,
+     "comum": 0.281,
+     "base": 0.406,
+     "salada": 0.181
+    },
+    "custo": 13.67,
+    "receita": 76.85
+   },
+   {
+    "faixa": "14h15",
+    "peso_kg": 0.459,
+    "mix": {
+     "nobre": 0.212,
+     "comum": 0.22,
+     "base": 0.385,
+     "salada": 0.183
+    },
+    "custo": 11.92,
+    "receita": 55.05
+   },
+   {
+    "faixa": "14h15",
+    "peso_kg": 0.311,
+    "mix": {
+     "nobre": 0.199,
+     "comum": 0.099,
+     "base": 0.449,
+     "salada": 0.252
+    },
+    "custo": 7.19,
+    "receita": 37.29
+   },
+   {
+    "faixa": "14h15",
+    "peso_kg": 0.507,
+    "mix": {
+     "nobre": 0.235,
+     "comum": 0.23,
+     "base": 0.367,
+     "salada": 0.169
+    },
+    "custo": 14.05,
+    "receita": 60.79
+   },
+   {
+    "faixa": "14h15",
+    "peso_kg": 0.504,
+    "mix": {
+     "nobre": 0.252,
+     "comum": 0.143,
+     "base": 0.383,
+     "salada": 0.222
+    },
+    "custo": 13.92,
+    "receita": 60.48
+   },
+   {
+    "faixa": "14h15",
+    "peso_kg": 0.642,
+    "mix": {
+     "nobre": 0.238,
+     "comum": 0.19,
+     "base": 0.309,
+     "salada": 0.263
+    },
+    "custo": 17.65,
+    "receita": 76.95
+   },
+   {
+    "faixa": "14h15",
+    "peso_kg": 0.478,
+    "mix": {
+     "nobre": 0.212,
+     "comum": 0.218,
+     "base": 0.384,
+     "salada": 0.185
+    },
+    "custo": 12.42,
+    "receita": 57.34
+   }
+  ]
+ },
+ "alertas_sem_ajuste": [
+  {
+   "faixa": "12h15",
+   "proteina_pct": 57.1,
+   "margem_bruta_pct": 67.9
+  },
+  {
+   "faixa": "12h30",
+   "proteina_pct": 56.5,
+   "margem_bruta_pct": 68.1
+  },
+  {
+   "faixa": "12h45",
+   "proteina_pct": 58.8,
+   "margem_bruta_pct": 67.5
+  },
+  {
+   "faixa": "13h00",
+   "proteina_pct": 58.4,
+   "margem_bruta_pct": 66.9
+  },
+  {
+   "faixa": "13h15",
+   "proteina_pct": 58.0,
+   "margem_bruta_pct": 67.8
+  },
+  {
+   "faixa": "13h45",
+   "proteina_pct": 50.1,
+   "margem_bruta_pct": 73.2
+  }
+ ]
+}
