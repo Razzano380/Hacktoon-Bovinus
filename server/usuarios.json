@@ -1,0 +1,82 @@
+[
+ {
+  "matricula": "1001",
+  "nome": "Fernanda",
+  "perfil": "gerente",
+  "praca": null,
+  "salt": "9bf1a681fe21af9e2c86f26c580efa35",
+  "hash": "6e10e23134c75e65d303f5f8862e1244f16bfdc4f931b08fa8a180fee3422612"
+ },
+ {
+  "matricula": "2001",
+  "nome": "Ricardo",
+  "perfil": "diretoria",
+  "praca": null,
+  "salt": "d27988e3f43daa9dab5efce6df3224a3",
+  "hash": "96e2bb005221492599a282fe4c40f3540f5b8596867cfd30da27abc6a65d4935"
+ },
+ {
+  "matricula": "3001",
+  "nome": "Carlos",
+  "perfil": "garcom",
+  "praca": "A",
+  "salt": "3d4fb7f68cdd3edfacd7085e3188506b",
+  "hash": "06e7a9c36a85118ed725695480763f34416dd09272d5f74ad59168226da05a4c"
+ },
+ {
+  "matricula": "3002",
+  "nome": "Ana",
+  "perfil": "garcom",
+  "praca": "B",
+  "salt": "c96bf4dbf2806dc60666ca702cdd8e78",
+  "hash": "1ce5741d72436426744d61f0c6639945c9b137c67111044ed0f3ddb4dee08401"
+ },
+ {
+  "matricula": "3003",
+  "nome": "João",
+  "perfil": "garcom",
+  "praca": "C",
+  "salt": "831f8677f7a7ceda7c5fedc241645066",
+  "hash": "bc7223f63a0612a7642645f94df50f2f2616c57b893ea5cc3391180f76f1ade3"
+ },
+ {
+  "matricula": "3004",
+  "nome": "Rita",
+  "perfil": "garcom",
+  "praca": "D",
+  "salt": "57952e1ea940e51f398185ad8e591fd7",
+  "hash": "cad93f16b28116cc820dfd3c89d68db981c44a67f703e183df37762714c45192"
+ },
+ {
+  "matricula": "3005",
+  "nome": "Marcos",
+  "perfil": "garcom",
+  "praca": "E",
+  "salt": "a4661432a51cc5a2c0230281132aa0f3",
+  "hash": "1c02f9cecd1133daa0b1588e1d21f81af48bbadfb4e23b93d6680b29883f6c66"
+ },
+ {
+  "matricula": "3006",
+  "nome": "Bia",
+  "perfil": "garcom",
+  "praca": "F",
+  "salt": "10824145d8ed6ef6497b0ef4272a61ff",
+  "hash": "2f343f3a07c6ffdc866cccdb47f56bada8e086d2ced09b2f85dc0b779fb32219"
+ },
+ {
+  "matricula": "3007",
+  "nome": "Paulo",
+  "perfil": "garcom",
+  "praca": "G",
+  "salt": "e06fbb9c3338b344281a67bb67985738",
+  "hash": "36d9775200dbbe0834eec4d4cd2ff5028fe0ca0cffccb1e74e338ba33d672c9a"
+ },
+ {
+  "matricula": "3008",
+  "nome": "Lúcia",
+  "perfil": "garcom",
+  "praca": "H",
+  "salt": "20127e448afe923145b9c1229f9cbfa0",
+  "hash": "8f0a6853f2477353116598d0a042f2b966cfc6b020bda074f9476b3152a4ea4a"
+ }
+]

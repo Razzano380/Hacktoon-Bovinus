@@ -1,4 +1,6 @@
 ﻿<!doctype html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Bovinu's Flow</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -116,7 +118,7 @@ main .wrap{padding-block:22px 40px;display:grid;gap:18px}
 .st-livre{background:var(--ok)} .st-ocupada{background:var(--occ)} .st-finalizando{background:var(--info)} .st-aguardando{background:var(--bad)} .st-limpeza{background:var(--warn)}
 .st-reservada{background:var(--gold)}
 .tb.st-aguardando{animation:pulse 1.2s infinite}
-body.public .ctrl, body.public nav.tabs{display:none}
+[hidden]{display:none!important}
 .qrbox{background:#fff;padding:10px;border-radius:12px;display:inline-block;line-height:0}
 .qrbox img{width:150px;height:150px;display:block}
 .inp{border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:8px;padding:8px 10px;font:inherit;width:100%;min-width:0}
@@ -183,43 +185,149 @@ pre.code{background:var(--tv-bg);color:var(--tv-ink);border-radius:10px;padding:
 .hm-d{font-weight:600;align-self:center}
 .hm-c{height:24px;border-radius:4px}
 @media (max-width:640px){.clock{font-size:22px}.brand h1{font-size:24px}.tv .big{font-size:64px}.brand span{display:none}.top .wrap{padding-block:10px}}
+
+/* ---------- shell por perfil: sidebar recolhível no desktop, barra inferior no celular ---------- */
+body{margin:0}
+.ico{width:20px;height:20px;flex:0 0 20px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.app{display:grid;grid-template-columns:236px minmax(0,1fr);min-height:100vh}
+body.collapsed .app{grid-template-columns:68px minmax(0,1fr)}
+.side{position:sticky;top:0;height:100vh;background:#1B1513;color:#F4ECE6;display:flex;flex-direction:column;gap:4px;padding:16px 10px;overflow:hidden}
+.side .logo{font-family:var(--f-display);font-size:24px;font-weight:700;padding:0 10px 14px;white-space:nowrap}
+.side .logo b{color:#F1CF85}
+.side nav{display:grid;gap:2px}
+.side a,.side button.navb{display:flex;gap:12px;align-items:center;padding:10px 12px;border-radius:10px;color:#CDBFB7;text-decoration:none;font-weight:600;white-space:nowrap;background:none;border:0;text-align:left;width:100%}
+.side a:hover,.side button.navb:hover{background:#2A2220;color:#fff}
+.side a[aria-current="page"]{background:var(--brand);color:#fff}
+.side .foot{margin-top:auto;display:grid;gap:6px;font-size:12px;color:#A99A92}
+.side .who{padding:8px 12px;border-top:1px solid #3A302C}
+.side .who b{display:block;color:#F4ECE6;font-size:13px}
+body.collapsed .side .txt,body.collapsed .side .who,body.collapsed .side .logo span{display:none}
+body.collapsed .side .logo{padding-inline:12px}
+body.collapsed .side .collapse .ico{transform:rotate(180deg)}
+.top{position:sticky;top:0;z-index:10}
+.top .wrap{padding-block:10px}
+.ptitle{font-family:var(--f-display);font-size:24px;font-weight:700;color:var(--on-brand);margin:0}
+.userchip{display:flex;align-items:center;gap:8px;font-size:12px}
+.bnav{display:none}
+.src{display:inline-flex;align-items:center;gap:5px;font-size:11px;font-weight:700;border-radius:20px;padding:2px 8px;border:1px dashed currentColor;white-space:nowrap;letter-spacing:.2px}
+.src-sim{color:var(--info)} .src-hist{color:var(--gold)} .src-prev{color:var(--ok)}
+.lvl{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.lvl .n{font-family:var(--f-display);font-weight:700;font-size:13px;letter-spacing:1px;text-transform:uppercase;color:var(--brand)}
+.why{font-size:12px;color:var(--muted);margin-top:4px}
+.why b{color:var(--ink)}
+.acts{display:flex;gap:6px;flex-wrap:wrap}
+body.public .app{display:block}
+body.public .side,body.public .top,body.public .bnav{display:none}
+.simctl{display:contents}
+body[data-perfil="diretoria"] .simctl,body[data-perfil="garcom"] .simctl .seg,body[data-perfil="garcom"] #reset{display:none}
+#g-kpis{grid-template-columns:repeat(auto-fit,minmax(min(100%,150px),1fr))}
+@media (max-width:820px){
+  .app,body.collapsed .app{grid-template-columns:minmax(0,1fr)}
+  .side{display:none}
+  .bnav{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:15;background:var(--surface);border-top:1px solid var(--line);padding-bottom:env(safe-area-inset-bottom,0px);overflow-x:auto}
+  .bnav a{flex:1 0 64px;display:flex;flex-direction:column;align-items:center;gap:2px;padding:8px 4px;font-size:11px;font-weight:600;color:var(--muted);text-decoration:none;text-align:center}
+  .bnav a[aria-current="page"]{color:var(--brand)}
+  body.has-bnav main{padding-bottom:70px}
+  .ptitle{font-size:20px}
+  .simctl .btn,.simctl .seg button{padding:6px 8px}
+}
+
+/* ---------- tela inicial e login ---------- */
+.gate{min-height:100vh;background:#1B1513;color:#F4ECE6;display:flex;flex-direction:column}
+.gate .wrap{width:100%;max-width:1040px;padding-block:40px;display:grid;gap:28px}
+.gate h1{font-size:44px;font-weight:700}
+.gate h1 b{color:#F1CF85}
+.gate .lead{color:#CDBFB7;max-width:60ch;font-size:15px}
+.profiles{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(min(100%,250px),1fr))}
+.pcard{background:#2A2220;border:1px solid #3A302C;border-radius:14px;padding:20px;display:grid;gap:10px;align-content:start;color:inherit;text-decoration:none}
+.pcard:hover,.pcard:focus-visible{border-color:#C9443A;background:#322826}
+.pcard .ico{width:28px;height:28px;color:#F1CF85}
+.pcard h2{font-size:24px}
+.pcard p{color:#CDBFB7}
+.pcard .go{font-weight:700;color:#F1CF85}
+.pcard.cli{grid-column:1/-1;display:flex;flex-wrap:wrap;align-items:center;gap:14px 20px;background:transparent;border-style:dashed}
+.login{max-width:420px;margin:0 auto;width:100%}
+.login .card{display:grid;gap:14px;background:var(--surface);color:var(--ink)}
+.login label{display:grid;gap:6px;font-weight:600;font-size:13px}
+.login .inp{padding:11px 12px;font-size:16px}
+.err{background:var(--bad-soft);color:var(--bad);border-radius:8px;padding:9px 12px;font-weight:600;font-size:13px}
+.note{background:var(--warn-soft);color:var(--ink);border-radius:8px;padding:10px 12px;font-size:13px}
+.gate a.back{color:#CDBFB7}
+
+/* ---------- garçom: tela cheia no celular ---------- */
+.waiter-full{max-width:560px;margin:0 auto;width:100%;background:transparent}
+.waiter-full .ph-top{border-radius:var(--r)}
+.waiter-full .ph-body{padding:12px 0}
+.waiter-full .btn.sm{padding:10px 14px;font-size:14px;min-height:44px}
+.waiter-full .chip{padding:10px 14px;font-size:14px;min-height:44px}
+.mine{display:grid;grid-template-columns:repeat(auto-fill,minmax(56px,1fr));gap:8px}
+.mine .tb{font-size:13px;min-height:52px}
 </style>
 
+<section id="v-inicio" class="view gate" hidden><div class="wrap">
+  <div><h1>Bovinu's <b>Flow</b></h1><p class="lead" style="margin-top:8px">Inteligência operacional da Bovinu's Grill &amp; Beer Augusta. Escolha como você trabalha. Funcionários entram com matrícula e senha.</p></div>
+  <div class="profiles" id="profiles"></div>
+  <p class="muted" style="color:#A99A92;font-size:12px" id="gate-mode"></p>
+</div></section>
+
+<section id="v-login" class="view gate" hidden><div class="wrap">
+  <a href="#inicio" class="back">← Trocar perfil</a>
+  <form class="login" id="f-login" autocomplete="on" novalidate>
+    <div class="card">
+      <div><span class="lbl" id="l-perfil"></span><h2 style="margin-top:4px">Entrar</h2></div>
+      <div id="l-demo" class="note" hidden></div>
+      <div id="l-fields" style="display:grid;gap:14px">
+        <label>Matrícula<input class="inp" id="l-mat" name="username" inputmode="numeric" autocomplete="username" required maxlength="12"></label>
+        <label>Senha<input class="inp" id="l-senha" name="password" type="password" autocomplete="current-password" required maxlength="128"></label>
+      </div>
+      <div class="err" id="l-err" role="alert" hidden></div>
+      <button class="btn pri" type="submit" id="l-btn" style="padding:12px">Entrar</button>
+      <p class="muted" style="font-size:12px" id="l-hint"></p>
+    </div>
+  </form>
+</div></section>
+
+<section id="v-mesa" class="view" hidden><div class="wrap" style="max-width:520px;padding-block:16px"><div id="mesa"></div></div></section>
+
+<div class="app">
+<aside class="side" aria-label="Navegação">
+  <div class="logo">B<span>ovinu's <b>Flow</b></span></div>
+  <nav id="tabs"></nav>
+  <div class="foot">
+    <div class="who" id="who"></div>
+    <button class="navb collapse" id="collapse" aria-label="Recolher menu"><svg class="ico" viewBox="0 0 24 24"><path d="M15 18l-6-6 6-6"/></svg><span class="txt">Recolher menu</span></button>
+  </div>
+</aside>
+<div style="min-width:0">
 <header class="top">
-  <div class="wrap">
-    <div class="brand"><h1>Bovinu's <b>Flow</b></h1><span>Grill &amp; Beer Augusta · almoço por quilo</span></div>
+  <div class="wrap" style="display:flex;flex-wrap:wrap;align-items:center;gap:10px 16px">
+    <h1 class="ptitle" id="ptitle">Painel</h1>
     <div class="ctrl">
-      <span class="synth" title="Todos os números desta demonstração são simulados">DADOS SINTÉTICOS</span>
+      <span class="synth" title="Os números operacionais vêm de uma simulação do almoço, não do restaurante">SIMULAÇÃO</span>
+      <span class="simctl">
       <div class="seg" role="group" aria-label="Modo da operação">
         <button id="m-sem" data-mode="sem">Hoje (sem Flow)</button>
         <button id="m-com" data-mode="com">Com Flow</button>
       </div>
       <button class="btn" id="play" aria-pressed="false">▶ Simular</button>
-      <button class="btn" id="speed">1×</button>
+      <button class="btn" id="speed" aria-label="Velocidade da simulação">1×</button>
       <button class="btn" id="reset">Reiniciar 11h30</button>
       <div class="clock num" id="clock">12h40</div>
+      </span>
+      <button class="btn" id="logout" title="Sair"><svg class="ico" viewBox="0 0 24 24" style="width:16px;height:16px;vertical-align:-3px"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4M16 17l5-5-5-5M21 12H9"/></svg> Sair</button>
     </div>
   </div>
 </header>
-<nav class="tabs" aria-label="Telas"><div class="wrap" id="tabs">
-  <a href="#gerente">Gerente</a>
-  <a href="#diretoria">Diretoria</a>
-  <a href="#salao">Mapa do salão</a>
-  <a href="#churrasqueira">Churrasqueira</a>
-  <a href="#garcom">Garçom</a>
-  <a href="#cliente">Cliente</a>
-  <a href="#experiencia">Experiência e equipe</a>
-  <a href="#como-funciona">Como funciona</a>
-</div></nav>
 
 <main>
   <section id="v-gerente" class="view"><div class="wrap">
-    <div class="vhead"><div><h2>Painel do gerente</h2><p class="muted">O que está acontecendo agora, o que vem nos próximos 15 minutos e o que fazer a respeito.</p></div></div>
+    <div class="lvl"><span class="n">1 · O que está acontecendo</span><span class="src src-sim">Simulação</span><span class="muted" style="font-size:12px">números do almoço simulado, atualizados a cada minuto</span></div>
     <div class="grid g5" id="g-kpis"></div>
     <div class="grid g2">
-      <div class="card"><div class="vhead"><h3>Alertas e recomendações</h3><span class="lbl">ação sugerida → gerente decide</span></div><div class="alerts" id="g-alerts" style="margin-top:10px"></div></div>
-      <div class="card"><div class="vhead"><h3>Clientes por 15 minutos</h3><div class="legend"><span><i style="background:var(--brand)"></i>chegaram</span><span><i style="border:2px solid var(--gold)"></i>previsto</span></div></div><div id="g-chart" style="margin-top:8px"></div></div>
+      <div class="card"><div class="vhead"><div class="lvl"><span class="n">2 · Precisa de atenção</span></div><span class="lbl" id="g-attn-n"></span></div><div class="alerts" id="g-attn" style="margin-top:10px"></div></div>
+      <div class="card"><div class="vhead"><div class="lvl"><span class="n">3 · O que fazer</span></div><span class="lbl">o sistema sugere, você confirma</span></div><div class="alerts" id="g-alerts" style="margin-top:10px"></div></div>
     </div>
+    <div class="card"><div class="vhead"><h3>Clientes por 15 minutos</h3><div class="legend"><span><i style="background:var(--brand)"></i>chegaram <span class="src src-sim">Simulação</span></span><span><i style="border:2px solid var(--gold)"></i>previsto <span class="src src-prev">Previsão</span></span></div></div><div id="g-chart" style="margin-top:8px"></div></div>
     <div class="card"><div class="vhead"><div><h3>Fila de mesa · anfitrião</h3><p class="muted" style="font-size:12px">O anfitrião anota o grupo na porta. Enquanto o grupo se serve, o sistema reserva a mesa e avisa o garçom da praça, que leva o grupo até ela.</p></div></div>
       <form id="f-grupo" class="rowf" style="margin-top:10px" autocomplete="off">
         <input class="inp" id="grp-nome" placeholder="Nome do grupo (ex.: Marina)" aria-label="Nome do grupo" maxlength="30">
@@ -231,17 +339,17 @@ pre.code{background:var(--tv-bg);color:var(--tv-ink);border-radius:10px;padding:
   </div></section>
 
   <section id="v-diretoria" class="view" hidden><div class="wrap">
-    <div class="vhead"><div><h2>Visão da diretoria</h2><p class="muted">O restaurante em uma página: movimento da semana, do mês e do ano, horário de pico e pico da churrasqueira. Sem caçar informação em planilha.</p></div>
+    <div class="vhead"><div><h2>Visão estratégica</h2><p class="muted">Como o restaurante está performando, quais são os padrões de movimento e onde estão os gargalos recorrentes. <span class="src src-hist">Histórico sintético</span></p></div>
       <div class="chips" role="group" aria-label="Período"><button class="chip" data-per="semana">Semana</button><button class="chip" data-per="mes">Mês</button><button class="chip" data-per="ano">Ano</button></div></div>
     <div class="grid g5" id="d-kpis"></div>
     <div class="grid g2">
       <div class="card"><div class="vhead"><h3>Movimento</h3><span class="lbl" id="d-title"></span></div>
         <div id="d-bars" style="margin-top:8px"></div><div class="legend"><span><i style="background:var(--brand)"></i>dia útil</span><span><i style="background:var(--gold)"></i>fim de semana</span></div></div>
-      <div class="card"><div class="vhead"><h3>Horário de pico</h3><span class="lbl">clientes por 15 min · média</span></div>
+      <div class="card"><div class="vhead"><h3>Horário de pico <span class="src src-prev">Modelo de chegadas</span></h3><span class="lbl">clientes por 15 min · média</span></div>
         <div class="plan-wrap" style="margin-top:10px"><div id="d-heat"></div></div><p id="d-peak" style="margin-top:10px"></p></div>
     </div>
     <div class="grid g2">
-      <div class="card"><div class="vhead"><h3>Pico da churrasqueira</h3><div class="legend"><span><i style="background:var(--occ)"></i>hoje</span><span><i style="background:var(--brand)"></i>com Flow</span></div></div>
+      <div class="card"><div class="vhead"><h3>Pico da churrasqueira <span class="src src-sim">Simulação comparativa</span></h3><div class="legend"><span><i style="background:var(--occ)"></i>hoje</span><span><i style="background:var(--brand)"></i>com Flow</span></div></div>
         <div id="d-grill" style="margin-top:8px"></div><p id="d-grill-txt" style="margin-top:6px"></p><p class="muted" style="font-size:12px;margin-top:4px">Espera em minutos ao longo de um dia útil simulado.</p></div>
       <div class="card"><h3>O que a diretoria precisa saber</h3><div id="d-ins" style="display:grid;gap:10px;margin-top:10px"></div></div>
     </div>
@@ -261,30 +369,19 @@ pre.code{background:var(--tv-bg);color:var(--tv-ink);border-radius:10px;padding:
   </div></section>
 
   <section id="v-garcom" class="view" hidden><div class="wrap">
-    <div class="vhead"><div><h2>Tela do garçom</h2><p class="muted">No celular, só a praça dele: o que fazer agora, em ordem. Escolha a praça:</p></div><div class="chips" id="g-praca"></div></div>
-    <div class="grid g2" style="align-items:start">
-      <div class="phone"><div class="screen" id="waiter"></div></div>
-      <div class="card"><h3>Por que isso ajuda o garçom</h3>
-        <ul style="margin:10px 0 0;padding-left:18px;display:grid;gap:8px">
-          <li><b>Mesa garantida para quem está na fila</b>: o anfitrião anota o grupo, o sistema reserva a mesa e o garçom da praça leva o grupo até ela (“Levei ✓”).</li>
-          <li><b>Quantas pessoas na mesa</b>: um toque (1 a 6+). Com isso, o gerente vê a lotação real em pessoas, não só em mesas.</li>
-          <li><b>Pedidos da mesa</b>: bebida, café ou “chamar garçom” pedidos pelo QR da mesa chegam aqui como chamado.</li>
-          <li><b>Não precisa varrer o salão com os olhos</b> para achar mesa suja: o alerta chega quando o cliente sai.</li>
-          <li><b>Um toque por mesa</b> (“Limpei”) já gera o dado de tempo de liberação. Não há formulário.</li>
-          <li><b>“Passe na mesa”</b> avisa quando uma mesa está há mais de 15 min sem contato. O sistema lembra, o garçom atende.</li>
-          <li>A bebida continua no sistema de pedidos que já existe. O Flow só mostra o que está pendente.</li>
-        </ul>
-      </div>
-    </div>
+    <div class="waiter-full" id="waiter"></div>
   </div></section>
 
   <section id="v-cliente" class="view" hidden><div class="wrap">
-    <div class="vhead"><div><h2>O que o cliente vê</h2><p class="muted">Sem aplicativo: tudo abre pelo QR code ou por um link no WhatsApp e no Google.</p></div></div>
+    <div class="vhead"><div><h2>Cliente e QR codes</h2><p class="muted">Sem aplicativo e sem cadastro: tudo abre pelo QR code. Gere aqui o QR de cada mesa; ele identifica a mesa automaticamente.</p></div></div>
+    <div class="card" style="display:grid;gap:12px"><div class="vhead"><h3>QR code da mesa</h3><span class="lbl">imprimir e colar na mesa</span></div>
+      <form id="f-qr" class="rowf" autocomplete="off"><select class="inp" id="qr-mesa" aria-label="Mesa" style="flex:0 0 140px"></select><button class="btn pri" type="submit">Gerar QR</button></form>
+      <div id="qr-out" class="rowf" style="align-items:flex-start"></div></div>
     <div class="grid g3" style="align-items:start" id="cliente"></div>
   </div></section>
 
   <section id="v-experiencia" class="view" hidden><div class="wrap">
-    <div class="vhead"><div><h2>Experiência e equipe</h2><p class="muted">O resultado do dia e a comparação entre a operação de hoje e a operação com o Flow.</p></div></div>
+    <div class="vhead"><div><h2>Experiência e equipe</h2><p class="muted">O resultado do dia e a comparação entre a operação de hoje e a operação com o Flow. <span class="src src-sim">Simulação comparativa</span></p></div></div>
     <div class="grid g5" id="x-kpis"></div>
     <div class="grid g2">
       <div class="card"><h3>Onde vai o tempo do cliente</h3><p class="muted" style="font-size:12px">Média de hoje, da porta até a mesa</p><div id="x-journey" style="margin-top:10px"></div></div>
@@ -300,6 +397,29 @@ pre.code{background:var(--tv-bg);color:var(--tv-ink);border-radius:10px;padding:
   <section id="v-como-funciona" class="view" hidden><div class="wrap">
     <div class="thesis"><span class="lbl" style="color:#F1CF85">A ideia em uma frase</span><h2>A Bovinu's já sabe quanto pesa o prato. O Flow mostra quanto pesa cada minuto do cliente.</h2>
       <p style="opacity:.9;max-width:80ch">Cada toque de um funcionário e cada passo que a comanda já registra viram um <b>evento com horário</b>. Somando os eventos, o sistema sabe em tempo real quanto tempo o cliente esperou, onde está o gargalo e o que fazer.</p></div>
+
+    <div class="card" id="dados"><h3>De onde vem cada número</h3>
+      <p class="muted" style="margin-top:4px">O MVP ainda não está ligado ao restaurante. Cada dado leva um selo com a sua origem, e nenhum número simulado é apresentado como real.</p>
+      <div class="tbl-wrap" style="margin-top:10px"><table>
+        <tr><th>Selo</th><th>O que significa</th><th>Onde aparece</th></tr>
+        <tr><td><span class="src src-sim">Simulação</span></td><td>Almoço gerado minuto a minuto por um modelo com premissas declaradas (600 clientes em dia útil, pico 12h10–13h20, 90 mesas). Os toques de gerente, garçom e cliente alteram essa simulação.</td><td>Painel, mapa, churrasqueira, garçom, cliente</td></tr>
+        <tr><td><span class="src src-sim">Simulação comparativa</span></td><td>O mesmo dia rodado sem e com o Flow, com as mesmas chegadas e semente fixa.</td><td>Diretoria (grelha), Experiência e equipe</td></tr>
+        <tr><td><span class="src src-hist">Histórico sintético</span></td><td>Jan/2025 a nov/2026 gerado a partir das premissas (dia da semana, férias, ruído). Não é histórico da loja.</td><td>Diretoria</td></tr>
+        <tr><td><span class="src src-prev">Previsão</span></td><td>Estimativa de chegadas por 15 min a partir da curva média do dia. É uma estimativa, não um compromisso.</td><td>Painel (próximos 15 min), gráfico de chegadas</td></tr>
+        <tr><td><span class="pill p-ok">Registro real</span></td><td>Só existe com o servidor: logins, ações confirmadas pelo gerente, mudanças de mesa e pedidos do QR ficam registrados com horário e matrícula.</td><td>Servidor (<code>/api/eventos</code>)</td></tr>
+      </table></div>
+      <h3 style="margin-top:16px">Definições dos indicadores</h3>
+      <div class="tbl-wrap" style="margin-top:8px"><table>
+        <tr><th>Indicador</th><th>Fórmula</th></tr>
+        <tr><td>Lotação do salão</td><td>mesas não livres ÷ 90 mesas</td></tr>
+        <tr><td>Fila na entrada</td><td>pessoas aguardando o ponto de pratos</td></tr>
+        <tr><td>Tempo de espera (entrada)</td><td>pessoas na fila ÷ vazão da entrada (pessoas/min). Limite da casa: 2:00</td></tr>
+        <tr><td>Churrasqueira</td><td>pessoas na fila da grelha ÷ capacidade de atendimento por minuto. Meta: 2:30</td></tr>
+        <tr><td>Movimento agora</td><td>clientes que chegaram na faixa de 15 min atual</td></tr>
+        <tr><td>Próximos 15 min</td><td>soma da curva média de chegadas para os próximos 15 min</td></tr>
+        <tr><td>Grelha acima de 2:30 (diretoria)</td><td>dias em que o pico de espera da grelha passou de 2:30</td></tr>
+        <tr><td>Clientes satisfeitos</td><td>respostas com nota 4 ou 5 ÷ total de respostas (mínimo de 10 respostas para exibir)</td></tr>
+      </table></div></div>
 
     <div><h3 style="margin-bottom:10px">Do toque ao painel: 5 etapas</h3>
     <div class="pipe">
@@ -394,6 +514,9 @@ pre.code{background:var(--tv-bg);color:var(--tv-ink);border-radius:10px;padding:
 
   <section id="v-agora" class="view" hidden><div class="wrap" style="max-width:520px"><div id="agora"></div></div></section>
 </main>
+</div>
+</div>
+<nav class="bnav" id="bnav" aria-label="Navegação"></nav>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
 <script>
@@ -433,7 +556,7 @@ function assignGroups(st){
     st.log.unshift({t:st.min,txt:'Mesa '+t.id+' reservada para '+g.nome+' ('+g.qtd+'): '+GARCOM[t.praca]+' avisado',lvl:'info'});
   }
 }
-function addGroup(st,nome,qtd,me){const g={id:st.gid++,nome,qtd,t0:st.min,mesa:null,me:!!me};st.grupos.push(g);assignGroups(st);return g}
+function addGroup(st,nome,qtd,me){const g={id:st.gid++,nome:esc(nome),qtd,t0:st.min,mesa:null,me:!!me};st.grupos.push(g);assignGroups(st);return g}
 function seatGroup(st,g){
   const t=st.tables.find(x=>x.id===g.mesa); if(!t) return;
   Object.assign(t,{state:'ocupada',since:st.min,leave:st.min+28+st.r()*8,last:st.min,size:g.qtd,people:g.qtd,grupo:null,exp:{entry:0,grill:0,find:.3,drink:0}});
@@ -536,32 +659,45 @@ function boot(mode){S=createState(mode!=='sem',7,0);while(S.min<756)step(S,false
 function setMode(mode){const keep=S.min;S=createState(mode!=='sem',7,0);while(S.min<Math.min(keep,756))step(S,false);if(S.flow&&keep>=756)seedGroups(S);while(S.min<keep)step(S,false);render()}
 function toast(msg){let el=document.getElementById('toast');if(!el){el=document.createElement('div');el.id='toast';el.className='toast';el.setAttribute('role','status');document.body.appendChild(el)}el.textContent=msg;el.hidden=false;clearTimeout(toastT);toastT=setTimeout(()=>el.hidden=true,2600)}
 
-/* ---------- regras de alerta ---------- */
-function alertsFor(st){
+/* ---------- regras: nível 2 (atenção) e nível 3 (ações com motivo) ---------- */
+const LIMITE_FILA=2, META_GRELHA=2.5;
+function freeBySalao(st){const f={};st.tables.filter(t=>t.state==='livre').forEach(t=>f[t.salao]=(f[t.salao]||0)+1);return f}
+function atencao(st){
   const a=[], m=st.min;
   if(!st.flow) return [{lvl:'info',t:'Sem o Flow, esta lista não existe',d:'Hoje o gerente descobre a fila quando olha para a porta e a mesa suja quando o cliente reclama.'}];
-  const freeBy={};st.tables.filter(t=>t.state==='livre').forEach(t=>freeBy[t.salao]=(freeBy[t.salao]||0)+1);
-  const bestS=Object.keys(freeBy).sort((x,y)=>freeBy[y]-freeBy[x])[0];
-  if(st.entryWait>2&&!st.pratos2) a.push({lvl:'bad',t:'Fila na entrada: '+Math.round(st.entryQ)+' pessoas (~'+fmtMS(st.entryWait)+')',d:'Abrir o 2º ponto de pratos e o anfitrião divide a fila entre os dois lados do buffet.',act:'pratos',btn:'Aplicar'});
-  if(st.grillWait>2.0&&!st.support) a.push({lvl:st.grillWait>2.5?'bad':'warn',t:'Churrasqueira em '+fmtMS(st.grillWait)+' (meta 2:30)',d:'Deslocar 1 polivalente do apoio para a churrasqueira até 13h30.',act:'grill',btn:'Aplicar'});
-  if(st.waitQ.length) a.push({lvl:'warn',t:st.waitQ.length+' grupo(s) procurando mesa',d:'Anfitrião direciona para o '+(SALOES.find(s=>s.k===bestS)||{nome:'salão com mais mesas'}).nome+' ('+(freeBy[bestS]||0)+' livres).'});
-  const dirty=st.tables.filter(t=>t.state==='aguardando');
-  const byP={};dirty.forEach(t=>byP[t.praca]=(byP[t.praca]||0)+1);
-  Object.keys(byP).filter(p=>byP[p]>=2).forEach(p=>a.push({lvl:'warn',t:'Praça '+p+': '+byP[p]+' mesas esperando limpeza',d:GARCOM[p]+' já recebeu o alerta no celular.'}));
-  st.surveys.filter(s=>s.live&&s.score<=2&&m-s.t<20).forEach(s=>a.push({lvl:'bad',t:'Mesa '+s.mesa+' avaliou mal',d:(s.themes.join(', ')||'Sem motivo informado')+'. Passe na mesa antes de o cliente sair.'}));
-  const occN=st.tables.filter(t=>t.state!=='livre').length, ppl=peopleNow(st);
-  if(occN>=72&&ppl/occN<2.5) a.push({lvl:'info',t:'Mesas cheias, lugares vazios',d:Math.round(occN/90*100)+'% das mesas ocupadas, mas só '+ppl+' clientes nos 450 lugares. Anfitrião oferece mesa compartilhada para quem está sozinho.'});
-  if(st.support&&st.grillWait<.6&&m>=805) a.push({lvl:'ok',t:'Churrasqueira normalizada',d:'O polivalente pode voltar ao apoio.',act:'ungrill',btn:'Liberar'});
-  const nxt=rate(m+15,st.shift)*15;
-  if(m<730&&nxt>40) a.push({lvl:'info',t:'Pico começa em '+(730-m)+' min',d:'Previsão de ~'+Math.round(nxt)+' clientes nos próximos 15 min. Garçons nas praças e anfitrião na porta.'});
-  if(!a.length) a.push({lvl:'ok',t:'Operação dentro do esperado',d:'Nenhuma ação necessária agora.'});
+  if(st.entryWait>LIMITE_FILA) a.push({lvl:'bad',t:'Fila na entrada acima do limite',d:Math.round(st.entryQ)+' pessoas, espera de ~'+fmtMS(st.entryWait)+' (limite da casa: '+LIMITE_FILA+':00).'});
+  if(st.grillWait>2.0) a.push({lvl:st.grillWait>META_GRELHA?'bad':'warn',t:'Gargalo na churrasqueira',d:'Espera de '+fmtMS(st.grillWait)+' com '+Math.round(st.grillQ)+' pessoas na fila (meta 2:30).'});
+  if(st.waitQ.length) a.push({lvl:'warn',t:st.waitQ.length+' grupo(s) com prato na mão procurando mesa',d:'Clientes já se serviram e ainda não sentaram.'});
+  const byP={};st.tables.filter(t=>t.state==='aguardando').forEach(t=>byP[t.praca]=(byP[t.praca]||0)+1);
+  Object.keys(byP).filter(p=>byP[p]>=2).forEach(p=>a.push({lvl:'warn',t:'Praça '+p+': '+byP[p]+' mesas aguardando limpeza',d:GARCOM[p]+' já recebeu o alerta no celular.'}));
+  const occ=occupancy(st); if(occ>=.9) a.push({lvl:'bad',t:'Salão quase na capacidade',d:Math.round(occ*90)+' de 90 mesas ocupadas.'});
+  const occS=SALOES.map(s=>({s,o:st.tables.filter(t=>t.salao===s.k&&t.state!=='livre').length/s.n}));
+  const hi=occS.filter(x=>x.o>=.95), lo=occS.filter(x=>x.o<.7);
+  if(hi.length&&lo.length) a.push({lvl:'warn',t:'Clientes concentrados no '+hi[0].s.nome,d:Math.round(hi[0].o*100)+'% ocupado, enquanto o '+lo[0].s.nome+' está com '+Math.round(lo[0].o*100)+'%.'});
+  st.surveys.filter(s=>s.live&&s.score<=2&&m-s.t<20).forEach(s=>a.push({lvl:'bad',t:'Mesa '+s.mesa+' avaliou mal',d:(s.themes.join(', ')||'Sem motivo informado')+'.'}));
   return a;
 }
-function act(k){
-  if(k==='pratos'){S.pratos2=true;S.bcap=4.6;S.log.unshift({t:S.min,txt:'Gerente abriu o 2º ponto de pratos',lvl:'info'})}
-  if(k==='grill'){S.support=true;S.staff=5;S.log.unshift({t:S.min,txt:'5º apoio deslocado para a churrasqueira',lvl:'info'})}
-  if(k==='ungrill'){S.support=false;S.staff=4;S.log.unshift({t:S.min,txt:'Apoio voltou para o salão',lvl:'info'})}
-  toast('Ação registrada');render();
+const dispensadas={};
+function acoes(st){
+  const a=[], m=st.min;
+  if(!st.flow) return [];
+  const freeBy=freeBySalao(st), bestS=Object.keys(freeBy).sort((x,y)=>freeBy[y]-freeBy[x])[0], bestN=(SALOES.find(s=>s.k===bestS)||{nome:'salão com mais mesas'}).nome;
+  if(st.entryWait>LIMITE_FILA&&!st.pratos2) a.push({lvl:'bad',t:'Abrir o 2º ponto de pratos',d:'O anfitrião divide a fila entre os dois lados do buffet.',why:'A espera na entrada ('+fmtMS(st.entryWait)+') passou do limite de '+LIMITE_FILA+':00. Na simulação, o 2º ponto aumenta a vazão da entrada em cerca de 5%.',act:'pratos',btn:'Confirmar'});
+  if(st.grillWait>2.0&&!st.support) a.push({lvl:st.grillWait>META_GRELHA?'bad':'warn',t:'Levar 1 polivalente para a churrasqueira até 13h30',d:'Sai do apoio do salão e volta quando a fila normalizar.',why:'A espera ('+fmtMS(st.grillWait)+') está perto ou acima da meta de 2:30. Na simulação, o reforço aumenta a capacidade da grelha em cerca de 10%.',act:'grill',btn:'Confirmar'});
+  if(st.support&&st.grillWait<.6&&m>=805) a.push({lvl:'ok',t:'Devolver o polivalente ao salão',d:'A churrasqueira normalizou.',why:'Espera de '+fmtMS(st.grillWait)+' depois do pico.',act:'ungrill',btn:'Confirmar'});
+  if(st.waitQ.length) a.push({lvl:'warn',t:'Direcionar os grupos para o '+bestN,d:'Orientação para o anfitrião.',why:'É o salão com mais mesas livres agora ('+(freeBy[bestS]||0)+').'});
+  const occN=st.tables.filter(t=>t.state!=='livre').length, ppl=peopleNow(st);
+  if(occN>=72&&ppl/occN<2.5) a.push({lvl:'info',t:'Oferecer mesa compartilhada para quem está sozinho',d:'Orientação para o anfitrião.',why:Math.round(occN/90*100)+'% das mesas ocupadas, mas só '+ppl+' clientes nos 450 lugares.'});
+  const nxt=rate(m+15,st.shift)*15;
+  if(m<730&&nxt>40) a.push({lvl:'info',t:'Preparar a equipe para o pico em '+(730-m)+' min',d:'Garçons nas praças e anfitrião na porta.',why:'Previsão de ~'+Math.round(nxt)+' clientes nos próximos 15 min (média histórica do dia).'});
+  return a.filter(x=>!(x.act&&dispensadas[x.act]!=null&&m-dispensadas[x.act]<10));
+}
+async function act(k){
+  if(!await servidor('/api/acoes',{acao:k}))return;
+  if(k==='pratos'){S.pratos2=true;S.bcap=4.6;S.log.unshift({t:S.min,txt:'Gerente confirmou: 2º ponto de pratos aberto',lvl:'info'})}
+  if(k==='grill'){S.support=true;S.staff=5;S.log.unshift({t:S.min,txt:'Gerente confirmou: polivalente na churrasqueira',lvl:'info'})}
+  if(k==='ungrill'){S.support=false;S.staff=4;S.log.unshift({t:S.min,txt:'Gerente confirmou: polivalente voltou ao salão',lvl:'info'})}
+  toast('Ação confirmada e registrada');render();
 }
 
 /* ---------- render ---------- */
@@ -572,16 +708,20 @@ function lights(s){return`<div class="lights" aria-hidden="true"><i class="r ${s
 
 function renderGerente(){
   const st=S, occ=occupancy(st), dirty=st.tables.filter(t=>t.state==='aguardando').length;
-  const nxt=Math.round(rate(st.min,st.shift)*15);
+  const nxt=Math.round(rate(st.min,st.shift)*15), cur=slot(st.min), agora=st.arr[cur]||0;
   document.getElementById('g-kpis').innerHTML=
-    `<div class="card kpi"><div class="lbl">Semáforo da entrada</div><div class="sem" style="margin-top:6px">${lights(st.sem)}<div><div class="v" style="font-size:30px;text-transform:capitalize">${st.sem}</div><div class="s">${semInfo[st.sem][1]}</div></div></div></div>`+
-    kpi('Fila na entrada',Math.round(st.entryQ)+' <small style="font-size:16px">pessoas</small>','espera ~'+fmtMS(st.entryWait)+' min')+
-    kpi('Churrasqueira',fmtMS(st.grillWait),'espera agora · '+st.staff+' na grelha',[lvlPill(st.grillWait),st.grillWait>2.5?'acima da meta':'meta 2:30'])+
-    `<div class="card kpi"><div class="lbl">Lotação do salão</div><div class="v num">${Math.round(occ*90)} <small style="font-size:16px">de 90 mesas</small></div>
+    `<div class="card kpi"><div class="lbl">Lotação do salão</div><div class="v num">${Math.round(occ*100)}%</div>
       <div style="height:8px;border-radius:4px;background:var(--surface2);margin:6px 0"><div style="height:100%;border-radius:4px;width:${Math.min(100,occ*100)}%;background:${occ>=.9?'var(--bad)':occ>=.7?'var(--warn)':'var(--ok)'}"></div></div>
-      <div class="s"><b>${peopleNow(st)} clientes</b> nos 450 lugares · ${dirty} mesas sujas<br>${st.fillAt!=null?'Começou a encher às <b>'+fmtT(st.fillAt)+'</b>'+(st.fullAt!=null?' · quase lotado às <b>'+fmtT(st.fullAt)+'</b>':''):'Ainda não encheu (70% das mesas)'}</div></div>`+
-    kpi('Próximos 15 min',nxt,'clientes previstos (histórico do dia)');
-  document.getElementById('g-alerts').innerHTML=alertsFor(st).map(a=>`<div class="alert ${a.lvl}"><span class="bar"></span><div><b>${a.t}</b><small>${a.d}</small></div>${a.act?`<button class="btn pri sm" data-act="${a.act}">${a.btn}</button>`:'<span></span>'}</div>`).join('');
+      <div class="s">${Math.round(occ*90)} de 90 mesas · <b>${peopleNow(st)} clientes</b> · ${dirty} sujas</div></div>`+
+    kpi('Fila na entrada',Math.round(st.entryQ)+' <small style="font-size:16px">pessoas</small>','',[st.entryWait>LIMITE_FILA?'p-bad':st.entryWait>1?'p-warn':'p-ok',st.sem==='verde'?'fluxo livre':st.sem==='amarelo'?'moderado':'fila ou salão cheio'])+
+    kpi('Tempo de espera',fmtMS(st.entryWait),'na entrada, em min:seg · limite '+LIMITE_FILA+':00')+
+    kpi('Churrasqueira',fmtMS(st.grillWait),st.staff+' na grelha',[lvlPill(st.grillWait),st.grillWait>META_GRELHA?'acima da meta 2:30':'meta 2:30'])+
+    kpi('Movimento agora',agora,'clientes chegaram desde '+fmtT(OPEN+cur*15))+
+    kpi('Próximos 15 min','~'+nxt,'clientes previstos <span class="src src-prev">Previsão</span>');
+  const at=atencao(st), ac=acoes(st);
+  document.getElementById('g-attn-n').textContent=st.flow?(at.length?at.length+' ponto(s)':''):'';
+  document.getElementById('g-attn').innerHTML=at.length?at.map(a=>`<div class="alert ${a.lvl}"><span class="bar"></span><div><b>${a.t}</b><small>${a.d}</small></div><span></span></div>`).join(''):'<div class="empty">Nada fora do normal agora. ✓</div>';
+  document.getElementById('g-alerts').innerHTML=ac.length?ac.map(a=>`<div class="alert ${a.lvl}"><span class="bar"></span><div><b>${a.t}</b><small>${a.d}</small><div class="why"><b>Por quê:</b> ${a.why}</div></div>${a.act?`<div class="acts"><button class="btn pri sm" data-act="${a.act}">${a.btn}</button><button class="btn sm" data-skip="${a.act}" aria-label="Agora não">Agora não</button></div>`:'<span></span>'}</div>`).join(''):`<div class="empty">${st.flow?'Nenhuma ação necessária agora.':'Sem o Flow, não há recomendações.'}</div>`;
   document.getElementById('g-log').innerHTML=st.log.length?st.log.slice(0,40).map(l=>`<div><span>${fmtT(l.t)}</span><span class="pill p-${l.lvl==='info'?'info':l.lvl}" style="padding:0 8px">●</span><span>${l.txt}</span></div>`).join(''):'<div class="empty">Ainda nada registrado hoje.</div>';
   document.getElementById('g-chart').innerHTML=chart15(st);
   document.getElementById('g-grupos').innerHTML=st.grupos.length?`<div class="alerts">${st.grupos.map(g=>{const t=g.mesa&&st.tables.find(x=>x.id===g.mesa);
@@ -656,16 +796,19 @@ function renderTV(){
 
 function renderGarcom(){
   const st=S,p=pracaSel,m=st.min;
-  document.getElementById('g-praca').innerHTML=Object.keys(GARCOM).map(k=>`<button class="chip" data-praca="${k}" aria-pressed="${k===p}">${k} · ${GARCOM[k]}</button>`).join('');
   const ts=st.tables.filter(t=>t.praca===p);
   const dirty=ts.filter(t=>t.state==='aguardando'||t.state==='limpeza').sort((a,b)=>a.dirty-b.dirty);
   const calls=st.calls.filter(c=>c.praca===p);
   const idle=ts.filter(t=>(t.state==='ocupada')&&m-t.last>=15);
   const lev=st.grupos.filter(g=>g.mesa&&(st.tables.find(t=>t.id===g.mesa)||{}).praca===p);
   const cnt=ts.filter(t=>t.state==='ocupada'&&t.people==null);
+  const ESTADO_TXT={livre:'livre',ocupada:'ocupada',finalizando:'finalizando',aguardando:'aguardando limpeza',limpeza:'em limpeza',reservada:'reservada'};
   const it=(title,sub,btn,data,cls)=>`<div class="item"><div><b>${title}</b><small>${sub}</small></div>${btn?`<button class="btn ${cls||'pri'} sm" ${data}>${btn}</button>`:''}</div>`;
   document.getElementById('waiter').innerHTML=`<div class="ph-top"><b>Praça ${p} · ${GARCOM[p]}</b><small>${SALAO_DE[p]} · ${ts.filter(t=>t.state!=='livre').length}/${ts.length} mesas ocupadas · ${fmtT(m)}</small></div>
    <div class="ph-body">
+    <div class="lbl">Minhas mesas · toque para mudar o estado</div>
+    <div class="mine">${ts.map(t=>`<button class="tb st-${t.state}" data-t="${t.id}" aria-label="Mesa ${t.id}: ${ESTADO_TXT[t.state]}">${t.id}</button>`).join('')}</div>
+    <div class="legend"><span><i class="st-livre"></i>Livre</span><span><i class="st-reservada"></i>Reservada</span><span><i class="st-ocupada"></i>Ocupada</span><span><i class="st-finalizando"></i>Finalizando</span><span><i class="st-aguardando"></i>Limpar</span><span><i class="st-limpeza"></i>Em limpeza</span></div>
     ${lev.length?`<div class="lbl">Levar até a mesa (${lev.length})</div>`+lev.map(g=>`<div class="item" style="background:var(--gold-soft);border-color:var(--gold)"><div><b>${g.nome} · ${g.qtd} ${g.qtd>1?'pessoas':'pessoa'} → ${g.mesa}</b><small>buscar no fim do buffet · na fila há ${Math.max(0,Math.round(m-g.t0))} min</small></div><button class="btn pri sm" data-levei="${g.id}">Levei ✓</button></div>`).join(''):''}
     ${cnt.length?`<div class="lbl">Quantas pessoas na mesa?</div>`+cnt.slice(0,3).map(t=>`<div class="item" style="display:block"><b>Mesa ${t.id}</b><small>sentou há ${Math.max(0,Math.round(m-t.since))} min</small><div class="chips" style="margin-top:6px">${[1,2,3,4,5,6].map(n=>`<button class="chip" data-ppl="${t.id}:${n}">${n===6?'6+':n}</button>`).join('')}</div></div>`).join(''):''}
     <div class="lbl">Limpar agora (${dirty.length})</div>
@@ -710,10 +853,18 @@ function publicBody(st){
     <div class="item" style="display:block;background:var(--gold-soft);border-color:var(--gold)"><b>Sem fila e com 10% off</b><small>Das 11h30 às 12h ou depois das 13h. No Passe Executivo, o café é por nossa conta.</small></div>
     <div class="muted" style="font-size:12px">Hoje (quarta): feijoada no buffet</div></div>`;
 }
+function renderMesa(){
+  const el=document.getElementById('mesa');
+  if(!mesaAtual){el.innerHTML=`<div class="card" style="display:grid;gap:8px;text-align:center"><b style="font-size:18px">QR code não reconhecido</b><p class="muted">${mesaErro||'Peça ajuda ao garçom.'}</p><a class="btn ghost sm" href="#agora" style="color:var(--brand);text-decoration:none">Ver a fila e a lotação agora</a></div>`;return}
+  el.innerHTML=`<div class="screen" style="min-height:auto;border:1px solid var(--line)">${mesaScreen(mesaAtual)}</div>
+    <p style="text-align:center;margin-top:12px"><a href="#agora" style="color:var(--brand);font-weight:600">Ver a fila e a lotação agora</a></p>
+    <p class="muted" style="font-size:11px;text-align:center;margin-top:6px">${DEMO?'Modo demonstração: o QR não é verificado. ':''}Bovinu's Flow · sem cadastro, sem app</p>`;
+}
 function renderAgora(){document.getElementById('agora').innerHTML=`<div class="screen" style="min-height:auto;border:1px solid var(--line)">${publicBody(S)}</div><p class="muted" style="font-size:11px;text-align:center;margin-top:10px">Demonstração com dados sintéticos · Bovinu's Flow</p>`}
 
-function renderCliente(){
-  const st=S, emo=['😞','😕','😐','🙂','😍'], q=qrSrc();
+let mesaAtual='P12', mesaToken=null;
+function mesaScreen(id){
+  const st=S, emo=['😞','😕','😐','🙂','😍'];
   let sv;
   if(survey.sent){sv=`<div class="ph-body" style="text-align:center;padding-top:40px"><div style="font-size:48px">🙏</div><b style="font-size:20px;font-family:var(--f-display)">Obrigado!</b><p class="muted">Sua resposta já chegou ao gerente.</p><button class="btn ghost sm" data-sv-reset="1" style="margin:12px auto 0;color:var(--brand)">Responder de novo (demo)</button></div>`}
   else sv=`<div class="ph-body"><b style="font-size:17px">Como foi seu almoço hoje?</b>
@@ -722,20 +873,24 @@ function renderCliente(){
       <div class="chips">${(survey.score<=3?NEG:['Variedade do buffet','Qualidade da carne','Atendimento do garçom','Café no final']).map(x=>`<button class="chip" data-th="${x}" aria-pressed="${survey.themes.includes(x)}">${x}</button>`).join('')}</div>
       <div class="lbl">Voltaria na próxima semana?</div><div class="chips"><button class="chip" data-volta="1" aria-pressed="${survey.volta===true}">Sim</button><button class="chip" data-volta="0" aria-pressed="${survey.volta===false}">Não</button></div>
       <button class="btn pri" data-sv-send="1">Enviar</button>`:'<p class="muted" style="font-size:12px">Um toque basta. Leva 5 segundos.</p>'}</div>`;
+  const MT=st.tables.find(t=>t.id===id), gname=GARCOM[MT.praca];
+  const pend=st.calls.filter(c=>c.mesa===id), done=st.m.drink.filter(d=>d.mesa===id).slice(-3).reverse();
+  const pedir=`<div class="ph-body"><b style="font-size:17px">Precisa de algo?</b><small class="muted" style="margin-top:-6px">O pedido vai direto para o celular de ${gname}, o garçom da sua mesa.</small>
+    <div class="grid" style="grid-template-columns:1fr 1fr;gap:8px">${[['🥤','Bebida'],['☕','Café'],['🍮','Sobremesa'],['🧻','Guardanapo'],['🧊','Gelo / limão'],['🙋','Chamar garçom']].map(([i,l])=>`<button class="item" data-pedir="${l}" style="flex-direction:column;justify-content:center;gap:2px;cursor:pointer;font:inherit;color:var(--ink);min-height:64px"><span style="font-size:22px">${i}</span><b style="font-size:13px">${l}</b></button>`).join('')}</div>
+    ${pend.map(c=>`<div class="item" style="background:var(--warn-soft);border-color:var(--warn)"><div><b>${c.tipo}</b><small>${gname} a caminho · pedido há ${Math.max(0,Math.round(st.min-c.t))} min</small></div></div>`).join('')}
+    ${done.map(d=>`<div class="item"><div><b>${d.tipo} ✓</b><small>atendido em ${fmtMS(d.v)} min</small></div></div>`).join('')}</div>`;
+  const tabs=`<div class="chips" style="padding:10px 12px 0"><button class="chip" data-mtab="pedir" aria-pressed="${mesaTab==='pedir'}">Pedir algo</button><button class="chip" data-mtab="avaliar" aria-pressed="${mesaTab==='avaliar'}">Avaliar o almoço</button></div>`;
+  return `<div class="ph-top"><b>Mesa ${id}</b><small>QR na mesa · sem app · garçom: ${gname}</small></div>${tabs}${mesaTab==='pedir'?pedir:sv}`;
+}
+function renderCliente(){
+  const st=S, q=qrSrc();
   const qrCard=`<div class="card" style="display:grid;gap:12px;justify-items:center;text-align:center">
     <span class="lbl">Cartaz na porta e na sala de espera</span>
     <b style="font-family:var(--f-display);font-size:24px">Aponte a câmera e veja a fila agora</b>
     ${q?`<div class="qrbox"><img src="${q}" alt="QR code que abre a página pública do Bovinu's Augusta"></div>`:`<div class="item">QR indisponível sem internet</div>`}
     <p class="muted" style="font-size:12px;max-width:34ch">Abre no navegador, sem instalar nada: semáforo, tempo até sentar, mesas livres e fila de mesa para grupos.</p>
     <a class="btn ghost sm" href="#agora" style="color:var(--brand);text-decoration:none">Abrir a página do cliente</a></div>`;
-  const MT=st.tables.find(t=>t.id==='P12'), gname=GARCOM[MT.praca];
-  const pend=st.calls.filter(c=>c.mesa==='P12'), done=st.m.drink.filter(d=>d.mesa==='P12').slice(-3).reverse();
-  const pedir=`<div class="ph-body"><b style="font-size:17px">Precisa de algo?</b><small class="muted" style="margin-top:-6px">O pedido vai direto para o celular de ${gname}, o garçom da sua mesa.</small>
-    <div class="grid" style="grid-template-columns:1fr 1fr;gap:8px">${[['🥤','Bebida'],['☕','Café'],['🍮','Sobremesa'],['🧻','Guardanapo'],['🧊','Gelo / limão'],['🙋','Chamar garçom']].map(([i,l])=>`<button class="item" data-pedir="${l}" style="flex-direction:column;justify-content:center;gap:2px;cursor:pointer;font:inherit;color:var(--ink)"><span style="font-size:22px">${i}</span><b style="font-size:12px">${l}</b></button>`).join('')}</div>
-    ${pend.map(c=>`<div class="item" style="background:var(--warn-soft);border-color:var(--warn)"><div><b>${c.tipo}</b><small>${gname} a caminho · pedido há ${Math.max(0,Math.round(st.min-c.t))} min</small></div></div>`).join('')}
-    ${done.map(d=>`<div class="item"><div><b>${d.tipo} ✓</b><small>atendido em ${fmtMS(d.v)} min</small></div></div>`).join('')}</div>`;
-  const tabs=`<div class="chips" style="padding:10px 12px 0"><button class="chip" data-mtab="pedir" aria-pressed="${mesaTab==='pedir'}">Pedir algo</button><button class="chip" data-mtab="avaliar" aria-pressed="${mesaTab==='avaliar'}">Avaliar o almoço</button></div>`;
-  const pesq=`<div class="phone"><div class="screen"><div class="ph-top"><b>Mesa P12</b><small>QR na mesa · sem app · garçom: ${gname}</small></div>${tabs}${mesaTab==='pedir'?pedir:sv}</div></div>`;
+  const pesq=`<div class="phone"><div class="screen">${mesaScreen('P12')}</div></div>`;
   const passe=`<div class="phone"><div class="screen"><div class="ph-top"><b>Passe Executivo</b><small>WhatsApp · Bovinu's Augusta</small></div><div class="ph-body">
     <div class="item" style="display:block"><b>Olá, Marina! 👋</b><small>Você almoçou 7 vezes este mês. Mais 3 e a sobremesa é por nossa conta.</small></div>
     <div class="stamps">${[...Array(10)].map((_,i)=>`<i class="${i<7?'on':''}">${i<7?'🥩':''}</i>`).join('')}</div>
@@ -858,61 +1013,186 @@ function renderDiretoria(){
 }
 
 function render(){
+  if(!S) return;
   document.getElementById('clock').textContent=fmtT(Math.min(S.min,CLOSE));
   document.getElementById('m-sem').setAttribute('aria-pressed',!S.flow);
   document.getElementById('m-com').setAttribute('aria-pressed',S.flow);
   const v=current();
   if(v==='gerente')renderGerente();else if(v==='diretoria'){if(!document.getElementById('d-kpis').innerHTML)renderDiretoria()}else if(v==='salao')renderSalao();else if(v==='churrasqueira')renderTV();
   else if(v==='garcom')renderGarcom();else if(v==='experiencia')renderExperiencia();
+  else if(v==='mesa')renderMesa();
   else if(v==='cliente'||v==='agora'){const a=document.activeElement;if(a&&a.id==='pub-nome')return;v==='cliente'?renderCliente():renderAgora()}
 }
 
-/* ---------- navegação e eventos ---------- */
-const VIEWS=['gerente','diretoria','salao','churrasqueira','garcom','cliente','experiencia','como-funciona','agora'];
-function current(){const h=location.hash.slice(1);return VIEWS.includes(h)?h:'gerente'}
-function route(){const v=current();document.body.classList.toggle('public',v==='agora');VIEWS.forEach(k=>document.getElementById('v-'+k).hidden=k!==v);
-  document.querySelectorAll('#tabs a').forEach(a=>a.setAttribute('aria-current',a.getAttribute('href')==='#'+v?'page':'false'));render()}
+/* ---------- perfis, sessão e permissões ----------
+   Com o servidor (node server.js), login e permissões são verificados no backend.
+   No GitHub Pages não há servidor: o site entra em "modo demonstração" e avisa que nada é protegido. */
+const ICON={grid:'<rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/>',
+  map:'<path d="M9 4 3 6v14l6-2 6 2 6-2V4l-6 2-6-2z"/><path d="M9 4v14M15 6v14"/>',
+  flame:'<path d="M12 3c1 4 5 5 5 10a5 5 0 0 1-10 0c0-3 2-4 2-7 1 1 2 2 3 4 0-2 0-5 0-7z"/>',
+  qr:'<rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><path d="M14 14h3v3h-3zM20 14v.01M14 20h.01M17 20h4v-3"/>',
+  smile:'<circle cx="12" cy="12" r="9"/><path d="M8 14s1.5 2 4 2 4-2 4-2M9 9h.01M15 9h.01"/>',
+  info:'<circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/>',
+  chart:'<path d="M3 3v18h18"/><path d="M7 15l4-4 3 3 5-6"/>',
+  list:'<path d="M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01"/>',
+  case:'<rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2"/>',
+  fork:'<path d="M7 3v8M5 3v5a2 2 0 0 0 4 0V3M7 11v10M17 3c-2 1-3 4-3 7h3v11"/>'};
+const ico=k=>`<svg class="ico" viewBox="0 0 24 24" aria-hidden="true">${ICON[k]}</svg>`;
+const PAGINAS={gerente:['Painel','grid'],salao:['Mapa do salão','map'],churrasqueira:['Churrasqueira','flame'],cliente:['Cliente e QR','qr'],experiencia:['Experiência e equipe','smile'],diretoria:['Visão estratégica','chart'],garcom:['Minha praça','list'],'como-funciona':['Sobre os dados','info']};
+const PERFIS={
+  gerente:{nome:'Gerência',ico:'case',q:'O que está acontecendo agora e o que preciso resolver?',views:['gerente','salao','churrasqueira','cliente','experiencia','como-funciona']},
+  diretoria:{nome:'Diretoria',ico:'chart',q:'Como estamos performando e quais decisões devo tomar?',views:['diretoria','experiencia','como-funciona']},
+  garcom:{nome:'Garçom',ico:'fork',q:'Quais tarefas preciso executar agora na minha praça?',views:['garcom']}};
+const PUBLICAS=['inicio','login','agora','mesa'];
+let USER=null, DEMO=false, mesaErro='';
+const store={get(){try{return JSON.parse(sessionStorage.getItem('bf_demo'))}catch(e){return null}},set(v){try{v?sessionStorage.setItem('bf_demo',JSON.stringify(v)):sessionStorage.removeItem('bf_demo')}catch(e){}}};
+async function http(path,body){
+  const r=await fetch(path,body===undefined?{credentials:'same-origin'}:{method:'POST',credentials:'same-origin',headers:{'Content-Type':'application/json'},body:JSON.stringify(body)});
+  let data={};try{data=await r.json()}catch(e){}
+  return{status:r.status,ok:r.ok,data};
+}
+/* operação que altera o restaurante: o servidor decide; no modo demonstração, aplica localmente */
+async function servidor(path,body){
+  if(DEMO) return true;
+  try{const r=await http(path,body);if(r.ok)return true;
+    if(r.status===401){toast('Sessão expirada. Entre novamente.');USER=null;location.hash='#inicio';return false}
+    toast(r.data.erro||'Não foi possível concluir.');return false}
+  catch(e){toast('Sem conexão com o servidor. Tente de novo.');return false}
+}
+function viewFromHash(){const h=location.hash.slice(1).split('/');return h[0]}
+function current(){const v=viewFromHash();return VIEWS.includes(v)?v:'inicio'}
+function homeOf(u){return PERFIS[u.perfil].views[0]}
+function renderShell(){
+  const p=PERFIS[USER.perfil], v=current();
+  const links=p.views.map(k=>`<a href="#${k}" aria-current="${k===v?'page':'false'}" title="${PAGINAS[k][0]}">${ico(PAGINAS[k][1])}<span class="txt">${PAGINAS[k][0]}</span></a>`).join('');
+  document.getElementById('tabs').innerHTML=links;
+  document.getElementById('bnav').innerHTML=p.views.length>1?links:'';
+  document.body.classList.toggle('has-bnav',p.views.length>1);
+  document.body.dataset.perfil=USER.perfil;
+  document.getElementById('who').innerHTML=`<b>${esc(USER.nome)}</b>${p.nome}${USER.praca?' · praça '+USER.praca:''}${DEMO?'<br><span style="color:#F1CF85">modo demonstração</span>':''}`;
+  document.getElementById('ptitle').textContent=PAGINAS[v][0];
+}
+const esc=t=>String(t).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+function renderInicio(){
+  document.getElementById('profiles').innerHTML=Object.entries(PERFIS).map(([k,p])=>`<a class="pcard" href="#login/${k}">${ico(p.ico)}<h2>${p.nome}</h2><p>${p.q}</p><span class="go">Entrar com matrícula →</span></a>`).join('')+
+    `<div class="pcard cli">${ico('qr')}<div style="flex:1 1 260px"><h2 style="font-size:20px">Cliente</h2><p>Não precisa de cadastro: aponte a câmera para o QR code da sua mesa.</p></div><a class="btn" href="#agora">Ver fila e lotação agora</a></div>`;
+  document.getElementById('gate-mode').textContent=DEMO?'Modo demonstração (site estático, sem servidor): os perfis não são protegidos. Para login real, rode node server.js.':'A escolha do perfil não dá acesso: a matrícula é verificada no servidor.';
+}
+function renderLogin(){
+  const k=location.hash.split('/')[1], p=PERFIS[k];
+  if(!p){location.hash='#inicio';return}
+  document.getElementById('l-perfil').innerHTML=p.nome;
+  document.getElementById('l-demo').hidden=!DEMO;
+  document.getElementById('l-demo').textContent='Servidor indisponível: este é o site estático de demonstração. Você vai entrar sem verificação de senha e com dados simulados. Não use assim em produção.';
+  document.getElementById('l-fields').hidden=DEMO;
+  document.getElementById('l-btn').textContent=DEMO?'Entrar em modo demonstração':'Entrar';
+  document.getElementById('l-err').hidden=true;
+  document.getElementById('l-hint').textContent=DEMO?'':'Demonstração: gerente 1001, diretoria 2001, garçons 3001 a 3008 (praças A a H). Senha: bovinus2026.';
+}
+async function resolveMesa(){
+  const t=decodeURIComponent(location.hash.split('/')[1]||'');mesaToken=t;mesaErro='';
+  if(DEMO){const id=t.split('.')[0];mesaAtual=S.tables.some(x=>x.id===id)?id:null;return}
+  try{const r=await http('/api/mesa?t='+encodeURIComponent(t));mesaAtual=r.ok?r.data.mesa:null;if(!r.ok)mesaErro=r.data.erro||''}
+  catch(e){mesaAtual=null;mesaErro='Sem conexão. Tente de novo em instantes.'}
+}
+async function route(){
+  let v=current();
+  if(!PUBLICAS.includes(v)){
+    if(!USER){location.replace('#inicio');return}
+    if(!PERFIS[USER.perfil].views.includes(v)){location.replace('#'+homeOf(USER));return}
+  }
+  if((v==='inicio'||v==='login')&&USER){location.replace('#'+homeOf(USER));return}
+  if(v==='mesa') await resolveMesa(); else if(v==='cliente') mesaAtual='P12';
+  document.body.classList.toggle('public',PUBLICAS.includes(v));
+  VIEWS.forEach(k=>document.getElementById('v-'+k).hidden=k!==v);
+  if(v==='inicio')renderInicio();else if(v==='login')renderLogin();
+  if(USER&&!PUBLICAS.includes(v)){renderShell();if(v==='garcom')pracaSel=USER.praca}
+  scrollTo(0,0);render();
+}
 addEventListener('hashchange',route);
+document.getElementById('f-login').addEventListener('submit',async e=>{
+  e.preventDefault();
+  const perfil=location.hash.split('/')[1], err=document.getElementById('l-err'), btn=document.getElementById('l-btn');
+  const show=t=>{err.textContent=t;err.hidden=false};
+  if(DEMO){USER={nome:'Demonstração',perfil,praca:perfil==='garcom'?'B':null};store.set(USER);route();return}
+  const mat=document.getElementById('l-mat').value.trim(), senha=document.getElementById('l-senha').value;
+  if(!mat||!senha){show('Preencha matrícula e senha.');return}
+  btn.disabled=true;btn.textContent='Entrando…';
+  try{const r=await http('/api/login',{matricula:mat,senha,perfil});
+    if(r.ok){USER=r.data;document.getElementById('l-senha').value='';route()}else show(r.data.erro||'Não foi possível entrar.')}
+  catch(e){show('Sem conexão com o servidor.')}
+  finally{btn.disabled=false;btn.textContent='Entrar'}
+});
+document.getElementById('logout').onclick=async()=>{
+  if(!DEMO){try{await http('/api/logout',{})}catch(e){}}
+  USER=null;store.set(null);running=false;tickLoop();location.hash='#inicio';
+};
+document.getElementById('collapse').onclick=()=>{const c=document.body.classList.toggle('collapsed');try{localStorage.setItem('bf_side',c?'1':'')}catch(e){}};
+try{if(localStorage.getItem('bf_side'))document.body.classList.add('collapsed')}catch(e){}
+
+/* QR da mesa: no servidor o token é assinado; no modo demonstração vai só o número da mesa */
+const qrSel=document.getElementById('qr-mesa');
+qrSel.innerHTML=makeTables().map(t=>`<option>${t.id}</option>`).join('');qrSel.value='P12';
+document.getElementById('f-qr').addEventListener('submit',async e=>{
+  e.preventDefault();const id=qrSel.value, out=document.getElementById('qr-out');let tok=id;
+  if(!DEMO){try{const r=await http('/api/qr/'+id);if(!r.ok){toast(r.data.erro||'Não foi possível gerar.');return}tok=r.data.token}catch(err){toast('Sem conexão com o servidor.');return}}
+  const url=location.origin+location.pathname+'#mesa/'+encodeURIComponent(tok);
+  let img='';try{const d=document.createElement('div');new QRCode(d,{text:url,width:220,height:220,colorDark:'#1B1513',colorLight:'#ffffff'});const c=d.querySelector('canvas');img=c?c.toDataURL():''}catch(err){}
+  out.innerHTML=`${img?`<div class="qrbox"><img src="${img}" alt="QR code da mesa ${id}"></div>`:''}<div style="display:grid;gap:6px;min-width:0;flex:1 1 220px"><b>Mesa ${id}</b><a href="${esc(url)}" style="word-break:break-all;color:var(--brand)">${esc(url)}</a><span class="muted" style="font-size:12px">${DEMO?'Modo demonstração: este QR não é assinado.':'Assinado pelo servidor: não dá para trocar o número da mesa no link.'}</span></div>`;
+});
+
+/* ---------- navegação e eventos ---------- */
+const VIEWS=['inicio','login','mesa','gerente','diretoria','salao','churrasqueira','garcom','cliente','experiencia','como-funciona','agora'];
 function tickLoop(){clearInterval(timer);if(!running)return;timer=setInterval(()=>{for(let i=0;i<speed;i++)if(!step(S,false)){running=false;document.getElementById('play').textContent='▶ Simular';document.getElementById('play').setAttribute('aria-pressed','false');clearInterval(timer);break}render()},800)}
 document.getElementById('play').onclick=e=>{running=!running;e.currentTarget.textContent=running?'❚❚ Pausar':'▶ Simular';e.currentTarget.setAttribute('aria-pressed',running);tickLoop()};
 document.getElementById('speed').onclick=e=>{speed=speed===1?3:speed===3?6:1;e.currentTarget.textContent=speed+'×'};
 document.getElementById('reset').onclick=()=>{S=createState(S.flow,7,0);survey.sent=false;render()};
 document.querySelectorAll('[data-mode]').forEach(b=>b.onclick=()=>setMode(b.dataset.mode));
-document.addEventListener('click',e=>{
+const ORDEM=['livre','ocupada','finalizando','aguardando','limpeza'];
+document.addEventListener('click',async e=>{
   const b=e.target.closest('button');if(!b)return;const d=b.dataset,m=S.min;
   if(d.act)act(d.act);
+  else if(d.skip){dispensadas[d.skip]=m;toast('Recomendação adiada por 10 min');render()}
   else if(d.per){per=d.per;renderDiretoria()}
   else if(d.actTv){S.cuts.Picanha=(S.cuts.Picanha||0)+1;toast('Atendimento registrado');render()}
-  else if(d.levei){const g=S.grupos.find(x=>x.id==d.levei);if(g){seatGroup(S,g);toast(g.nome+' levado até a mesa '+g.mesa)}render()}
+  else if(d.levei){const g=S.grupos.find(x=>x.id==d.levei);if(g&&await servidor('/api/mesas/'+g.mesa+'/estado',{estado:'ocupada'})){seatGroup(S,g);toast(g.nome+' levado até a mesa '+g.mesa)}render()}
   else if(d.ppl){const [id,q]=d.ppl.split(':');const t=S.tables.find(x=>x.id===id);t.people=+q;t.size=+q;toast('Mesa '+id+': '+q+' pessoas');render()}
-  else if(d.pedir){const t=S.tables.find(x=>x.id==='P12');if(t.state==='livre'||t.state==='aguardando'||t.state==='limpeza')Object.assign(t,{state:'ocupada',since:m,leave:m+30,last:m,size:2,people:2,exp:{entry:0,grill:0,find:0,drink:0}});
-    addCall(S,t,d.pedir);S.log.unshift({t:m,txt:'Mesa P12 pediu: '+d.pedir+' ('+GARCOM[t.praca]+')',lvl:'info'});toast('Pedido enviado para '+GARCOM[t.praca]);render()}
+  else if(d.pedir){const id=mesaAtual;
+    if(!DEMO&&current()==='mesa'){try{const r=await http('/api/chamados',{t:mesaToken,tipo:d.pedir});if(!r.ok){toast(r.data.erro||'Não foi possível enviar.');return}}catch(err){toast('Sem conexão. Tente de novo.');return}}
+    const t=S.tables.find(x=>x.id===id);if(t.state==='livre'||t.state==='aguardando'||t.state==='limpeza')Object.assign(t,{state:'ocupada',since:m,leave:m+30,last:m,size:2,people:2,exp:{entry:0,grill:0,find:0,drink:0}});
+    addCall(S,t,d.pedir);S.log.unshift({t:m,txt:'Mesa '+id+' pediu: '+d.pedir+' ('+GARCOM[t.praca]+')',lvl:'info'});toast('Pedido enviado para '+GARCOM[t.praca]);render()}
   else if(d.mtab){mesaTab=d.mtab;render()}
   else if(d.pq){pub.qtd=+d.pq;render()}
   else if(d.entrar){const el=document.getElementById('pub-nome');const nome=((el&&el.value)||pub.nome||'').trim()||'Você';
     if(el)el.blur();S.meSeated=null;addGroup(S,nome,pub.qtd,true);toast('Você entrou na fila de mesa');render()}
-  else if(d.t){const t=S.tables.find(x=>x.id===d.t);if(t.state==='reservada'){toast('Mesa '+t.id+' reservada para a fila');return}const order=['livre','ocupada','finalizando','aguardando','limpeza'];const nx=order[(order.indexOf(t.state)+1)%order.length];
+  else if(d.t){const t=S.tables.find(x=>x.id===d.t);if(t.state==='reservada'){toast('Mesa '+t.id+' reservada para a fila');return}const nx=ORDEM[(ORDEM.indexOf(t.state)+1)%ORDEM.length];
+    if(!await servidor('/api/mesas/'+t.id+'/estado',{estado:nx}))return;
     if(nx==='ocupada')Object.assign(t,{since:m,leave:m+30,last:m,exp:{entry:0,grill:0,find:0,drink:0}});
     if(nx==='aguardando'){t.dirty=m;t.notice=m+(S.flow?1:6);if(S.flow)S.log.unshift({t:m,txt:'Mesa '+t.id+' saiu: alerta enviado para '+GARCOM[t.praca],lvl:'warn'})}
     if(nx==='limpeza')t.cleanEnd=m+2;
-    if(nx==='livre')release(S,t);else t.state=nx;render()}
-  else if(d.praca){pracaSel=d.praca;render()}
-  else if(d.clean){const t=S.tables.find(x=>x.id===d.clean);release(S,t);S.log.unshift({t:m,txt:'Mesa '+t.id+' liberada por '+GARCOM[t.praca],lvl:'ok'});toast('Mesa '+t.id+' liberada');render()}
-  else if(d.call){const c=S.calls.find(x=>x.id==d.call);if(c){resolveCall(S,c);S.calls=S.calls.filter(x=>x!==c)}render()}
-  else if(d.touch){const t=S.tables.find(x=>x.id===d.touch);t.last=m;render()}
+    if(nx==='livre')release(S,t);else t.state=nx;toast('Mesa '+t.id+': '+nx);render()}
+  else if(d.clean){const t=S.tables.find(x=>x.id===d.clean);if(!await servidor('/api/mesas/'+t.id+'/estado',{estado:'livre'}))return;release(S,t);S.log.unshift({t:m,txt:'Mesa '+t.id+' liberada por '+GARCOM[t.praca],lvl:'ok'});toast('Mesa '+t.id+' liberada');render()}
+  else if(d.call){const c=S.calls.find(x=>x.id==d.call);if(c){resolveCall(S,c);S.calls=S.calls.filter(x=>x!==c);toast(c.tipo+' da mesa '+c.mesa+' atendido')}render()}
+  else if(d.touch){const t=S.tables.find(x=>x.id===d.touch);t.last=m;toast('Mesa '+t.id+' visitada');render()}
   else if(d.occ){S.log.unshift({t:m,txt:'Praça '+pracaSel+': '+d.occ,lvl:'warn'});toast('Ocorrência enviada ao gerente')}
   else if(d.score){survey.score=+d.score;survey.themes=[];render()}
   else if(d.th){const i=survey.themes.indexOf(d.th);i<0?survey.themes.push(d.th):survey.themes.splice(i,1);render()}
   else if(d.volta){survey.volta=d.volta==='1';render()}
-  else if(d.svSend){addSurvey(S,{t:m,score:survey.score,themes:survey.themes.slice(),mesa:'P12',volta:survey.volta,live:true});
-    S.log.unshift({t:m,txt:'Pesquisa da mesa P12: nota '+survey.score+(survey.themes.length?' ('+survey.themes.join(', ')+')':''),lvl:survey.score<=2?'bad':survey.score===3?'warn':'ok'});
-    if(survey.score<=2)toast('Alerta enviado ao gerente: mesa P12');Object.assign(survey,{sent:true,score:0,themes:[],volta:null});render()}
+  else if(d.svSend){const id=mesaAtual;addSurvey(S,{t:m,score:survey.score,themes:survey.themes.slice(),mesa:id,volta:survey.volta,live:true});
+    S.log.unshift({t:m,txt:'Pesquisa da mesa '+id+': nota '+survey.score+(survey.themes.length?' ('+survey.themes.join(', ')+')':''),lvl:survey.score<=2?'bad':survey.score===3?'warn':'ok'});
+    toast(survey.score<=2?'Obrigado. O gerente vai passar na sua mesa.':'Obrigado pela avaliação!');Object.assign(survey,{sent:true,score:0,themes:[],volta:null});render()}
   else if(d.svReset){survey.sent=false;render()}
 });
 document.addEventListener('input',e=>{if(e.target.id==='pub-nome')pub.nome=e.target.value});
 document.addEventListener('focusout',e=>{if(e.target.id==='pub-nome')setTimeout(render,0)});
 document.getElementById('f-grupo').addEventListener('submit',e=>{e.preventDefault();const n=document.getElementById('grp-nome');const nome=n.value.trim();
   if(!nome){n.focus();toast('Digite o nome do grupo');return}addGroup(S,nome,+document.getElementById('grp-qtd').value);n.value='';toast(nome+' entrou na fila de mesa');render()});
-boot('com');route();
+/* detecta o servidor: 200/401 em /api/me = servidor presente; qualquer outra resposta = site estático */
+(async()=>{
+  boot('com');
+  try{const r=await http('/api/me');if(r.ok)USER=r.data;else if(r.status!==401)throw 0}
+  catch(e){DEMO=true;USER=store.get()}
+  route();
+})();
 </script>
 

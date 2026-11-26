@@ -6,7 +6,7 @@ Projeto para o **Hackathon Tech FMU 2026.2 × Bovinu's Grill & Beer – Augusta*
 
 | | |
 |---|---|
-| **Protótipo funcionando** | https://razzano380.github.io/Hacktoon-Bovinus/ (abre no computador, tablet e celular, sem login) |
+| **Protótipo funcionando** | https://razzano380.github.io/Hacktoon-Bovinus/ (modo demonstração, sem servidor) · login real com `node server.js` |
 | **Slides (5)** | [`slides-bovinus-flow.pdf`](slides-bovinus-flow.pdf) |
 | **Vídeo (1min50s)** | https://razzano380.github.io/Hacktoon-Bovinus/video/bovinus-flow-demo.mp4 (arquivo: [`video/bovinus-flow-demo.mp4`](video/bovinus-flow-demo.mp4)) |
 | **Equipe** | Juan Razzano · Gustavo Lima · Rodrigo Viana |
@@ -173,18 +173,40 @@ A simulação usa 600 clientes por dia útil (premissa anterior ao dado de 618);
 
 ## 7. Como rodar
 
-- **Online:** abra https://razzano380.github.io/Hacktoon-Bovinus/
-- **Local:** baixe o repositório e abra `index.html` no navegador. Não precisa instalar nada.
+### Com login e permissões (recomendado)
 
-Telas: `#gerente` · `#diretoria` · `#salao` · `#churrasqueira` · `#garcom` · `#cliente` · `#experiencia` · `#como-funciona` · `#agora` (página do cliente pelo QR code).
+Precisa só do Node 18 ou mais novo. Não há dependências para instalar.
+
+```bash
+node server.js            # abre em http://localhost:8080
+npm test                  # testes da API (login, permissões, QR)
+```
+
+| Perfil | Matrícula | O que vê |
+|---|---|---|
+| Gerência | `1001` | Painel em 3 níveis, mapa do salão, churrasqueira, QR das mesas, experiência e equipe |
+| Diretoria | `2001` | Visão estratégica, experiência e equipe |
+| Garçom | `3001` a `3008` (praças A a H; `3002` = Ana, praça B) | Só a própria praça, no celular |
+| Cliente | sem login | Abre pelo QR da mesa (`#mesa/<token>`) ou pela página pública `#agora` |
+
+Senha de demonstração: `bovinus2026`. **Troque as senhas e defina `SESSION_SECRET` e `QR_SECRET` antes de qualquer uso real** (ver [`docs/mvp-perfis.md`](docs/mvp-perfis.md)).
+
+### Sem servidor (GitHub Pages ou abrindo o `index.html`)
+
+O site detecta que não há servidor e entra em **modo demonstração**: dá para navegar por todos os perfis, mas nada é protegido, e a tela avisa isso.
 
 No protótipo, cada pessoa que abre o site roda a própria simulação; as telas não são compartilhadas entre aparelhos.
+
+Detalhes do MVP por perfis (diagnóstico, decisões, arquitetura e pendências): [`docs/mvp-perfis.md`](docs/mvp-perfis.md).
 
 ## 8. O que tem no repositório
 
 | Arquivo / pasta | O que é |
 |---|---|
-| `index.html` | Protótipo navegável (código-fonte completo) |
+| `index.html` | Interface completa (HTML + CSS + JavaScript puro) |
+| `server.js` | Servidor do MVP: login, sessão, permissões e QR assinado (Node, sem dependências) |
+| `server/usuarios.json` | Funcionários de demonstração (senhas só como hash scrypt) |
+| `tests/` | Testes da API (`npm test`) e de ponta a ponta no navegador (`tests/e2e.mjs`) |
 | `slides-bovinus-flow.pdf` | Apresentação em 5 slides |
 | `video/bovinus-flow-demo.mp4` | Vídeo de 1min50s com o protótipo funcionando (narração em voz sintética) |
 | `deck/` | Fonte dos slides |
