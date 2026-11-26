@@ -5,15 +5,15 @@
 </div>
 <div class="pipe">
 <div class="stage in" style="--i:0"><p class="n">1</p><p class="t">Coleta</p><p class="d">Toques do garçom, QR do cliente, painel da grelha</p></div>
-<div class="stage in" style="--i:1"><p class="n">2</p><p class="t">Envio</p><p class="d">Wi-Fi da loja, em tempo real; guarda offline se cair</p></div>
+<div class="stage in" style="--i:1"><p class="n">2</p><p class="t">Acesso</p><p class="d">Login por matrícula; o servidor confere perfil e praça</p></div>
 <div class="stage in" style="--i:2"><p class="n">3</p><p class="t">Armazena</p><p class="d">Banco único: eventos, mesas, equipe, pesquisas</p></div>
-<div class="stage in" style="--i:3"><p class="n">4</p><p class="t">Inteligência</p><p class="d">Alertas na hora; previsão do pico toda noite</p></div>
-<div class="stage in" style="--i:4"><p class="n">5</p><p class="t">Uso</p><p class="d">Telas do salão, painel da diretoria, relatório semanal</p></div>
+<div class="stage in" style="--i:3"><p class="n">4</p><p class="t">Inteligência</p><p class="d">Alertas com motivo na hora; previsão do pico toda noite</p></div>
+<div class="stage in" style="--i:4"><p class="n">5</p><p class="t">Uso</p><p class="d">Uma tela por perfil: gerência, diretoria, garçom, cliente</p></div>
 </div>
 <div class="cards" style="grid-template-columns:repeat(3,1fr)">
-<div class="card in" style="--i:5"><p class="who">Versão principal</p><p class="txt">Supabase (PostgreSQL em tempo real), PWA em Next.js, previsão em Python, WhatsApp Business.</p></div>
-<div class="card in" style="--i:6"><p class="who">Versão baixo custo</p><p class="txt">AppSheet ou Glide com Google Sheets, Forms e Looker Studio. Dá para começar na semana 1.</p></div>
-<div class="card in" style="--i:7"><p class="who">LGPD</p><p class="txt">Sem câmera no MVP, pesquisa anônima, telefone só com aceite, guarda de 12 meses.</p></div>
+<div class="card in" style="--i:5"><p class="who">MVP de hoje</p><p class="txt">Servidor Node sem dependências: senha com hash, sessão assinada, permissão por perfil e por praça, QR assinado por mesa.</p></div>
+<div class="card in" style="--i:6"><p class="who">Versão de produção</p><p class="txt">Supabase (PostgreSQL em tempo real) para sincronizar os aparelhos, PWA, previsão em Python.</p></div>
+<div class="card in" style="--i:7"><p class="who">LGPD</p><p class="txt">Sem câmera no MVP, pesquisa anônima, cliente sem cadastro, guarda de 12 meses.</p></div>
 </div>
-<aside>Estrutura (35 s). “Tudo o que vocês viram é um evento com hora marcada: mesa ocupada às 12h14, limpa às 12h19. Cada frente grava e lê do mesmo banco em tempo real; por isso o toque do garçom muda a tela do gerente e a do cliente. Daí saem os alertas na hora e, à noite, a previsão do pico.” Se a empresa não tiver TI: a versão baixo custo roda em planilha e formulário. O diagrama e o modelo de dados estão no README do repositório.</aside>
+<aside>Estrutura (35 s). “Tudo o que vocês viram é um evento com hora marcada: mesa ocupada às 12h14, limpa às 12h19. Antes de gravar, o servidor confere quem é a pessoa e o que ela pode fazer: o garçom só mexe nas mesas da praça dele, só o gerente confirma uma ação, e o QR de cada mesa é assinado, então não dá para trocar o número no link.” Seja honesto: no MVP a operação ainda é uma simulação em cada aparelho; sincronizar os aparelhos em tempo real é o próximo passo, com o Supabase. O diagrama e o modelo de dados estão no README do repositório.</aside>
 </section>
