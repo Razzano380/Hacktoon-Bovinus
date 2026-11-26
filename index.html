@@ -217,6 +217,7 @@ body.collapsed .side .collapse .ico{transform:rotate(180deg)}
 .why b{color:var(--ink)}
 .acts{display:flex;gap:6px;flex-wrap:wrap}
 body.public .app{display:block}
+body.gateview .app{display:none}
 body.public .side,body.public .top,body.public .bnav{display:none}
 .simctl{display:contents}
 body[data-perfil="diretoria"] .simctl,body[data-perfil="garcom"] .simctl .seg,body[data-perfil="garcom"] #reset{display:none}
@@ -239,13 +240,20 @@ body[data-perfil="diretoria"] .simctl,body[data-perfil="garcom"] .simctl .seg,bo
 .gate h1 b{color:#F1CF85}
 .gate .lead{color:#CDBFB7;max-width:60ch;font-size:15px}
 .profiles{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(min(100%,250px),1fr))}
-.pcard{background:#2A2220;border:1px solid #3A302C;border-radius:14px;padding:20px;display:grid;gap:10px;align-content:start;color:inherit;text-decoration:none}
-.pcard:hover,.pcard:focus-visible{border-color:#C9443A;background:#322826}
+.pcard{background:#2A2220;border:1px solid #3A302C;border-radius:14px;padding:20px;display:grid;gap:10px;align-content:start;color:inherit;text-decoration:none;cursor:pointer;transition:transform .18s ease,border-color .18s ease,box-shadow .18s ease,background-color .18s ease}
+a.pcard:hover,a.pcard:focus-visible{border-color:#F59E0B;background:#322826;transform:translateY(-3px);box-shadow:0 10px 24px rgba(0,0,0,.35),0 0 0 1px #F59E0B inset}
+.live{display:inline-flex;align-items:center;gap:8px;font-size:12px;font-weight:600;letter-spacing:.4px;color:#CDBFB7;border:1px solid #3A302C;border-radius:20px;padding:5px 12px;justify-self:start}
+.live i{width:8px;height:8px;border-radius:50%;background:#10B981;animation:livepulse 2s ease-in-out infinite}
+@keyframes livepulse{0%,100%{box-shadow:0 0 0 0 rgba(16,185,129,.55)}50%{box-shadow:0 0 0 6px rgba(16,185,129,0)}}
+.btn-amber{background:#F59E0B;color:#1B1513;font-weight:700;text-decoration:none;border-radius:10px;padding:11px 18px;border:2px solid #F59E0B;white-space:nowrap}
+.btn-amber:hover,.btn-amber:focus-visible{background:#FBBF24;border-color:#FBBF24}
+@media (prefers-reduced-motion:reduce){.live i{animation:none}.pcard{transition:none}a.pcard:hover{transform:none}}
+@media (max-width:640px){.gate h1{font-size:36px}.gate .wrap{padding-block:24px}.pcard.cli .btn-amber{width:100%;text-align:center}}
 .pcard .ico{width:28px;height:28px;color:#F1CF85}
 .pcard h2{font-size:24px}
 .pcard p{color:#CDBFB7}
-.pcard .go{font-weight:700;color:#F1CF85}
-.pcard.cli{grid-column:1/-1;display:flex;flex-wrap:wrap;align-items:center;gap:14px 20px;background:transparent;border-style:dashed}
+.pcard .go{font-weight:700;color:#F59E0B}
+.pcard.cli{cursor:default;grid-column:1/-1;display:flex;flex-wrap:wrap;align-items:center;gap:14px 20px;background:transparent;border-style:dashed}
 .login{max-width:420px;margin:0 auto;width:100%}
 .login .card{display:grid;gap:14px;background:var(--surface);color:var(--ink)}
 .login label{display:grid;gap:6px;font-weight:600;font-size:13px}
@@ -265,7 +273,7 @@ body[data-perfil="diretoria"] .simctl,body[data-perfil="garcom"] .simctl .seg,bo
 </style>
 
 <section id="v-inicio" class="view gate" hidden><div class="wrap">
-  <div><h1>Bovinu's <b>Flow</b></h1><p class="lead" style="margin-top:8px">Inteligência operacional da Bovinu's Grill &amp; Beer Augusta. Escolha como você trabalha. Funcionários entram com matrícula e senha.</p></div>
+  <div style="display:grid;gap:14px"><span class="live" role="status"><i aria-hidden="true"></i>Operação ativa • Unidade Augusta</span><h1>Bovinu's <b>Flow</b></h1><p class="lead" style="margin-top:8px">Inteligência operacional da Bovinu's Grill &amp; Beer Augusta. Escolha como você trabalha. Funcionários entram com matrícula e senha.</p></div>
   <div class="profiles" id="profiles"></div>
   <p class="muted" style="color:#A99A92;font-size:12px" id="gate-mode"></p>
 </div></section>
@@ -1074,9 +1082,10 @@ function renderShell(){
 }
 const esc=t=>String(t).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 function renderInicio(){
-  document.getElementById('profiles').innerHTML=Object.entries(PERFIS).map(([k,p])=>`<a class="pcard" href="#login/${k}">${ico(p.ico)}<h2>${p.nome}</h2><p>${p.q}</p><span class="go">Entrar com matrícula →</span></a>`).join('')+
-    `<div class="pcard cli">${ico('qr')}<div style="flex:1 1 260px"><h2 style="font-size:20px">Cliente</h2><p>Não precisa de cadastro: aponte a câmera para o QR code da sua mesa.</p></div><a class="btn" href="#agora">Ver fila e lotação agora</a></div>`;
-  document.getElementById('gate-mode').textContent=DEMO?'Modo demonstração (site estático, sem servidor): os perfis não são protegidos. Para login real, rode node server.js.':'A escolha do perfil não dá acesso: a matrícula é verificada no servidor.';
+  /* pirâmide operacional: da execução na ponta até a decisão estratégica */
+  document.getElementById('profiles').innerHTML=['garcom','gerente','diretoria'].map(k=>{const p=PERFIS[k];return`<a class="pcard" href="#login/${k}">${ico(p.ico)}<h2>${p.nome}</h2><p>${p.q}</p><span class="go">Entrar com matrícula →</span></a>`}).join('')+
+    `<div class="pcard cli">${ico('qr')}<div style="flex:1 1 260px"><h2 style="font-size:20px">Cliente</h2><p>Acompanhe o tempo de espera e a lotação em tempo real, sem precisar de cadastro.</p></div><a class="btn-amber" href="#agora">Ver fila e lotação agora</a></div>`;
+  document.getElementById('gate-mode').textContent='Ambiente de demonstração (MVP). Selecione qualquer perfil acima para simular a operação em tempo real.';
 }
 function renderLogin(){
   const k=location.hash.split('/')[1], p=PERFIS[k];
@@ -1104,6 +1113,7 @@ async function route(){
   if((v==='inicio'||v==='login')&&USER){location.replace('#'+homeOf(USER));return}
   if(v==='mesa') await resolveMesa(); else if(v==='cliente') mesaAtual='P12';
   document.body.classList.toggle('public',PUBLICAS.includes(v));
+  document.body.classList.toggle('gateview',v==='inicio'||v==='login');
   VIEWS.forEach(k=>document.getElementById('v-'+k).hidden=k!==v);
   if(v==='inicio')renderInicio();else if(v==='login')renderLogin();
   if(USER&&!PUBLICAS.includes(v)){renderShell();if(v==='garcom')pracaSel=USER.praca}
