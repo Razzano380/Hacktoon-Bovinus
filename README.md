@@ -6,9 +6,9 @@ Projeto para o **Hackathon Tech FMU 2026.2 × Bovinu's Grill & Beer – Augusta*
 
 | | |
 |---|---|
-| **Protótipo funcionando** | https://razzano380.github.io/Hacktoon-Bovinus/ (abre no computador, tablet e celular, sem login) |
+| **Protótipo funcionando** | https://razzano380.github.io/Hacktoon-Bovinus/ (modo demonstração, sem servidor) · login real com `node server.js` |
 | **Slides (5)** | [`slides-bovinus-flow.pdf`](slides-bovinus-flow.pdf) |
-| **Vídeo (1min50s)** | https://razzano380.github.io/Hacktoon-Bovinus/video/bovinus-flow-demo.mp4 (arquivo: [`video/bovinus-flow-demo.mp4`](video/bovinus-flow-demo.mp4)) |
+| **Vídeo (1min53s)** | https://razzano380.github.io/Hacktoon-Bovinus/video/bovinus-flow-demo.mp4 (arquivo: [`video/bovinus-flow-demo.mp4`](video/bovinus-flow-demo.mp4)) |
 | **Equipe** | Juan Razzano · Gustavo Lima · Rodrigo Viana |
 
 > ⚠️ **Todos os números deste projeto são sintéticos.** Vêm de uma simulação e de um histórico gerados a partir de premissas declaradas, não de dados reais da empresa. Não conversamos com os donos nem fizemos pesquisa de campo.
@@ -39,15 +39,16 @@ Ninguém vê as três juntas. O gerente descobre o gargalo pela cara do cliente 
 
 ## 2. A solução
 
-O **Bovinu's Flow** transforma cada toque de um funcionário (e cada registro que a comanda já faz) em um **evento com horário**. Somando os eventos, o sistema sabe em tempo real onde está o gargalo e sugere a ação. Cada pessoa que mexe no fluxo ganha uma tela simples:
+O **Bovinu's Flow** transforma cada toque de um funcionário (e cada registro que a comanda já faz) em um **evento com horário**. Somando os eventos, o sistema sabe em tempo real onde está o gargalo e sugere a ação. É **uma plataforma com uma experiência para cada perfil**. Na tela inicial a pessoa escolhe o perfil e entra com matrícula e senha; o servidor confere as permissões e cada um vê só o que precisa:
 
-| Frente | Aparelho | O que faz |
-|---|---|---|
-| **Gerente** | tablet | Semáforo do salão, fila, grelha e lotação; alertas com botão *Aplicar* |
-| **Garçom** | celular da casa | Mesa para limpar, pessoas sentadas, chamados, grupo da fila de mesa |
-| **Churrasqueira** | painel | Tempo de espera; chama reforço quando passa de 2 min |
-| **Cliente** | QR code, sem app | Lotação, fila de mesa, pedido rápido e avaliação de 1 toque |
-| **Diretoria** | navegador | Movimento por semana/mês/ano, horário de pico e pico da grelha |
+| Perfil | Aparelho | Pergunta que a tela responde | O que tem |
+|---|---|---|---|
+| **Gerência** | tablet ou computador | O que está acontecendo e o que preciso resolver? | Painel em 3 níveis (agora, atenção, o que fazer), mapa do salão, churrasqueira, QR das mesas |
+| **Diretoria** | navegador | Como estamos performando e o que decidir? | Movimento por semana/mês/ano com comparação, horários de pico, gargalos recorrentes |
+| **Garçom** | celular da casa | O que preciso fazer agora na minha praça? | Só as mesas da praça dele, mesas para limpar, chamados, grupos da fila |
+| **Cliente** | QR code da mesa, sem app e sem login | Como faço meu pedido? | Mesa identificada pelo QR, pedidos rápidos, avaliação, fila e lotação |
+
+Toda recomendação ao gerente mostra **o motivo** e só muda a operação depois que ele confirma. Cada número leva um selo de origem (*simulação*, *histórico sintético* ou *previsão*), para nenhum dado simulado parecer real.
 
 **Integração entre as frentes:** todas leem e gravam no mesmo fluxo de eventos. O "Limpei" do garçom muda na hora a tela do gerente, a fila do cliente e o histórico da diretoria.
 
@@ -57,12 +58,12 @@ O **Bovinu's Flow** transforma cada toque de um funcionário (e cada registro qu
 
 | | |
 |---|---|
-| ![Painel do gerente](capturas/1-painel-do-gerente.png) | ![Mapa do salão](capturas/2-mapa-do-salao.png) |
-| **Painel do gerente** | **Mapa do salão** |
-| ![Cliente pelo QR code](capturas/3-cliente-qr-code.png) | ![Diretoria](capturas/4-diretoria.png) |
-| **Cliente pelo QR code** | **Diretoria** |
-| ![Celular e tablet](capturas/5-celular-e-tablet.png) | |
-| **Celular e tablet** | |
+| ![Tela inicial por perfil](capturas/1-tela-inicial.png) | ![Painel do gerente](capturas/2-painel-do-gerente.png) |
+| **Tela inicial: cada perfil entra com matrícula** | **Gerente: agora, atenção e o que fazer** |
+| ![Diretoria](capturas/3-diretoria.png) | ![Garçom e cliente no celular](capturas/4-garcom-e-cliente-no-celular.png) |
+| **Diretoria: visão estratégica** | **Garçom (praça B) e cliente pelo QR da mesa** |
+| ![Mapa do salão](capturas/5-mapa-do-salao.png) | |
+| **Mapa do salão** | |
 
 ## 4. Estrutura e integração
 
@@ -150,8 +151,9 @@ Exemplo de evento (o garçom tocou "Limpei" na mesa S14):
 1. **Entender:** lemos o case da Bovinu's (almoço por quilo, 600 clientes, pico curto) e o mapa da unidade.
 2. **Escolher:** comparamos 8 ideias de MVP por impacto no cliente, custo e facilidade de testar ([`mvps-bovinus.png`](mvps-bovinus.png)). O Flow venceu por atacar a espera, que é o que o cliente sente.
 3. **Modelar:** sem dados da loja, escrevemos uma simulação do almoço (chegadas, balança, grelha, mesas, limpeza) com premissas declaradas e semente fixa, para o resultado ser reproduzível.
-4. **Construir:** fizemos o protótipo web com 9 telas em um único arquivo (`index.html`, HTML + CSS + JavaScript puro), publicado no GitHub Pages.
+4. **Construir:** fizemos o protótipo web em um único arquivo (`index.html`, HTML + CSS + JavaScript puro), publicado no GitHub Pages.
 5. **Testar:** rodamos o mesmo dia duas vezes, com as mesmas chegadas, sem e com o Flow, e ajustamos o layout para celular e tablet.
+6. **Evoluir para MVP:** trocamos as abas soltas por uma experiência por perfil (tela inicial, login, menu lateral), separamos operação e estratégia, adicionamos um servidor com login e permissões e o QR assinado por mesa, e cobrimos os fluxos com testes automáticos (11 da API e 20 no navegador). Detalhes em [`docs/mvp-perfis.md`](docs/mvp-perfis.md).
 
 ## 6. Resultado esperado (simulação)
 
@@ -173,20 +175,42 @@ A simulação usa 600 clientes por dia útil (premissa anterior ao dado de 618);
 
 ## 7. Como rodar
 
-- **Online:** abra https://razzano380.github.io/Hacktoon-Bovinus/
-- **Local:** baixe o repositório e abra `index.html` no navegador. Não precisa instalar nada.
+### Com login e permissões (recomendado)
 
-Telas: `#gerente` · `#diretoria` · `#salao` · `#churrasqueira` · `#garcom` · `#cliente` · `#experiencia` · `#como-funciona` · `#agora` (página do cliente pelo QR code).
+Precisa só do Node 18 ou mais novo. Não há dependências para instalar.
+
+```bash
+node server.js            # abre em http://localhost:8080
+npm test                  # testes da API (login, permissões, QR)
+```
+
+| Perfil | Matrícula | O que vê |
+|---|---|---|
+| Gerência | `1001` | Painel em 3 níveis, mapa do salão, churrasqueira, QR das mesas, experiência e equipe |
+| Diretoria | `2001` | Visão estratégica, experiência e equipe |
+| Garçom | `3001` a `3008` (praças A a H; `3002` = Ana, praça B) | Só a própria praça, no celular |
+| Cliente | sem login | Abre pelo QR da mesa (`#mesa/<token>`) ou pela página pública `#agora` |
+
+Senha de demonstração: `bovinus2026`. **Troque as senhas e defina `SESSION_SECRET` e `QR_SECRET` antes de qualquer uso real** (ver [`docs/mvp-perfis.md`](docs/mvp-perfis.md)).
+
+### Sem servidor (GitHub Pages ou abrindo o `index.html`)
+
+O site detecta que não há servidor e entra em **modo demonstração**: dá para navegar por todos os perfis, mas nada é protegido, e a tela avisa isso.
 
 No protótipo, cada pessoa que abre o site roda a própria simulação; as telas não são compartilhadas entre aparelhos.
+
+Detalhes do MVP por perfis (diagnóstico, decisões, arquitetura e pendências): [`docs/mvp-perfis.md`](docs/mvp-perfis.md).
 
 ## 8. O que tem no repositório
 
 | Arquivo / pasta | O que é |
 |---|---|
-| `index.html` | Protótipo navegável (código-fonte completo) |
+| `index.html` | Interface completa (HTML + CSS + JavaScript puro) |
+| `server.js` | Servidor do MVP: login, sessão, permissões e QR assinado (Node, sem dependências) |
+| `server/usuarios.json` | Funcionários de demonstração (senhas só como hash scrypt) |
+| `tests/` | Testes da API (`npm test`) e de ponta a ponta no navegador (`tests/e2e.mjs`) |
 | `slides-bovinus-flow.pdf` | Apresentação em 5 slides |
-| `video/bovinus-flow-demo.mp4` | Vídeo de 1min50s com o protótipo funcionando (narração em voz sintética) |
+| `video/bovinus-flow-demo.mp4` | Vídeo de 1min53s com o MVP funcionando: perfis, gerente, garçom, cliente pelo QR e diretoria (com legendas, sem narração) |
 | `deck/` | Fonte dos slides |
 | `capturas/` | 5 capturas de tela da solução |
 | `docs/modelo-de-dados.sql` | Esquema do banco proposto |

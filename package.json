@@ -1,0 +1,11 @@
+{
+  "name": "bovinus-flow",
+  "private": true,
+  "description": "Bovinu's Flow: MVP por perfis (servidor Node sem dependências)",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node --test tests/api.test.js",
+    "e2e": "node tests/e2e.mjs"
+  },
+  "engines": { "node": ">=18" }
+}
